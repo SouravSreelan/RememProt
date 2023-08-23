@@ -1,0 +1,84 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+
+    <div class="row d-flex justify-content-center">
+  
+
+        <div class="col col-xl-9 col-lg-9">
+
+          <h4 class="d-flex justify-content-center m-3" style="font-weight: bold;"><u> REMEMProt-CSEA </u> </h4>
+
+          <div>
+            <p style="text-align: justify;">The enrichment analysis using the REMEMProt-CSEA enables the visualization of a set of query proteins if <i>a priory</i> is identified in a particular experimental/biological context. This also enables the users to cross-refer to enrichment methods, profiling/differential expression, and biological contexts such as disease, organism, and cell line/tissue source for their protein of interest.</p>
+          </div>
+             <div class="d-flex justify-content-center m-5">
+
+              <form method="POST" action="{% url 'rememb_prot:enrichment' %}">
+                {% csrf_token %}
+                   <div>
+                   <p style="font-size: large;">Enter Gene ID/ Gene Symbol : </p>
+                   </div>
+
+                <div>
+               <textarea id="analysis-input" name="analysisInput" rows="19" cols="60"></textarea>
+                </div>
+
+                <div class=" d-flex justify-content-center">
+                <input  class="btn btn-danger btn-lg mt-4 mr-4" type="button" id="example" value="Example">
+
+                <input  class="btn btn-info btn-lg mt-4" type="submit">
+                </div>
+
+            </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+  const textArea = document.getElementById("analysis-input");
+  document.querySelector('#example').addEventListener('click', function() {
+  textArea.value = `RUSF1
+SACM1L
+SARAF
+SCAMP2
+SCAMP3
+SCAP
+SCARB2
+SCCPDH
+SCD
+SDC2
+SDC4
+SDCBP
+SDHC
+SEC11A
+SEC22A
+SEC61A1
+SEC61A2
+SEC61B
+SEC63
+SEL1L
+SEMA4C
+SEMA6A
+SERINC3
+SFT2D3
+SFXN1
+SFXN2
+SFXN3
+SFXN4
+SGPP1
+SLC12A2
+SLC12A4
+`
+  });
+
+</script>
+
+{% endblock %}

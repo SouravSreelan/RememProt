@@ -1,0 +1,117 @@
+source,name,intersection_size
+GO:BP,ribose phosphate metabolic process,8
+GO:BP,organic acid metabolic process,12
+GO:BP,ATP metabolic process,7
+GO:BP,ribonucleoside diphosphate metabolic process,5
+GO:BP,purine nucleotide metabolic process,8
+GO:BP,carbohydrate catabolic process,6
+GO:BP,glycolytic process,5
+GO:BP,oxoacid metabolic process,12
+GO:BP,ATP generation from ADP,5
+GO:BP,ribonucleotide metabolic process,8
+GO:BP,pyruvate metabolic process,5
+GO:BP,purine ribonucleoside diphosphate metabolic process,5
+GO:BP,ADP metabolic process,5
+GO:BP,purine nucleoside diphosphate metabolic process,5
+GO:BP,purine ribonucleotide metabolic process,8
+GO:BP,small molecule metabolic process,15
+GO:BP,nucleotide phosphorylation,5
+GO:BP,carboxylic acid metabolic process,12
+GO:BP,purine ribonucleoside triphosphate metabolic process,8
+GO:BP,nucleoside phosphate metabolic process,8
+GO:BP,organonitrogen compound biosynthetic process,13
+GO:BP,nucleotide metabolic process,8
+GO:BP,carbohydrate metabolic process,8
+GO:BP,nucleoside diphosphate metabolic process,5
+GO:BP,nucleobase-containing small molecule metabolic process,9
+GO:BP,purine nucleoside triphosphate metabolic process,8
+GO:BP,nucleoside diphosphate phosphorylation,5
+GO:BP,generation of precursor metabolites and energy,10
+GO:BP,nucleoside triphosphate metabolic process,8
+GO:BP,purine-containing compound metabolic process,8
+GO:BP,ribonucleoside triphosphate metabolic process,8
+GO:CC,ficolin-1-rich granule,5
+GO:CC,secretory granule,9
+GO:CC,cytosol,22
+GO:CC,cytoplasmic vesicle,14
+GO:CC,intracellular vesicle,14
+GO:CC,secretory granule lumen,6
+GO:CC,secretory vesicle,9
+GO:CC,vesicle lumen,6
+GO:CC,cytoplasmic vesicle lumen,6
+GO:CC,extracellular vesicle,25
+GO:CC,cytoplasm,38
+GO:CC,vesicle,26
+GO:CC,extracellular membrane-bounded organelle,25
+GO:CC,extracellular organelle,25
+GO:CC,extracellular exosome,24
+GO:CC,extracellular space,27
+GO:CC,extracellular region,27
+GO:CC,ficolin-1-rich granule lumen,5
+GO:MF,catalytic activity,24
+GO:MF,disulfide oxidoreductase activity,3
+GO:MF,MHC class II protein complex binding,3
+GO:MF,MHC protein complex binding,3
+GO:MF,cadherin binding,6
+HP,Rhabdomyolysis,4
+HPA,soft tissue 2,29
+HPA,lymph node; non-germinal center cells[≥Medium],24
+HPA,testis; sertoli cells[≥Medium],15
+HPA,liver; cholangiocytes[≥Low],24
+HPA,skin 2; lymphocytes[High],8
+HPA,skin 2; melanocytes[≥Low],10
+HPA,hippocampus; glial cells[≥Low],29
+HPA,small intestine; paneth cells[High],5
+HPA,lung; alveolar cells type II[≥Low],14
+HPA,skin 1; cells in basal layer[≥Medium],9
+HPA,skin 2; melanocytes[≥Medium],9
+HPA,skin 1; fibrohistiocytic cells[≥Low],11
+HPA,skin 2; lymphocytes[≥Medium],9
+HPA,hippocampus; glial cells[≥Medium],16
+HPA,duodenum; paneth cells[High],5
+HPA,soft tissue 2; fibroblasts[≥Low],24
+HPA,skin 2; fibrohistiocytic cells[≥Medium],10
+HPA,rectum; mucosal lymphoid cells[≥Medium],7
+HPA,testis; sertoli cells[≥Low],17
+HPA,liver; cholangiocytes[≥Medium],16
+HPA,skin 2; cells in basal layer[≥Medium],11
+HPA,skin 1; lymphocytes[≥Medium],9
+HPA,skin 2; cells in basal layer[≥Low],13
+HPA,skin 1; cells in basal layer[≥Low],12
+HPA,skin 1; lymphocytes[≥Low],11
+HPA,cerebral cortex; glial cells[≥Low],28
+HPA,cerebellum; molecular layer cells - cytoplasm/membrane[High],6
+HPA,skin 2; lymphocytes[≥Low],11
+HPA,rectum; mucosal lymphoid cells[≥Low],8
+HPA,skin 1; lymphocytes[High],8
+HPA,tonsil; germinal center cells[High],13
+HPA,caudate; glial cells[≥Low],28
+HPA,soft tissue 1,29
+HPA,cerebral cortex; glial cells[≥Medium],20
+HPA,caudate; glial cells[≥Medium],17
+HPA,soft tissue 2; peripheral nerve[≥Low],24
+HPA,skin 1; langerhans cells[≥Low],10
+HPA,cerebellum; molecular layer cells - cytoplasm/membrane[≥Low],9
+HPA,skin 1; endothelial cells[≥Low],11
+HPA,skin 2; fibrohistiocytic cells[≥Low],12
+HPA,cerebellum; molecular layer cells - cytoplasm/membrane[≥Medium],9
+KEGG,Metabolic pathways,15
+KEGG,Glycolysis / Gluconeogenesis,6
+KEGG,Pyruvate metabolism,3
+KEGG,Carbon metabolism,6
+KEGG,Biosynthesis of amino acids,4
+MIRNA,hsa-miR-23a-3p,7
+MIRNA,hsa-miR-324-3p,7
+MIRNA,hsa-miR-222-3p,8
+MIRNA,hsa-miR-324-5p,7
+REAC,Platelet degranulation ,5
+REAC,Response to elevated platelet cytosolic Ca2+,5
+WP,Glycolysis in senescence,3
+WP,Arsenic metabolism and reactive oxygen species generation,3
+WP,Clear cell renal cell carcinoma pathways,5
+WP,Metabolic reprogramming in pancreatic cancer,4
+WP,Glycolysis and gluconeogenesis,4
+WP,Amino acid metabolism,6
+WP,Cori cycle,3
+WP,Photodynamic therapy-induced HIF-1 survival signaling,4
+WP,Aerobic glycolysis,4

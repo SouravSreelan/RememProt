@@ -1,0 +1,102 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+
+    <div class="row d-flex justify-content-center">
+  
+
+        <div class="col col-xl-9 col-lg-9">
+
+          <h4 class="d-flex justify-content-center m-3" style="font-weight: bold;"><u> Disease Ontology: </u></h4>
+
+             <div class="d-flex justify-content-center m-5">
+
+
+              <form method="POST" action="{% url 'rememb_prot:dose_ontology' %}">
+                {% csrf_token %}
+                <div>
+                    <p style="text-align: justify;">
+                        The disease ontology enrichment enables the analysis of the disease associations of the set of query proteins within the curated sets of proteins in REMEMProt. This also help visualize the protein-disease associations in the form of a heat map.
+
+                    </p>
+                </div>
+                   <div >
+                   <p style="font-size: large;text-align: center;">Enter Gene ID/ Gene Symbol : <br></p>
+                   </div>
+
+                <div>
+               <textarea id="doseInput" name="doseInput" rows="19" cols="60" style="margin-left: 9em;"></textarea>
+                </div>
+
+                
+                <div class=" d-flex justify-content-center">
+
+                    <input  class="btn btn-danger btn-lg mt-4 mr-4" type="button" id="example" value="Example">
+
+                <input  class="btn btn-info btn-lg mt-4" type="submit" value="Submit">
+                </div>
+
+            </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    const textArea = document.getElementById("doseInput");
+    document.querySelector('#example').addEventListener('click', function() {
+    textArea.value = `RUSF1
+SACM1L
+SARAF
+SCAMP2
+SCAMP3
+SCAP
+SCARB2
+SCCPDH
+SCD
+SDC2
+SDC4
+SDCBP
+SDHC
+SEC11A
+SEC22A
+SEC61A1
+SEC61A2
+SEC61B
+SEC63
+SEL1L
+SEMA4C
+SEMA6A
+SERINC3
+SFT2D3
+SFXN1
+SFXN2
+SFXN3
+SFXN4
+SGPP1
+SLC12A2
+SLC12A4
+SLC12A7
+SLC12A9
+SLC15A4
+SLC16A1
+SLC16A3
+SLC25A17
+SLC25A20
+SLC25A22
+SLC25A26
+SLC25A3
+SLC25A36
+SLC25A4
+SLC25A44
+SLC25A5
+`
+ 
+  });
+  
+  </script>
+{% endblock %}

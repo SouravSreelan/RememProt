@@ -1,0 +1,57 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="col col-xl-12 mt-3 ml-5">
+        <h6>Organism: &nbsp;&nbsp; {{ species }}</h6>
+      </div>
+     
+    </div>
+
+      <div class="row">
+        <div class="col col-xl-12 d-flex justify-content-end">
+          <h6>For inquiries regarding the complete dataset download, kindly <a href="{% url 'rememb_prot:contactus' %}" target="_blank">contact us.</a></h6>
+        </div>
+        <div class="col col-xl-12">
+            <div class=" d-flex justify-content-center">
+            <table class="styled-table table-bordered" style="background-color: white;text-align: center;">
+                  <thead>
+                    <tr style="text-align: center;">
+                      <th rowspan="2" scope="col">Gene symbol</th>
+                      <th rowspan="2" scope="col">Transmembrane</th>
+                      <th rowspan="2" scope="col">Profile and/or differential expression</th>
+                      <th rowspan="2" scope="col">Context of identification</th>
+                      <th colspan="3" scope="col">Cell Marker Status</th>
+                      </tr>
+                      <tr style="text-align: center;">
+                      <th  scope="col">Tissue type</th>
+                      <th scope="col">Cancer type</th>
+                      <th scope="col">Cell name</th>
+
+                    </tr>
+                  </thead>
+                <tbody>
+
+                {% for data in results %}
+                  <tr>
+                  <td>{{ data.geneSymbol }}</td>
+                  <td>{{ data.isTrans }}</td>
+                  <td>{{ data.profileOrDifex }}</td>
+                  <td>{{ data.contxtOfIdent }}</td>
+                  <td>{{ data.tissueType }}</td>
+                  <td>{{ data.cancerType }}</td>
+                  <td>{{ data.cellName }}</td>
+
+                </tr>
+               {% endfor %}
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

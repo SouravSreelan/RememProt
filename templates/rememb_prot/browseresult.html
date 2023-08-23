@@ -1,0 +1,462 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<style>
+  h5{
+    font-weight: bolder;
+    
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+}
+.card{
+  height: 3vh;
+  width: 7vh;
+  align-items: center;
+  box-shadow:
+    4px 0px 4px 0px #bbb5b5,
+    4px 2px 4px 0px #b7b8b9;
+}
+/* .card:hover{
+  width: 8vh;
+  align-items: center;
+  box-shadow:
+    4px 0px 4px 0px #ffffff,
+    4px 2px 4px 0px #d1d9e6;
+} */
+
+.blur {
+filter: blur(5px);
+}
+.hidden{
+  display: none;
+}
+.btsn {
+  cursor: pointer;
+  border: #fff;
+  background-color: transparent;
+  color: #6d5dfc;
+  font-size: 1.5em;
+
+  
+}
+.btsn:hover{
+color: #ff0f1f;
+}
+
+</style>
+
+<div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.795); outline-style: solid ; outline-color: rgb(75, 24, 24);">
+    <div class="row styled-row">
+      <div class="col col-xl-12">
+        <h6>Organism: &nbsp;&nbsp; {{ species }}</h6>
+      </div>
+   </div>
+
+
+   <div class="row d-flex justify-content-center mx-3">
+    {% if key == 'both' %}
+
+    <div class="mt-3 col col-xl-6">
+      <table class="table">
+        <tr>
+          <td>Analysis</td>
+          <td> Profile</td>
+        </tr>
+        <tr>
+          <td>Context</td>
+          <td>{{ profile_contxt }}</td>
+        </tr>
+        <tr>
+          <td>Method</td>
+          <td>{{ method }}</td>
+        </tr>
+        <tr>
+          <td><i>Tissue/Cell line</i></td>
+          {% if tissueCell %}
+          <td>{{ tissueCell }}</td>
+          {% endif %}
+        </tr>
+
+        <tr>
+          <td>PubMed ID</td>
+          <td> {% for pm in  pmids_prof %} 
+            <p> <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pm }}">{{ pm }} </a></p>
+            
+            {% endfor %}
+          </td>
+        </tr>
+
+        
+
+      </table>
+          
+    </div>
+
+
+
+    <div class="mt-3 col col-xl-6">
+
+      <table  class="table">
+        <tr>
+          <td>Analysis</td>
+          <td> Differential expression</td>
+        </tr>
+        <tr>
+          <td>Context</td>
+          <td> {{ dif_contxt }}</td>
+        </tr>
+        <tr>
+          <td>Method</td>
+          <td>{{ method }}</td>
+        </tr>
+
+        <tr>
+          <td>Context of differential regulation</td>
+          <td>{{ diff_reg }}</td>
+        </tr>
+
+        <tr>
+          <td><i>Tissue/Cell line</i></td>
+          {% if tissueCell %}
+          <td>{{ tissueCell }}</td>
+          {% endif %}
+        </tr>
+
+        
+        <tr>
+          <td>PubMed ID</td>
+          <td> {% for pm in  pmids_dif %} 
+            <p> <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pm }}">{{ pm }} </a></p>
+            
+            {% endfor %}
+          </td>
+        </tr>
+
+
+      </table>
+
+    </div>
+
+
+    <div class="col col-xl-6 col-lg-6">
+          <div class="mt-3 d-flex justify-content-center">
+                <table class ="styled-table table-bordered" style="text-align: center;">
+                <thead>
+                    <tr style="border: none;text-align: center;">
+                    <th rowspan="2"> Protein </th>
+                    <th rowspan="2"> Transmembrane status</th>
+                    <th colspan="3" style="text-align: center;">Cell Marker Status  <a href="http://bio-bigdata.hrbmu.edu.cn/CellMarker/" target="_blank"><p style="color:white;">(Adopted from CellMarker database) </p> </a> </th>
+                    </tr><tr style="text-align: center;">
+                  
+                    <th> Tissue type</th>
+                    <th> Cancer type</th>
+                    <th> Cell name</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {% for g in profile_df %}
+                  <tr>
+                    <td>  <a  href="https://www.ncbi.nlm.nih.gov/gene/{{g.geneID }}"  target="_blank"> {{ g.geneSymbol }} </a> </td>
+                    {% if g.isTrans == 'NO' %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg></td>
+                    {% else %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg></td>
+                    {% endif %}
+                    <td>{{ g.tissueType }}</td>
+                    <td>{{ g.cancerType }}</td>
+                    <td>{{ g.cellName }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+             </table>
+             </div>
+      </div>
+
+
+   
+      <div class="col col-xl-6 col-lg-6">
+        <div class="mt-3 d-flex justify-content-center">
+              <table class ="styled-table table-bordered" style="text-align: center;">
+              <thead>
+                  <tr style="text-align: center;">
+                    <th rowspan="2"> Protein </th>
+                    <th rowspan="2"> Transmembrane status</th>
+                    <th colspan="3" style="text-align: center;">Cell Marker Status  <a   href="http://bio-bigdata.hrbmu.edu.cn/CellMarker/" target="_blank"><p style="color:white;">(Adopted from CellMarker database) </p> </a> </th>
+                  </tr><tr style="text-align: center;">
+                  
+                    <th> Tissue type</th>
+                    <th> Cancer type</th><th> Cell name</th>
+                  </tr> </thead>
+                  {% for g in difx_df %}
+                  <tr>
+                    <td> <a  href="https://www.ncbi.nlm.nih.gov/gene/{{g.geneID }}" target="_blank">  {{ g.geneSymbol }} </a></td>
+                    {% if g.isTrans == 'NO' %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg></td>
+                    {% else %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg></td>  {% endif %}
+                  
+                    <td>{{ g.tissueType }}</td>
+                    <td>{{ g.cancerType }}</td>
+                    <td>{{ g.cellName }} </td>
+                  
+                  </tr>
+                  {% endfor %}
+                </table>
+             </div>
+        </div>
+      </div>
+
+      {% endif %}
+    </div>
+
+     <div class="row d-flex justify-content-center mx-3">
+    {% if key == 'profile' %}
+    <div class="mt=3 col col-xl-12 col-lg-12">
+        <table  class="table">
+          <tr>
+            <td>Analysis</td>
+            <td> Profile</td>
+          </tr>
+          <tr>
+            <td>Context</td>
+            <td>{{ profile_contxt }}</td>
+          </tr>
+          <tr>
+            <td>Method</td>
+            <td>{{ method }}</td>
+          </tr>
+          <tr>
+            <td><i>Tissue/Cell line</i></td>
+            {% if tissueCell %}
+            <td>{{ tissueCell }}</td>
+            {% endif %}
+          </tr>
+
+          
+        
+        <tr>
+          <td>PubMed ID</td>
+          <td> {% for pm in  pmids_prof %} 
+            <p> <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pm }}">{{ pm }} </a></p>
+            
+            {% endfor %}
+          </td>
+        </tr>
+
+
+        </table>
+
+      </div>
+      </div>
+
+      <div class="hidden animate__bounceIn d-flex justify-content-center" id="hiddenDiv" style="position: fixed;z-index: 999;left: 70vh;top: 40vh;">
+        <div class="p-5 shadow justify-content-center" style="border:1px inset #6d5dfc; border-radius: 10px;width: 40vh;background-color: rgb(231, 209, 209);">
+          <div class="d-flex justify-content-end "> <button class="btsn" id="close-diff"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+          </svg></button></div>
+        {% for g in profile_df %}
+        <div class="gene-info" data-gene="{{ g.geneSymbol }}">
+          <div class="row">
+            <div class="col col-xl-12 col-lg-12 justify-content-center">
+              <h5> Gene : <span class="geneSymbol"> <a href="https://www.ncbi.nlm.nih.gov/gene/{{ g.geneID }}" target="_blank">{{ g.geneSymbol }} </a></span></h5> <br>
+
+         
+              {% if g.isTrans == 'NO' %}
+              <div><p>Transmembrane Status <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg></p></div>
+              {% else %}
+              <div><p>Transmembrane Status <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg></p></div>
+              {% endif %}
+                
+              <p class="tissueType">Tissue Type : {{ g.tissueType }} </p> 
+              <p class="cancerType">Cancer Type : {{ g.cancerType }} </p> 
+              <p class="cellName">Cell Name : {{ g.cellName }}</p>
+            </div>
+          </div>
+          
+        </div>
+        {% endfor %}
+      </div></div>
+      
+      <div class="row justify-content-center mb-5" id="mainForm">
+        <div class="mt-3 col col-xl-12 col-lg-12">
+          <div class="row">
+            {% for g in profile_df %}
+            <div class="mt-3 col col-xl-1 col-lg-1">
+              <div class="card">
+                <button class="btn gene-button" style="font-size: 0.8rem;" data-gene="{{ g.geneSymbol }}">
+                  <a style="text-align: center;" class="">{{ g.geneSymbol }}</a>
+                </button>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+ 
+
+
+
+    <!-- href="https://www.ncbi.nlm.nih.gov/gene/{{ g.geneID }}" target="_blank" -->
+
+      {% endif %}
+  
+      {% if key == 'diff' %}
+      <div class="mt-3 col col-xl-12 col-lg-12">
+      <div>
+      <div class="m-3">
+ 
+        <table  class="table">
+          <tr>
+            <td>Analysis</td>
+            <td> Differential expression</td>
+          </tr>
+          <tr>
+            <td>Context</td>
+            <td>{{ diffx_contxt }}</td>
+          </tr>
+
+          <tr>
+            <td>Context of differential regulation</td>
+            <td>{{ diff_reg }}</td>
+          </tr>
+
+          <tr>
+            <td>Method</td>
+            <td>{{ method }}</td>
+          </tr>
+          <tr>
+            <td><i>Tissue/Cell line</i></td>
+            {% if tissueCell %}
+            <td>{{ tissueCell }}</td>
+            {% endif %}
+          </tr>
+
+          <tr>
+          <td>PubMed ID</td>
+          <td> {% for pm in  pmids_dif %} 
+            <p> <a href="https://pubmed.ncbi.nlm.nih.gov/{{ pm }}">{{ pm }} </a></p>
+            
+            {% endfor %}
+          </td>
+        </tr>
+
+      </table>
+        </div>   
+      </div>
+      </div>
+
+      <div class="mt-3 col col-xl-12 col-lg-12">
+        <div class="d-flex justify-content-center">
+
+         <table class ="styled-table table-bordered" style="text-align: center;">
+          <thead>
+              <tr style="text-align: center;">
+                    <th rowspan="2"> Protein </th>
+                    <th rowspan="2"> Transmembrane</th>
+                    <th colspan="3" style="text-align: center;">Cell Marker Status <a  href="http://bio-bigdata.hrbmu.edu.cn/CellMarker/" target="_blank"> <p style="color:white;">(Adopted from CellMarker database) </p> </a> </th>
+                  </tr><tr style="text-align: center;">
+             
+                     <th> Tissue type</th>
+                    <th> Cancer type</th><th> Cell name</th>
+                </tr>
+                </thead>
+                  {% for g in difx_df %}
+                  <tr>
+                    <td><a  href="https://www.ncbi.nlm.nih.gov/gene/{{g.geneID }}" target="_blank" >  {{ g.geneSymbol }} </a></td>
+                    {% if g.isTrans == 'NO' %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg></td>
+                    {% else %}
+                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg></td>
+                    {% endif %}
+                    
+                    <td>{{ g.tissueType }}</td>
+                    <td>{{ g.cancerType }}</td>
+                    <td>{{ g.cellName }}</td>
+                 
+                  </tr>
+                  {% endfor %}
+                </table>
+             </div>
+        </div>
+        {% endif %}
+
+      </div>
+  </div>
+</div>
+
+<script>
+  //  const hiddenDiv = document.getElementById('hiddenDiv');
+  // const geneCards = document.querySelectorAll('.gene-card');
+  // const geneInfo = document.querySelector('.gene-info');
+  // const geneSymbolElement = document.getElementById('geneSymbol');
+  // const tissueTypeElement = document.getElementById('tissueType');
+  // const cancerTypeElement = document.getElementById('cancerType');
+  // const cellNameElement = document.getElementById('cellName');
+  // const mainForm = document.getElementById('mainForm');
+
+  const geneInfoElements = document.querySelectorAll('.gene-info');
+  const geneButtons = document.querySelectorAll('.gene-button');
+
+
+  geneButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const geneSymbol = button.getAttribute('data-gene');
+
+    
+      geneInfoElements.forEach(info => {
+        info.style.display = 'none';
+        mainForm.classList.add("blur");
+        hiddenDiv.classList.remove("hidden");
+      });
+
+
+      const selectedGeneInfo = document.querySelector(`.gene-info[data-gene="${geneSymbol}"]`);
+      if (selectedGeneInfo) {
+        selectedGeneInfo.style.display = 'block';
+      }
+    });
+  });
+  const closeBtn = document.getElementById('close-diff');
+  closeBtn.addEventListener('click',function(){
+
+        mainForm.classList.remove("blur");
+        hiddenDiv.classList.add("hidden");
+});
+
+
+//   document.getElementById('Done').addEventListener('click', function() {
+
+// mainForm.classList.add("hidden");
+// hiddenDiv.classList.remove("hidden");
+// });
+  
+//   document.addEventListener('click', event => {
+//     if (!geneInfo.contains(event.target)) {
+//       geneInfo.style.display = 'none';
+//     }
+//   });
+  </script>
+
+
+{% endblock %}

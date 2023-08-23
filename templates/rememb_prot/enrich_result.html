@@ -1,0 +1,216 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <div class="row d-flex justify-content-center">
+    <div class="col col-xl-12">
+        <div class="d-flex justify-content-center" >
+        <!-- <img src="data:image/svg+xml;base64, {{ barplot|safe }}"> -->
+        </div>
+    </div>
+    </div>
+
+
+
+
+<div class="row d-flex justify-content-center">
+    <div class="col col-xl-8">
+    <div class="mt-3  justify-content-center">
+
+    <table class="styled-table" style="background-color: white;width: 100%;">
+    <thead class="thead-dark">
+            <th >Disease_Organism_Cell line/tissue name_memb enrich method_Profiling/Differential_Context of Identification</th>
+            <th>Percentage</th>
+                <th>Count</th>
+                <th>p_value</th>
+        </thead>
+        <tbody>
+            {% for data in enrichment_result %}
+                    <tr>
+                        <td>
+                            {{ data.enrichment }}
+                        </td>
+                         <td>
+                            {{ data.percentage }}
+                        </td>
+                         <td>
+                            {{ data.count }}
+                        </td>
+                         <td>
+                            {{ data.p_value }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+        </table>
+        </div>
+
+    </div>
+
+    <div class="col col-xl-2 mt-4">
+        
+        <div style="background-color: white;" class="shadow">
+        <table class="table table-bordered" style="text-align: center;">
+            <tr>
+                <th colspan="2">Organism</th>
+               
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>Human</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>Mouse</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>Rat</td>
+            </tr>
+            </table>
+            </div>
+            <div style="background-color: white;" class="shadow">
+            <table  class="table table-bordered" style="text-align: center;">
+                <tr>
+            <th colspan="2">Analysis</th>
+        </tr>
+        <tr>
+            <td>P</td>
+            <td>Profile</td>
+        </tr>
+        <tr>
+            <td>DEX</td>
+            <td>Differential Expression</td>
+        </tr>
+        </table>
+        </div>
+        <div style="background-color: white;" class="shadow">
+            <table  class="table table-bordered" style="text-align: center;">
+                <tr>
+            <th colspan="2">Membrane protein enrichment methods</th>
+        </tr>
+        <tr>
+            <td>UC</td>
+            <td>Ultracentrifuge</td>
+        </tr>
+    
+        <tr>
+            <td>AT</td>
+            <td>Aqueous two-phase system</td>
+        </tr>
+        <tr>
+            <td>BT</td>
+            <td>Biotynylation</td>
+        </tr>
+        <tr>
+            <td>KB</td>
+            <td>Kit-based</td>
+        </tr>
+        <tr>
+            <td>UC and CSC</td>
+            <td>Ultracentrifuge and Cell surface capture system</td>
+        </tr>
+        <tr>
+            <td>SC</td>
+            <td>Sucrose gradient centrifugation</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Centrifugation</td>
+        </tr>
+        </table>
+        </div>
+           
+        </div>
+       
+        <div class="col col-xl-2 mt-4">
+        
+            <div style="background-color: white;" class="shadow">
+           
+        <table class="table table-bordered" style="text-align: center;">
+            <tr>
+                <th colspan="2">Diseases</th>
+               
+            </tr>
+            <tr>
+                <td>BT</td>
+                <td>Brain tumor</td>
+            </tr>
+    
+            <tr>
+                <td>BTC</td>
+                <td>Breast cancer</td>
+            </tr>
+            <tr>
+                <td>SCLC</td>
+                <td>Squamous cell lung carcinoma</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Cancer</td>
+            </tr>
+            <tr>
+                <td>OS</td>
+                <td>Osteosarcoma</td>
+            </tr>
+    
+            <tr>
+                <td>EC</td>
+                <td>Endometrial cancer</td>
+            </tr>
+            <tr>
+                <td>MM</td>
+                <td>Multiple myeloma</td>
+            </tr>
+            <tr>
+                <td>RCC</td>
+                <td>Renal cell carcinoma</td>
+            </tr>
+            <tr>
+                <td>RB</td>
+                <td>Retinoblastoma</td>
+            </tr>
+    
+            <tr>
+                <td>HNSCC</td>
+                <td>Head and neck squamous cell carcinoma</td>
+            </tr>
+    
+            <tr>
+                <td>MCL</td>
+                <td>Mantle Cell Lymphoma</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td>Astrocytoma</td>
+            </tr>
+            <tr>
+                <td>POAG</td>
+                <td>Primary Open-Angle Glaucoma</td>
+            </tr>
+            <tr>
+                <td>LC</td>
+                <td>Lung cancer</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Type 2 diabetes</td>
+            </tr>
+            <tr>
+                <td>HP</td>
+                <td>Hepatotoxicity</td>
+            </tr>
+            </table>
+        </div>
+        </div>
+
+   
+
+
+    </div>
+</div>
+
+
+{% endblock %}

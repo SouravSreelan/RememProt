@@ -1,0 +1,360 @@
+{% extends 'ciods/ciods.html' %}
+{% block content %}
+
+<section id="intro" class="clearfix">
+
+    <div class="container">
+
+<!--       <div class="intro-img">
+        <img src="" alt="" class="img-fluid">
+      </div>
+ -->
+      <div class="intro-info">
+        <!-- <h2>We provide<br><span>solutions</span><br>for your business!</h2> -->
+        <!-- <p style="position: absolute; top:20%; left:2%; color:white;"> * This website is under construction </p> -->
+
+        <h2>Centre for Integrative <br>Omics Data Science</h2>
+        <!-- <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div> -->
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container wow fadeInUp">
+
+        <header class="section-header">
+          <!-- <div style=" background: rgba(66, 135, 245, 0.6); border-radius: 10px;"> -->
+          <h3 class="mt-4">About Us</h3>
+          <p style=" text-align: justify;">
+                Centre for Integrative Omics Data Science (CIODS) is a part of an initiative to undertake the next-generation integrative omics research on various fields of biological sciences and also its integration to Artificial Intelligence platforms for translational research. Supported under the YenVision-2025 of the Yenepoya University, the CIODS is envisioned towards assembly of global datasets and development of tools for analysis of integrated omics datasets (at DNA/RNA/protein/post-translational modification levels) in multiple themes including carcinogenesis, cancer drug resistance, infections, and signal transduction mechanisms.
+                The centre is constituted by the experts in these disciplines with a team of Data Scientists, Programmers and AI specialists to analyse, process and interpret molecular omics and clinical data and hence, formulation of creative integrative approaches for future endeavors. Coupled to the global genomic, transcriptomic, proteomic, metabolomic and signaling pathways through multiple themes, this centre also aims to develop efficient gateway platforms for systems biology research. We are keen to hire motivated, enthusiastic and passionate researchers who want to pursue their career in multi-omics and integrative omics research to drive global omis data science projects initiated at CIODS to transform CIODS into an institute of excellence.
+
+            </p>
+          <!-- </div> -->
+      </header>
+    </div>
+</section>
+        
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>THRUST AREAS</h3>
+          <div class="row">
+              <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+              <h3 class="title">Databases and Integrative Omics Data Analysis</h3>
+              </div>
+            </div>
+
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <h3 class="title">Development of Next-Generation Tools for Systems Biology</h3>
+            </div>
+          </div>
+
+
+         <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="box">
+              <h3 class="title">Machine Learning approaches for Image Analysis and Pattern Recognition</h3>
+              </div>
+            </div>
+
+
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <h3 class="title">Development and Analysis of Signal Transduction Pathways</h3>
+            </div>
+          </div>
+    </div>
+    </header>
+    </div>
+    </section>
+
+
+<section id="all-description">
+
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center description-count-div">
+    <div class="col col-md-6 col-lg-2">
+      <div id="description-count">
+        <h1>4</h1>
+        <p> FACULTY</p>
+      </div>
+    </div>
+
+  <div class="col col-md-6 col-lg-2">
+      <div id="description-count">
+        <h1>5</h1>
+        <p> DATA SCIENTISTS</p>
+      </div>
+    </div>
+
+      <div class="col col-md-6 col-lg-2">
+      <div id="description-count">
+        <h1>1</h1>
+        <p>GRANTS</p>
+      </div>
+    </div>
+
+
+      <div class="col col-md-6 col-lg-2">
+      <a href="{% url 'ciods:pulblication' %}">
+      <div id="description-count">
+        <h1>{{ pub_count }}</h1>
+        <p>PUBLICATIONS</p>
+      </div>
+      </a>
+    </div>
+
+
+       <div class="col col-md-6 col-lg-2">
+      <div id="description-count">
+        <h1>60</h1>
+        <p>PROJECTS</p>
+      </div>
+    </div>
+
+
+
+       <div class="col col-md-6 col-lg-2">
+      <div id="description-count">
+        <h1>4</h1>
+        <p>PATENT PENDING</p>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+</section>
+
+
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Team</h3>
+       </div>
+
+        <div class="row d-flex justify-content-center mt-5">
+          {% for profile in director %}
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{ profile.image.url }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>{{ profile.name }}</h4>
+                  <span>{{ profile.designation }}</span>
+                  <div class="social">
+                    {% if profile.github_link %}
+                      <a href="{{ profile.github_link }}"><i class="fa fa-github"></i></a>
+                    {% endif %}
+
+                    {% if profile.google_plus_link %}
+                    <a href="{{ profile.google_plus_link }}">
+                      <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 3.386719 3 L 27.339844 3 L 27.339844 28 L 3.386719 28 Z M 3.386719 3 " clip-rule="nonzero" fill="white"></path></clipPath></defs><g clip-path="url(#id1)"><path fill="white" d="M 14.660156 3.25 L 3.386719 10.308594 L 11.125 10.308594 C 11.097656 10.417969 11.050781 10.515625 11.027344 10.625 C 10.960938 10.964844 10.910156 11.34375 10.910156 11.734375 C 10.910156 16.773438 16.054688 16.207031 16.054688 16.207031 L 16.054688 17.492188 C 16.054688 18.011719 16.734375 17.832031 16.816406 18.890625 C 16.476562 18.890625 9.691406 18.695312 9.691406 23.277344 C 9.691406 27.882812 15.679688 27.65625 15.679688 27.65625 C 15.679688 27.65625 22.59375 27.964844 22.59375 22.273438 C 22.597656 18.871094 18.636719 17.765625 18.636719 16.398438 C 18.636719 15.015625 21.621094 14.609375 21.621094 11.375 C 21.621094 9.960938 21.523438 8.953125 20.890625 8.238281 C 20.84375 8.1875 20.808594 8.152344 20.761719 8.121094 C 20.75 8.109375 20.738281 8.101562 20.726562 8.09375 L 20.898438 8.09375 L 23.816406 5.902344 L 23.816406 8.898438 C 23.816406 8.953125 23.820312 9.007812 23.832031 9.0625 C 23.609375 9.1875 23.429688 9.363281 23.300781 9.585938 C 23.171875 9.808594 23.109375 10.050781 23.113281 10.308594 L 23.113281 11.722656 C 23.109375 11.910156 23.144531 12.09375 23.214844 12.269531 C 23.285156 12.445312 23.386719 12.597656 23.515625 12.734375 C 23.648438 12.867188 23.804688 12.972656 23.976562 13.042969 C 24.152344 13.117188 24.332031 13.152344 24.519531 13.152344 C 24.710938 13.152344 24.890625 13.117188 25.066406 13.042969 C 25.238281 12.972656 25.390625 12.867188 25.523438 12.734375 C 25.65625 12.597656 25.757812 12.445312 25.828125 12.269531 C 25.898438 12.09375 25.933594 11.910156 25.929688 11.722656 L 25.929688 10.308594 C 25.933594 10.050781 25.871094 9.808594 25.742188 9.585938 C 25.613281 9.363281 25.433594 9.1875 25.207031 9.0625 C 25.21875 9.007812 25.226562 8.953125 25.226562 8.898438 L 25.226562 4.839844 L 27.339844 3.25 Z M 15.632812 7.5625 C 16.039062 7.542969 16.445312 7.640625 16.835938 7.863281 C 17.125 8.007812 17.402344 8.21875 17.644531 8.480469 C 18.148438 8.984375 18.570312 9.714844 18.796875 10.578125 C 19.332031 12.625 18.636719 14.597656 17.191406 14.96875 C 15.765625 15.375 14.171875 14.039062 13.621094 12.007812 C 13.378906 11.015625 13.410156 10.054688 13.6875 9.292969 C 13.691406 9.28125 13.695312 9.273438 13.699219 9.265625 C 13.703125 9.261719 13.710938 9.257812 13.714844 9.253906 C 13.792969 8.953125 13.921875 8.679688 14.082031 8.457031 C 14.371094 8.035156 14.753906 7.746094 15.226562 7.617188 C 15.363281 7.585938 15.496094 7.566406 15.632812 7.5625 Z M 16.183594 19.75 C 18.566406 19.570312 20.597656 20.886719 20.746094 22.675781 C 20.84375 24.449219 19.007812 26.027344 16.605469 26.1875 C 14.222656 26.351562 12.160156 25.050781 12.046875 23.277344 C 11.933594 21.492188 13.78125 19.929688 16.183594 19.75 Z M 16.183594 19.75 " fill-opacity="1" fill-rule="nonzero"></path></g></svg>
+
+                    </a>
+                    {% endif %}
+
+                    {% if profile.linked_in_link %}
+                    <a href="{{ profile.linked_in_link }}"><i class="fa fa-linkedin"></i></a>
+                    {% endif %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-5 col-md-6 wow fadeInUp">
+
+            <h4> <b>Dr. Rajesh Raju</b></h4>
+            <h5>Founder &amp; Director</h5>
+            <h5>Centre for Integrative Omics Data Science</h5>
+            <p> Signal transduction<b>-</b> Pathways <b>-</b> Kinases and substrates<b>-</b> Proteomics<b>-</b> Multiomics </p>
+          </div>
+
+
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+
+ <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3>Assistant Professors</h3>
+           </div>
+
+        <div class="row d-flex justify-content-center">
+          {% for profile in professors %}
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+
+
+            <div class="member">
+              <img src="{{ profile.image.url }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>{{ profile.name }}</h4>
+                  <span>{{ profile.designation }}</span>
+                  <div class="social">
+                    {% if profile.github_link %}
+                      <a href="{{ profile.github_link }}"><i class="fa fa-github"></i></a>
+                    {% endif %}
+
+                    {% if profile.google_plus_link %}
+                    <a href="{{ profile.google_plus_link }}">
+                      <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 3.386719 3 L 27.339844 3 L 27.339844 28 L 3.386719 28 Z M 3.386719 3 " clip-rule="nonzero" fill="white"></path></clipPath></defs><g clip-path="url(#id1)"><path fill="white" d="M 14.660156 3.25 L 3.386719 10.308594 L 11.125 10.308594 C 11.097656 10.417969 11.050781 10.515625 11.027344 10.625 C 10.960938 10.964844 10.910156 11.34375 10.910156 11.734375 C 10.910156 16.773438 16.054688 16.207031 16.054688 16.207031 L 16.054688 17.492188 C 16.054688 18.011719 16.734375 17.832031 16.816406 18.890625 C 16.476562 18.890625 9.691406 18.695312 9.691406 23.277344 C 9.691406 27.882812 15.679688 27.65625 15.679688 27.65625 C 15.679688 27.65625 22.59375 27.964844 22.59375 22.273438 C 22.597656 18.871094 18.636719 17.765625 18.636719 16.398438 C 18.636719 15.015625 21.621094 14.609375 21.621094 11.375 C 21.621094 9.960938 21.523438 8.953125 20.890625 8.238281 C 20.84375 8.1875 20.808594 8.152344 20.761719 8.121094 C 20.75 8.109375 20.738281 8.101562 20.726562 8.09375 L 20.898438 8.09375 L 23.816406 5.902344 L 23.816406 8.898438 C 23.816406 8.953125 23.820312 9.007812 23.832031 9.0625 C 23.609375 9.1875 23.429688 9.363281 23.300781 9.585938 C 23.171875 9.808594 23.109375 10.050781 23.113281 10.308594 L 23.113281 11.722656 C 23.109375 11.910156 23.144531 12.09375 23.214844 12.269531 C 23.285156 12.445312 23.386719 12.597656 23.515625 12.734375 C 23.648438 12.867188 23.804688 12.972656 23.976562 13.042969 C 24.152344 13.117188 24.332031 13.152344 24.519531 13.152344 C 24.710938 13.152344 24.890625 13.117188 25.066406 13.042969 C 25.238281 12.972656 25.390625 12.867188 25.523438 12.734375 C 25.65625 12.597656 25.757812 12.445312 25.828125 12.269531 C 25.898438 12.09375 25.933594 11.910156 25.929688 11.722656 L 25.929688 10.308594 C 25.933594 10.050781 25.871094 9.808594 25.742188 9.585938 C 25.613281 9.363281 25.433594 9.1875 25.207031 9.0625 C 25.21875 9.007812 25.226562 8.953125 25.226562 8.898438 L 25.226562 4.839844 L 27.339844 3.25 Z M 15.632812 7.5625 C 16.039062 7.542969 16.445312 7.640625 16.835938 7.863281 C 17.125 8.007812 17.402344 8.21875 17.644531 8.480469 C 18.148438 8.984375 18.570312 9.714844 18.796875 10.578125 C 19.332031 12.625 18.636719 14.597656 17.191406 14.96875 C 15.765625 15.375 14.171875 14.039062 13.621094 12.007812 C 13.378906 11.015625 13.410156 10.054688 13.6875 9.292969 C 13.691406 9.28125 13.695312 9.273438 13.699219 9.265625 C 13.703125 9.261719 13.710938 9.257812 13.714844 9.253906 C 13.792969 8.953125 13.921875 8.679688 14.082031 8.457031 C 14.371094 8.035156 14.753906 7.746094 15.226562 7.617188 C 15.363281 7.585938 15.496094 7.566406 15.632812 7.5625 Z M 16.183594 19.75 C 18.566406 19.570312 20.597656 20.886719 20.746094 22.675781 C 20.84375 24.449219 19.007812 26.027344 16.605469 26.1875 C 14.222656 26.351562 12.160156 25.050781 12.046875 23.277344 C 11.933594 21.492188 13.78125 19.929688 16.183594 19.75 Z M 16.183594 19.75 " fill-opacity="1" fill-rule="nonzero"></path></g></svg>
+                    </a>
+                    {% endif %}
+
+                    {% if profile.linked_in_link %}
+                    <a href="{{ profile.linked_in_link }}"><i class="fa fa-linkedin"></i></a>
+                    {% endif %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+
+
+ <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h3> DATA SCIENTISTS </h3>
+           </div>
+
+        <div class="row d-flex justify-content-center">
+          {% for profile in employees %}
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+
+
+            <div class="member">
+              <img src="{{ profile.image.url }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>{{ profile.name }}</h4>
+                  <span>{{ profile.designation }}</span>
+                  <div class="social">
+                    {% if profile.github_link %}
+                      <a href="{{ profile.github_link }}"><i class="fa fa-github"></i></a>
+                    {% endif %}
+
+                    {% if profile.google_plus_link %}
+                    <a href="{{ profile.google_plus_link }}">
+                      <svg style="color: white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1"><path d="M 3.386719 3 L 27.339844 3 L 27.339844 28 L 3.386719 28 Z M 3.386719 3 " clip-rule="nonzero" fill="white"></path></clipPath></defs><g clip-path="url(#id1)"><path fill="white" d="M 14.660156 3.25 L 3.386719 10.308594 L 11.125 10.308594 C 11.097656 10.417969 11.050781 10.515625 11.027344 10.625 C 10.960938 10.964844 10.910156 11.34375 10.910156 11.734375 C 10.910156 16.773438 16.054688 16.207031 16.054688 16.207031 L 16.054688 17.492188 C 16.054688 18.011719 16.734375 17.832031 16.816406 18.890625 C 16.476562 18.890625 9.691406 18.695312 9.691406 23.277344 C 9.691406 27.882812 15.679688 27.65625 15.679688 27.65625 C 15.679688 27.65625 22.59375 27.964844 22.59375 22.273438 C 22.597656 18.871094 18.636719 17.765625 18.636719 16.398438 C 18.636719 15.015625 21.621094 14.609375 21.621094 11.375 C 21.621094 9.960938 21.523438 8.953125 20.890625 8.238281 C 20.84375 8.1875 20.808594 8.152344 20.761719 8.121094 C 20.75 8.109375 20.738281 8.101562 20.726562 8.09375 L 20.898438 8.09375 L 23.816406 5.902344 L 23.816406 8.898438 C 23.816406 8.953125 23.820312 9.007812 23.832031 9.0625 C 23.609375 9.1875 23.429688 9.363281 23.300781 9.585938 C 23.171875 9.808594 23.109375 10.050781 23.113281 10.308594 L 23.113281 11.722656 C 23.109375 11.910156 23.144531 12.09375 23.214844 12.269531 C 23.285156 12.445312 23.386719 12.597656 23.515625 12.734375 C 23.648438 12.867188 23.804688 12.972656 23.976562 13.042969 C 24.152344 13.117188 24.332031 13.152344 24.519531 13.152344 C 24.710938 13.152344 24.890625 13.117188 25.066406 13.042969 C 25.238281 12.972656 25.390625 12.867188 25.523438 12.734375 C 25.65625 12.597656 25.757812 12.445312 25.828125 12.269531 C 25.898438 12.09375 25.933594 11.910156 25.929688 11.722656 L 25.929688 10.308594 C 25.933594 10.050781 25.871094 9.808594 25.742188 9.585938 C 25.613281 9.363281 25.433594 9.1875 25.207031 9.0625 C 25.21875 9.007812 25.226562 8.953125 25.226562 8.898438 L 25.226562 4.839844 L 27.339844 3.25 Z M 15.632812 7.5625 C 16.039062 7.542969 16.445312 7.640625 16.835938 7.863281 C 17.125 8.007812 17.402344 8.21875 17.644531 8.480469 C 18.148438 8.984375 18.570312 9.714844 18.796875 10.578125 C 19.332031 12.625 18.636719 14.597656 17.191406 14.96875 C 15.765625 15.375 14.171875 14.039062 13.621094 12.007812 C 13.378906 11.015625 13.410156 10.054688 13.6875 9.292969 C 13.691406 9.28125 13.695312 9.273438 13.699219 9.265625 C 13.703125 9.261719 13.710938 9.257812 13.714844 9.253906 C 13.792969 8.953125 13.921875 8.679688 14.082031 8.457031 C 14.371094 8.035156 14.753906 7.746094 15.226562 7.617188 C 15.363281 7.585938 15.496094 7.566406 15.632812 7.5625 Z M 16.183594 19.75 C 18.566406 19.570312 20.597656 20.886719 20.746094 22.675781 C 20.84375 24.449219 19.007812 26.027344 16.605469 26.1875 C 14.222656 26.351562 12.160156 25.050781 12.046875 23.277344 C 11.933594 21.492188 13.78125 19.929688 16.183594 19.75 Z M 16.183594 19.75 " fill-opacity="1" fill-rule="nonzero"></path></g></svg>
+                    </a>
+                    {% endif %}
+
+                    {% if profile.linked_in_link %}
+                    <a href="{{ profile.linked_in_link }}"><i class="fa fa-linkedin"></i></a>
+                    {% endif %}
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-fluid">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-6">
+            <div class="map mb-4 mb-lg-0">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.0141931231387!2d74.90249431481998!3d12.777590090983372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35f41e46a16d7%3A0x9a3004b4171663a3!2sYenepoya%20Ayurveda%20Medical%20College%20%26%20Hospital!5e0!3m2!1sen!2sin!4v1663053089351!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-md-5 info">
+                <i class="ion-ios-location-outline"></i>
+                <p>4th floor,Yenepoya Ayurveda Medical College and Hospital, Manjanady, Mangalore, 575018</p>
+              </div>
+              <div class="col-md-4 info">
+                <i class="ion-ios-email-outline"></i>
+                <p>ciods@yenepoya.edu.in</p>
+              </div>
+              <div class="col-md-3 info">
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+918921377006</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+
+
+
+{% endblock %}

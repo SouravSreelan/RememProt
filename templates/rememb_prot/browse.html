@@ -1,0 +1,276 @@
+{% extends 'rememb_prot/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style type="text/css">
+
+
+.donut{
+  padding: 1vh;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+</style>
+
+
+<form action="{% url 'rememb_prot:browseResult' %}" method="POST">
+  {% csrf_token %}
+
+<div class="container shadow" style="background-color: #fff;">
+<div class="row mt-4" >
+<div class="col col-xl-12">
+  <div class="d-flex justify-content-left m-2">
+
+    <label for="species" class="styled-font m-1">Select Species : </label>
+
+   <select class="select-dropdown" id ="species" placeholder="Choose the species"  name="species" onchange="getMethods();" onfocus="this.selectedIndex = -1;" style="margin-left: 2em;">
+
+    <option disabled selected value></option>
+    <option value="Homo sapiens">Homo sapiens</option>
+    <option value="Mus musculus">Mus musculus</option>
+    <option value="Rattus norvegicus">Rattus norvegicus</option>
+    </select>
+
+  </div>
+</div>
+</div>
+
+<div class="row mt-4" style="padding-bottom: 15px; padding-top: 15px;">
+<div class="col col-xl-12">
+
+    <div class="d-flex justify-content-left m-2">
+
+    <label for="method" class="styled-font ">Choose a Method : </label>
+      <select id ="method-select" class="ml-3 form-select form-select-lg mb-2" name="method" disabled
+      onchange="getCellLine();" onfocus="this.selectedIndex = -1;">
+    </select>
+    <div id="loader" style="display:none;">
+      Loading...
+    </div>
+  </div>
+</div>
+
+<div class="col col-xl-12">
+      <div class="d-flex justify-content hidden" id = "tissue-div" style="padding-top: 2rem; padding-left: 0.5rem;" >
+        <label class="styled-font m-1">Tissue/Cell line : </label>
+        <select class="ml-4 form-select form-select-lg" name="tissueCell" id="tissueCell" disabled>
+        </select>
+      </div>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col col-xl-12">
+    <div class="d-flex justify-content-center m-5">
+   <input class = "btn btn-lg btn-danger" type="submit" name="submit" value="Submit">
+    </div>
+    </div>
+</div>
+</div>
+<div class="container-fluid mt-4">
+
+  <div class="row">
+    <div class="col col-xl-4 col-lg-4">
+      <div class="d-flex justify-content-center shadow" style="background-color: white;">
+        <img src="{% static 'rememb_prot/humann.png' %}" alt="">
+       
+      </div>
+    </div>
+
+    <div class="col col-xl-4 col-lg-4">
+      <div class="d-flex justify-content-center shadow" style="background-color: white;">
+        <!-- <canvas id = "mouse-donut" class="p-2"></canvas> -->
+        <img src="{% static 'rememb_prot/mouse.png' %}" alt="">
+      </div>
+    </div>
+
+    <div class="col col-xl-4 col-lg-4">
+      <div class="d-flex justify-content-center shadow" style="background-color: white;width:100%;height: 100%;">
+        <!-- <canvas id = "rat-donut" class="p-2"></canvas> -->
+        <img src="{% static 'rememb_prot/rat.png' %}"  alt="">
+
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+
+
+ </div>
+
+</form>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<script type="text/javascript">
+
+var xValues = ["Transmembrane protein family", "Solute carrier family", "Ras oncogene family", "Integrins", "GPCR", "Cadherins", "CD markers", "ATPase family", "ATP binding cassette subfamily"];
+  var yValues = [112, 202, 47, 18, 18,15,28,64,33];
+  var barColors = [
+    "	#008000",
+    "	#32CD32",
+    "	#9ACD32",
+    "#00CED1",
+    "#1e7145",
+    "#FFFF00",
+    "	#90EE90",
+    "	#F0E68C",
+    "	#FFD700"
+  ];
+  
+  new Chart("myChart", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+   
+        legend: {
+          display: true,
+          position: 'right',
+          font: {
+                        size: 6
+                    }
+      }
+      
+    }
+  });
+
+const species = document.getElementById("species");
+const methodSelect = document.getElementById("method-select");
+const tissueCell = document.getElementById("tissueCell");
+
+const dropdown = document.getElementById('method-select');
+const loader = document.getElementById('loader');
+
+dropdown.addEventListener('change', function() {
+  loader.style.display = 'flex';
+
+  // perform some asynchronous operation here
+  setTimeout(function() {
+    // simulate a delay of 2 seconds
+    loader.style.display = 'none';
+  }, 1300);
+
+});
+species.addEventListener('change', function() {
+  loader.style.display = 'flex';
+
+  // perform some asynchronous operation here
+  setTimeout(function() {
+    // simulate a delay of 2 seconds
+    loader.style.display = 'none';
+  }, 1300);
+});
+
+
+function getMethods()
+  {
+    const selectedSpecies = document.getElementById("species").value;
+
+    const csrf = document.getElementsByName('csrfmiddlewaretoken');
+    const fd = new FormData()
+    fd.append('csrfmiddlewaretoken', csrf[0].value)
+    fd.append('selectedSpecies',selectedSpecies)
+
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'rememb_prot:selectedSpecies' %}",
+        enctype: 'multipart/form-data',
+        data: fd,
+        success : function(data){
+              methodSelect.disabled = false;
+
+                  if (methodSelect.hasChildNodes()){
+                      methodSelect.innerHTML = '';
+                    }
+
+                     if (tissueCell.hasChildNodes()){
+                      tissueCell.innerHTML = '';
+                    }
+
+              var opt = document.createElement('option');
+              opt.value = "disabled selected value";
+              methodSelect.appendChild(opt);
+
+              data.methods.forEach(item => {
+              var opt = document.createElement('option');
+              opt.value = item;
+              opt.innerHTML = item;
+              methodSelect.appendChild(opt);
+
+                    });
+            },
+
+        error: function(error){
+            console.log('erroor')
+        },
+        cache: false,
+        contentType: false,
+        processData: false,
+        });
+
+};
+
+function getCellLine()
+  {
+    const methodSelect = document.getElementById("method-select").value;
+    const selectedSpecies = document.getElementById("species").value;
+    const tissueDiv = document.getElementById("tissue-div");
+
+
+    const csrf = document.getElementsByName('csrfmiddlewaretoken');
+    const fd = new FormData()
+    fd.append('csrfmiddlewaretoken', csrf[0].value)
+    fd.append('methodSelect',methodSelect)
+    fd.append('selectedSpecies',selectedSpecies)
+
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'rememb_prot:selectedMethod' %}",
+        enctype: 'multipart/form-data',
+        data: fd,
+        success : function(data){
+
+                tissueCell.disabled = false;
+
+                  if (tissueCell.hasChildNodes()){
+                      tissueCell.innerHTML = '';
+                    }
+              if (data.cells.length > 0 ){
+               
+              tissueDiv.classList.remove('hidden');
+              data.cells.forEach(item => {
+              var opt = document.createElement('option');
+              opt.value = item;
+              opt.innerHTML = item;
+              tissueCell.appendChild(opt);
+
+                    });
+                  }
+            },
+
+        error: function(error){
+            console.log('errrorooroo')
+        },
+        cache: false,
+        contentType: false,
+        processData: false,
+        });
+
+};
+
+</script>
+
+
+{% endblock %}

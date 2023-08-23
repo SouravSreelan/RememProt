@@ -1,0 +1,152 @@
+{% extends 'rememb_prot/base.html' %}
+{% block content %}
+
+<div class="container">
+
+
+    <form method="POST" action="{% url 'rememb_prot:bqueryResult' %}">
+                {% csrf_token %}
+
+
+
+
+  <div class="row d-flex justify-content-center">
+      <div class="col col-xl-12">
+        
+           <div class="m-2 d-flex justify-content-center">
+            <h4 class="d-flex justify-content-center m-3" style="font-weight: bold;"><u> Batch Query: </u></h4>
+              </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-xl-5">
+        <div class="form-group">
+          <div class="djan">
+          <label style="font-weight: bold;"><u>Select Species:</u></label>
+          <ul class="sou">
+            <li><br>
+          <input class="form-check-input mx-2" type="radio" name="species" id="homo" value="Homo sapiens" checked>
+          <label class="form-check-label mx-4" for = "homo">Homo sapiens</label>
+             <br> </li>
+              <li><br>
+          <input class="form-check-input mx-2" type="radio" name="species" id="mus" value="Mus musculus">
+          <label class="form-check-label mx-4" for = "mus">Mus musculus</label>
+          <br></li>
+                <li><br>
+          <input class="form-check-input mx-2" type="radio" name="species" id="rattus" value="Rattus norvegicus">
+          <label class="form-check-label mx-4" for = "rattus">Rattus norvegicus</label>
+          <br></li> </ul>
+           </div>
+        </div>
+
+        </div>
+        <div class="row">
+          <div class="col col-l-12 col-lg-12">
+              <div class="d-flex justify-content-center m-4" style=" padding-left: 8em;">
+                 
+  
+                  <div>
+                 <textarea id="bquery-input" name="bqueryInput" rows="18" cols="60" placeholder="Enter list of gene symbol.."></textarea>
+                  </div>
+  
+              </div>
+                  <div class=" d-flex justify-content-center" style="padding-left: 10em;">
+                  
+                    <input  class="btn btn-danger btn-lg mt-4 mr-4" type="button" id="example" value="Example">
+  
+                    <input  class="btn btn-info btn-lg mt-4" type="submit" name="submit">
+  
+                  </div>
+              </form>
+          </div>
+      </div>
+  
+  </div>
+  
+      </div>
+
+
+
+      <div  class="spacer"> . </div>
+
+    <script type="text/javascript">
+      const textArea = document.getElementById("bquery-input");
+//       document.querySelector('#example').addEventListener('click', function() {
+//       textArea.value = `PTPRC			
+// THY1
+// NANOG
+// POU5F1
+// CYR61
+// ITGAM
+// CD14
+// ITGB2
+// FCGR2A
+// FCGR2B
+// `
+   
+//     });
+    
+
+const radioButtons = document.querySelectorAll('input[name="species"]');
+
+radioButtons.forEach(radioButton => {
+  radioButton.addEventListener('change', () => {
+   
+    textArea.value = '';
+  });
+});
+
+exampleButton = document.getElementById('example');
+exampleButton.addEventListener('click', function() {
+  const selectedSpecies = document.querySelector('input[name="species"]:checked').value;
+  let exampleText = "";
+
+  switch (selectedSpecies) {
+    case "Homo sapiens":
+      exampleText = `PTPRC
+THY1
+NANOG
+POU5F1
+CYR61
+ITGAM
+CD14
+ITGB2
+FCGR2A
+FCGR2B`;
+      break;
+    case "Mus musculus":
+      exampleText = `A1cf
+Aaas
+Aadac
+Aak1
+Aars1
+Aatk
+Abca1
+Abca13
+Abca2
+Abca3	`;
+      break;
+    case "Rattus norvegicus":
+      exampleText = `Aadac
+Aldob
+Apmap
+Atp1a1
+Atp5f1d
+Atp2a2
+Calr
+Cltc
+Cpt1a
+Cyp2a1 `;
+      break;
+    default:
+      break;
+  }
+
+  textArea.value = exampleText;
+});
+    </script>
+
+
+{% endblock %}

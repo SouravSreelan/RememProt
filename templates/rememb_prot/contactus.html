@@ -1,0 +1,89 @@
+{% extends 'rememb_prot/base.html' %}
+{% block content%}
+
+{% if messages %}
+
+<ul class="messages">
+    {% for message in messages %}
+
+    {% if message.tags %}
+
+<div style="margin-top: 3px;" class="alert alert-primary" role="alert">
+{{ message }} </div>
+    {% endif %}
+    {% endfor %}
+
+
+
+{% endif %}
+
+<!-- contact -->
+<section class="contact_us">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="contact_inner">
+                  <div class="row">
+                      <div class="col-md-10">
+                          <div class="contact_form_inner">
+                              <div class="contact_field">
+                                  <h3>Contact Us</h3>
+                                  <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                                  <input type="text" class="form-control form-group" placeholder="Name" />
+                                  <input type="text" class="form-control form-group" placeholder="Email" />
+                                  <textarea class="form-control form-group" placeholder="Message"></textarea>
+                                  <button class="contact_form_submit">Send</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-2">
+                          <div class="right_conatct_social_icon d-flex align-items-end">
+                             <div class="socil_item_inner d-flex">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- <div class="contact_info_sec">
+                      <h4 style="color: white;">Contact Info</h4>
+                  
+                      <div class="d-flex info_single align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16" style="color: white;">
+                          <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                        </svg>
+                          <span style="color: white; padding-left: 1em;">ciods@yenepoya.edu.in</span>
+                      </div>
+                      <div class="d-flex info_single align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16" style="color: white;">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                          <span style="color: white; padding-left: 1em;"> 4th floor,Yenepoya Ayurveda Medical College and Hospital, Manjanady, Mangalore, 575018</span>
+                      </div>
+      
+                  </div> -->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- <section class="map_sec">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-1">
+              <div class="map_inner">
+                  <h4>Find Us on Google Map</h4>
+                  
+                  <div class="map_bind">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.014193123138!2d74.90249431479081!3d12.777590090983425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35f41e46a16d7%3A0x9a3004b4171663a3!2sYenepoya%20Ayurveda%20Medical%20College%20%26%20Hospital!5e0!3m2!1sen!2sin!4v1675919080687!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> -->
+
+{% endblock %}

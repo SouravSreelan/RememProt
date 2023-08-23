@@ -1,0 +1,181 @@
+{% extends 'rememb_prot/base.html' %}
+{% block content %}
+
+<!-- <style>
+    .box {
+  float: left;
+  height: 20px;
+  width: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  clear: both;
+}
+
+.green {
+  background-color: green;
+}
+
+</style>
+
+
+<center>
+    <div class="background" style="width: 80%; height: 80%; white-space: nowrap; overflow-x: scroll; border: 0; padding: 10px;background-color: ghostwhite ;"> 
+      
+      
+      <div style=" width: 100%;text-align: center;">
+      <div style ="display: flex;margin-left:-5px;margin-right:-5px;" >
+          <div style="flex: 50%;padding: 5px;
+          margin-top: 6.6em;">
+                   
+      <table style="border-collapse: collapse;border-spacing: 0;width: 100%;">
+          <tr>
+          <th style="width: 6rem;height: 2rem; text-align: right;padding: 16px;font-size: 30px;"></th></tr>
+          {% for m in n %}
+          <tr>
+              <th style="width: 4rem;height: 1rem;text-align: right;
+              /* padding: 16px; */
+              padding: 5px 5px;
+              font-size: 15px;vertical-align:bottom;">{{m}}</th>
+          </tr>
+          {% endfor %}
+      </table>
+      </div>
+      <div class="column1">
+      <table style="border-collapse: collapse;border-spacing: 0;width: 100%;>
+          <tr >
+          {% for i in genes %}
+          <th style="width: 2rem; height: 140px;
+          white-space: nowrap;
+          transform:translate(25px, 51px)rotate(315deg);
+          width: 30px;
+          border-bottom: 1px solid #000000;
+          padding: 10px 10px;vertical-align:top;"><center>{{i}}</center></th>
+          {% endfor %}
+          </tr>
+          
+  
+  
+          <tr>
+          
+          {% for i in nump %}
+         
+  
+          {% for j in i %}
+          {% if j == 1 %}
+          <td style="background-color: rgb(11, 121, 42); width: 2rem;height: 1rem;border: 1px solid;text-align: right;
+          padding: 16px;
+          font-size: 30px;"></td>
+          {% else %}
+          <td style="background-color: rgb(243, 238, 103); width: 2rem;height: 1rem;border: 1px solid;text-align: right;
+          padding: 16px;
+          font-size: 30px;"></td>
+          {% endif %}
+          {% endfor %}
+          </tr>
+          {% endfor %}
+  
+      </table>
+  
+      </div>
+      </div>
+      </div>
+     </div>
+  
+    </center> -->
+<style>
+    .table{
+        background-color: transparent;
+        font-size:x-small;
+        font-weight: bolder;
+        border: 1px solid black;
+        margin: 2rem;
+        width: 650px;
+        white-space: nowrap;
+        padding: 1.4rem;
+        table-layout:fixed ;
+    }
+    .th{
+      width: 2rem;
+    }
+    .table-sm th {
+    padding: 1.8rem;
+}
+
+    .abset{
+        background-color: 	rgba(163, 149, 149, 0.356);
+    }
+    .present {
+    background-color: rgba(0, 128, 0, 0.5); 
+    transition: background-color 0.3s;
+  }
+
+  .present:hover {
+    background-color: rgba(0, 128, 0, 1); 
+  }
+  .spacer{
+  margin-bottom: 105px; 
+  visibility: hidden;
+}
+</style>
+
+
+<div class="container-fluid mt-4">
+    
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col col-xl-12 col-lg-12 d-flex justify-content-center">
+          <div class="m-4 wrapper" style="overflow: scroll;">
+            <div class="row">
+    
+              <div style="height: 20px;width: 30px; background-color: rgba(0, 128, 0, 0.5);border: 1px solid black;" class="m-4 ml-5"></div>
+              <p class="mt-4" style="font-weight: bolder;">Associated</p>
+          
+       
+          </div>
+            <!-- <table class="table table-sm table-bordered" style="height: 5rem;width: 3rem;">
+              <thead>
+                  <tr>
+                    <th style="transform:translate(5rem, 3rem)rotate(315deg); height: 5rem;width: 3rem; vertical-align: top;background: none;"></th>
+                    {% for rows in n %}
+                    <th style="transform:translate(5rem, 3rem)rotate(315deg); height: 5rem;width: 3rem; vertical-align: top;background: none;">{{ rows }}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+            </table> -->
+      
+            <!-- <div class="wrapper"> -->
+              <table class="table table-sm table-bordered">
+                <thead>
+                  <tr>
+                    <th style="height: 6rem;width: 1rem;background: none;border-color: transparent;"></th>
+                    {% for rows in n %}
+                    <th style="transform:translate(11px, 42px)rotate(300deg);height: 6rem;width: 1rem; vertical-align: top;background: none;border-color: transparent;">{{ rows }}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for rows in final_np %}
+                  <tr>
+                    {% for i in rows %}
+                    {% if i == 0 %}
+                    <td class="abset"></td>
+                    {% elif i == 1 %}
+                    <td class="present" title="Present"></td>
+                    {% else %}
+                    <td class="ms-n5" style="width: 3rem;background-color: #ff00003d">{{ i }}</td>
+                    {% endif %}
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      
+    
+</div>    
+
+
+<div class="spacer">.</div>
+{%  endblock %}

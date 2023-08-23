@@ -1,0 +1,41 @@
+{% extends 'rememb_prot/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+       <div class="col col-xl-8 col-lg-8">
+           <div class="d-flex justify-content-center mt-5">
+               <table class="table table-striped" style="background-color: white;">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Gene Symbol</th>
+                  <th scope="col">Species Type</th>
+                  <th scope="col">Tissue Type</th>
+                  <th scope="col">Cancer Type</th>
+                <th scope="col"> Cell Name</th>
+                </tr>
+              </thead>
+                    <tbody>
+
+                {% for cm in cellmarkers %}
+                    <tr>
+                    <td>{{ cm.geneSymbol }}</td>
+                    <td>{{ cm.species }}</td>
+                    <td>{{ cm.tissueType }}</td>
+                    <td>{{ cm.cancerType }}</td>
+                    <td>{{ cm.cellName }}</td>
+                    </tr>
+                {% endfor %}
+
+                    </tbody>
+                </table>
+           </div>
+       </div>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

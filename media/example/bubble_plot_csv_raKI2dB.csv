@@ -1,0 +1,2213 @@
+category,term,count,genes
+BP,heart development,54,DLC1
+BP,heart development,54,NRP2
+BP,heart development,54,NRP1
+BP,heart development,54,EDN1
+BP,heart development,54,PDLIM3
+BP,heart development,54,GJA1
+BP,heart development,54,TTN
+BP,heart development,54,GJA5
+BP,heart development,54,ZIC3
+BP,heart development,54,TGFB2
+BP,heart development,54,CERKL
+BP,heart development,54,GATA6
+BP,heart development,54,COL4A3BP
+BP,heart development,54,GAB1
+BP,heart development,54,SEMA3C
+BP,heart development,54,MKL2
+BP,heart development,54,SLC22A5
+BP,heart development,54,MB
+BP,heart development,54,PTPRJ
+BP,heart development,54,RXRA
+BP,heart development,54,VANGL2
+BP,heart development,54,MYH6
+BP,heart development,54,TNNT2
+BP,heart development,54,HHEX
+BP,heart development,54,MURC
+BP,heart development,54,MIB1
+BP,heart development,54,FOXC2
+BP,heart development,54,FOXC1
+BP,heart development,54,ADAM19
+BP,heart development,54,MYL2
+BP,heart development,54,TCAP
+BP,heart development,54,EGLN1
+BP,heart development,54,SOX9
+BP,heart development,54,ITGB1
+BP,heart development,54,CHD7
+BP,heart development,54,HEXIM1
+BP,heart development,54,PKD2
+BP,heart development,54,NFATC4
+BP,heart development,54,PCSK5
+BP,heart development,54,ACTC1
+BP,heart development,54,TGFBR2
+BP,heart development,54,NF1
+BP,heart development,54,HSPG2
+BP,heart development,54,SMAD3
+BP,heart development,54,TBX1
+BP,heart development,54,TNNI3
+BP,heart development,54,CSRP3
+BP,heart development,54,FOXP1
+BP,heart development,54,KCNJ8
+BP,heart development,54,PLN
+BP,heart development,54,TSC2
+BP,heart development,54,ATP6V0A1
+BP,heart development,54,TGFBR3
+BP,heart development,54,HDAC9
+BP,blood vessel development,55,GNA13
+BP,blood vessel development,55,ACVRL1
+BP,blood vessel development,55,NRP1
+BP,blood vessel development,55,PGF
+BP,blood vessel development,55,IL18
+BP,blood vessel development,55,LEPR
+BP,blood vessel development,55,EDN1
+BP,blood vessel development,55,GJA1
+BP,blood vessel development,55,FOXO1
+BP,blood vessel development,55,GJA5
+BP,blood vessel development,55,TGFB2
+BP,blood vessel development,55,WARS
+BP,blood vessel development,55,CERKL
+BP,blood vessel development,55,APOE
+BP,blood vessel development,55,CXCR4
+BP,blood vessel development,55,ANG
+BP,blood vessel development,55,SEMA3C
+BP,blood vessel development,55,NOS2
+BP,blood vessel development,55,MKL2
+BP,blood vessel development,55,FGF2
+BP,blood vessel development,55,RAPGEF1
+BP,blood vessel development,55,PTPRJ
+BP,blood vessel development,55,RECK
+BP,blood vessel development,55,VASH1
+BP,blood vessel development,55,PNPLA6
+BP,blood vessel development,55,THY1
+BP,blood vessel development,55,MIB1
+BP,blood vessel development,55,NUS1
+BP,blood vessel development,55,FOXC2
+BP,blood vessel development,55,FOXC1
+BP,blood vessel development,55,CAV1
+BP,blood vessel development,55,CDH2
+BP,blood vessel development,55,MEIS1
+BP,blood vessel development,55,WT1
+BP,blood vessel development,55,CDH5
+BP,blood vessel development,55,PTK2
+BP,blood vessel development,55,FBXW8
+BP,blood vessel development,55,CHD7
+BP,blood vessel development,55,PLCD1
+BP,blood vessel development,55,PLXND1
+BP,blood vessel development,55,FIGF
+BP,blood vessel development,55,PPAP2B
+BP,blood vessel development,55,MAP2K1
+BP,blood vessel development,55,TBX4
+BP,blood vessel development,55,TGFBR2
+BP,blood vessel development,55,NF1
+BP,blood vessel development,55,TBX1
+BP,blood vessel development,55,TNNI3
+BP,blood vessel development,55,LAMA4
+BP,blood vessel development,55,MEOX2
+BP,blood vessel development,55,ECSCR
+BP,blood vessel development,55,HBEGF
+BP,blood vessel development,55,AMOT
+BP,blood vessel development,55,TGFBR3
+BP,blood vessel development,55,HDAC7
+BP,vasculature development,56,GNA13
+BP,vasculature development,56,ACVRL1
+BP,vasculature development,56,NRP1
+BP,vasculature development,56,PGF
+BP,vasculature development,56,IL18
+BP,vasculature development,56,LEPR
+BP,vasculature development,56,EDN1
+BP,vasculature development,56,GJA1
+BP,vasculature development,56,FOXO1
+BP,vasculature development,56,GJA5
+BP,vasculature development,56,TGFB2
+BP,vasculature development,56,WARS
+BP,vasculature development,56,CERKL
+BP,vasculature development,56,APOE
+BP,vasculature development,56,CXCR4
+BP,vasculature development,56,ANG
+BP,vasculature development,56,SEMA3C
+BP,vasculature development,56,NOS2
+BP,vasculature development,56,MKL2
+BP,vasculature development,56,FGF2
+BP,vasculature development,56,RAPGEF1
+BP,vasculature development,56,PTPRJ
+BP,vasculature development,56,RECK
+BP,vasculature development,56,EFNB2
+BP,vasculature development,56,VASH1
+BP,vasculature development,56,PNPLA6
+BP,vasculature development,56,THY1
+BP,vasculature development,56,MIB1
+BP,vasculature development,56,NUS1
+BP,vasculature development,56,FOXC2
+BP,vasculature development,56,FOXC1
+BP,vasculature development,56,CAV1
+BP,vasculature development,56,CDH2
+BP,vasculature development,56,MEIS1
+BP,vasculature development,56,WT1
+BP,vasculature development,56,CDH5
+BP,vasculature development,56,PTK2
+BP,vasculature development,56,FBXW8
+BP,vasculature development,56,CHD7
+BP,vasculature development,56,PLCD1
+BP,vasculature development,56,PLXND1
+BP,vasculature development,56,FIGF
+BP,vasculature development,56,PPAP2B
+BP,vasculature development,56,MAP2K1
+BP,vasculature development,56,TBX4
+BP,vasculature development,56,TGFBR2
+BP,vasculature development,56,NF1
+BP,vasculature development,56,TBX1
+BP,vasculature development,56,TNNI3
+BP,vasculature development,56,LAMA4
+BP,vasculature development,56,MEOX2
+BP,vasculature development,56,ECSCR
+BP,vasculature development,56,HBEGF
+BP,vasculature development,56,AMOT
+BP,vasculature development,56,TGFBR3
+BP,vasculature development,56,HDAC7
+BP,tissue morphogenesis,51,DLC1
+BP,tissue morphogenesis,51,ENAH
+BP,tissue morphogenesis,51,NRP1
+BP,tissue morphogenesis,51,PGF
+BP,tissue morphogenesis,51,ZIC2
+BP,tissue morphogenesis,51,TGFB2
+BP,tissue morphogenesis,51,CD44
+BP,tissue morphogenesis,51,ILK
+BP,tissue morphogenesis,51,SEMA3C
+BP,tissue morphogenesis,51,RET
+BP,tissue morphogenesis,51,AR
+BP,tissue morphogenesis,51,RXRA
+BP,tissue morphogenesis,51,VANGL2
+BP,tissue morphogenesis,51,LEF1
+BP,tissue morphogenesis,51,TNNT2
+BP,tissue morphogenesis,51,HHEX
+BP,tissue morphogenesis,51,MIB1
+BP,tissue morphogenesis,51,NCOA3
+BP,tissue morphogenesis,51,FOXC2
+BP,tissue morphogenesis,51,FOXC1
+BP,tissue morphogenesis,51,TGFB1I1
+BP,tissue morphogenesis,51,WNT5A
+BP,tissue morphogenesis,51,COBL
+BP,tissue morphogenesis,51,BBS4
+BP,tissue morphogenesis,51,FGFR3
+BP,tissue morphogenesis,51,TNC
+BP,tissue morphogenesis,51,BMPR2
+BP,tissue morphogenesis,51,CTNND1
+BP,tissue morphogenesis,51,EGLN1
+BP,tissue morphogenesis,51,NR3C1
+BP,tissue morphogenesis,51,SOX9
+BP,tissue morphogenesis,51,TCF7L1
+BP,tissue morphogenesis,51,IGF1R
+BP,tissue morphogenesis,51,FOXQ1
+BP,tissue morphogenesis,51,MACF1
+BP,tissue morphogenesis,51,HOXA5
+BP,tissue morphogenesis,51,BCL2
+BP,tissue morphogenesis,51,PLXND1
+BP,tissue morphogenesis,51,CAR2
+BP,tissue morphogenesis,51,ACTC1
+BP,tissue morphogenesis,51,TBX4
+BP,tissue morphogenesis,51,SMAD3
+BP,tissue morphogenesis,51,FZD3
+BP,tissue morphogenesis,51,SHANK3
+BP,tissue morphogenesis,51,FZD6
+BP,tissue morphogenesis,51,HOXB4
+BP,tissue morphogenesis,51,FREM2
+BP,tissue morphogenesis,51,TSC2
+BP,tissue morphogenesis,51,ZIC5
+BP,tissue morphogenesis,51,TGFBR3
+BP,tissue morphogenesis,51,APAF1
+BP,blood vessel morphogenesis,43,GNA13
+BP,blood vessel morphogenesis,43,CAV1
+BP,blood vessel morphogenesis,43,ACVRL1
+BP,blood vessel morphogenesis,43,NRP1
+BP,blood vessel morphogenesis,43,PGF
+BP,blood vessel morphogenesis,43,IL18
+BP,blood vessel morphogenesis,43,LEPR
+BP,blood vessel morphogenesis,43,EDN1
+BP,blood vessel morphogenesis,43,GJA1
+BP,blood vessel morphogenesis,43,CDH2
+BP,blood vessel morphogenesis,43,MEIS1
+BP,blood vessel morphogenesis,43,WT1
+BP,blood vessel morphogenesis,43,TGFB2
+BP,blood vessel morphogenesis,43,WARS
+BP,blood vessel morphogenesis,43,PTK2
+BP,blood vessel morphogenesis,43,CERKL
+BP,blood vessel morphogenesis,43,APOE
+BP,blood vessel morphogenesis,43,CXCR4
+BP,blood vessel morphogenesis,43,ANG
+BP,blood vessel morphogenesis,43,SEMA3C
+BP,blood vessel morphogenesis,43,PLCD1
+BP,blood vessel morphogenesis,43,NOS2
+BP,blood vessel morphogenesis,43,MKL2
+BP,blood vessel morphogenesis,43,PLXND1
+BP,blood vessel morphogenesis,43,FIGF
+BP,blood vessel morphogenesis,43,FGF2
+BP,blood vessel morphogenesis,43,PTPRJ
+BP,blood vessel morphogenesis,43,TGFBR2
+BP,blood vessel morphogenesis,43,TBX4
+BP,blood vessel morphogenesis,43,NF1
+BP,blood vessel morphogenesis,43,TBX1
+BP,blood vessel morphogenesis,43,TNNI3
+BP,blood vessel morphogenesis,43,PNPLA6
+BP,blood vessel morphogenesis,43,VASH1
+BP,blood vessel morphogenesis,43,THY1
+BP,blood vessel morphogenesis,43,NUS1
+BP,blood vessel morphogenesis,43,MEOX2
+BP,blood vessel morphogenesis,43,ECSCR
+BP,blood vessel morphogenesis,43,AMOT
+BP,blood vessel morphogenesis,43,HBEGF
+BP,blood vessel morphogenesis,43,FOXC2
+BP,blood vessel morphogenesis,43,FOXC1
+BP,blood vessel morphogenesis,43,HDAC7
+BP,regulation of hydrolase activity,42,CAV1
+BP,regulation of hydrolase activity,42,XIAP
+BP,regulation of hydrolase activity,42,AGFG1
+BP,regulation of hydrolase activity,42,ADORA2A
+BP,regulation of hydrolase activity,42,TNNC1
+BP,regulation of hydrolase activity,42,TBC1D9
+BP,regulation of hydrolase activity,42,LEPR
+BP,regulation of hydrolase activity,42,ABHD5
+BP,regulation of hydrolase activity,42,EDN1
+BP,regulation of hydrolase activity,42,ASAP2
+BP,regulation of hydrolase activity,42,ASAP3
+BP,regulation of hydrolase activity,42,SMAP1
+BP,regulation of hydrolase activity,42,TBC1D12
+BP,regulation of hydrolase activity,42,ANG
+BP,regulation of hydrolase activity,42,TBC1D14
+BP,regulation of hydrolase activity,42,MTCH1
+BP,regulation of hydrolase activity,42,TBC1D13
+BP,regulation of hydrolase activity,42,TBC1D4
+BP,regulation of hydrolase activity,42,TBC1D30
+BP,regulation of hydrolase activity,42,DHCR24
+BP,regulation of hydrolase activity,42,HIP1
+BP,regulation of hydrolase activity,42,VAV3
+BP,regulation of hydrolase activity,42,NOS1
+BP,regulation of hydrolase activity,42,NF1
+BP,regulation of hydrolase activity,42,MYH6
+BP,regulation of hydrolase activity,42,RICTOR
+BP,regulation of hydrolase activity,42,TBC1D22A
+BP,regulation of hydrolase activity,42,THY1
+BP,regulation of hydrolase activity,42,PLCE1
+BP,regulation of hydrolase activity,42,RNF7
+BP,regulation of hydrolase activity,42,NDEL1
+BP,regulation of hydrolase activity,42,CHML
+BP,regulation of hydrolase activity,42,IFT57
+BP,regulation of hydrolase activity,42,ACAP2
+BP,regulation of hydrolase activity,42,TSC2
+BP,regulation of hydrolase activity,42,ERN1
+BP,regulation of hydrolase activity,42,APAF1
+BP,regulation of hydrolase activity,42,ARAP3
+BP,regulation of hydrolase activity,42,ARAP2
+BP,regulation of hydrolase activity,42,ARAP1
+BP,regulation of hydrolase activity,42,HTR2A
+BP,regulation of hydrolase activity,42,F2R
+BP,cardiac muscle tissue development,19,ACTC1
+BP,cardiac muscle tissue development,19,MYL2
+BP,cardiac muscle tissue development,19,RXRA
+BP,cardiac muscle tissue development,19,HSPG2
+BP,cardiac muscle tissue development,19,EGLN1
+BP,cardiac muscle tissue development,19,MYH6
+BP,cardiac muscle tissue development,19,TTN
+BP,cardiac muscle tissue development,19,ITGB1
+BP,cardiac muscle tissue development,19,CSRP3
+BP,cardiac muscle tissue development,19,FOXP1
+BP,cardiac muscle tissue development,19,TGFB2
+BP,cardiac muscle tissue development,19,TNNT2
+BP,cardiac muscle tissue development,19,MURC
+BP,cardiac muscle tissue development,19,GATA6
+BP,cardiac muscle tissue development,19,PLN
+BP,cardiac muscle tissue development,19,FOXC2
+BP,cardiac muscle tissue development,19,TGFBR3
+BP,cardiac muscle tissue development,19,FOXC1
+BP,cardiac muscle tissue development,19,MKL2
+BP,regulation of phosphorylation,55,EDN1
+BP,regulation of phosphorylation,55,TGFB3
+BP,regulation of phosphorylation,55,TIRAP
+BP,regulation of phosphorylation,55,PRDX2
+BP,regulation of phosphorylation,55,TLR4
+BP,regulation of phosphorylation,55,PDCD4
+BP,regulation of phosphorylation,55,SPRY4
+BP,regulation of phosphorylation,55,PRKAR2B
+BP,regulation of phosphorylation,55,MAP3K5
+BP,regulation of phosphorylation,55,NDUFS4
+BP,regulation of phosphorylation,55,CERKL
+BP,regulation of phosphorylation,55,MDFIC
+BP,regulation of phosphorylation,55,IFNG
+BP,regulation of phosphorylation,55,GAB1
+BP,regulation of phosphorylation,55,SPRED1
+BP,regulation of phosphorylation,55,RAPGEF3
+BP,regulation of phosphorylation,55,CEACAM2
+BP,regulation of phosphorylation,55,FGF2
+BP,regulation of phosphorylation,55,LYN
+BP,regulation of phosphorylation,55,CCDC88C
+BP,regulation of phosphorylation,55,PKIG
+BP,regulation of phosphorylation,55,THY1
+BP,regulation of phosphorylation,55,ACVR2A
+BP,regulation of phosphorylation,55,PLCE1
+BP,regulation of phosphorylation,55,HIPK3
+BP,regulation of phosphorylation,55,CD81
+BP,regulation of phosphorylation,55,ERN1
+BP,regulation of phosphorylation,55,NRK
+BP,regulation of phosphorylation,55,GADD45A
+BP,regulation of phosphorylation,55,CAV1
+BP,regulation of phosphorylation,55,TNF
+BP,regulation of phosphorylation,55,FGFR3
+BP,regulation of phosphorylation,55,ADORA2A
+BP,regulation of phosphorylation,55,BMPR2
+BP,regulation of phosphorylation,55,KIT
+BP,regulation of phosphorylation,55,CD24A
+BP,regulation of phosphorylation,55,INPP5K
+BP,regulation of phosphorylation,55,HEXIM1
+BP,regulation of phosphorylation,55,DGKD
+BP,regulation of phosphorylation,55,BCL2
+BP,regulation of phosphorylation,55,VAV3
+BP,regulation of phosphorylation,55,MAP2K1
+BP,regulation of phosphorylation,55,HCLS1
+BP,regulation of phosphorylation,55,TGFBR2
+BP,regulation of phosphorylation,55,NF1
+BP,regulation of phosphorylation,55,DGKH
+BP,regulation of phosphorylation,55,RICTOR
+BP,regulation of phosphorylation,55,CDKN1C
+BP,regulation of phosphorylation,55,SH3BP5
+BP,regulation of phosphorylation,55,TSC2
+BP,regulation of phosphorylation,55,FABP4
+BP,regulation of phosphorylation,55,LRP8
+BP,regulation of phosphorylation,55,IGFBP3
+BP,regulation of phosphorylation,55,HTR2A
+BP,regulation of phosphorylation,55,F2R
+BP,regulation of Ras protein signal transduction,39,AGFG1
+BP,regulation of Ras protein signal transduction,39,TBC1D9
+BP,regulation of Ras protein signal transduction,39,CYTH1
+BP,regulation of Ras protein signal transduction,39,ASAP2
+BP,regulation of Ras protein signal transduction,39,ITPKB
+BP,regulation of Ras protein signal transduction,39,CYTH3
+BP,regulation of Ras protein signal transduction,39,ASAP3
+BP,regulation of Ras protein signal transduction,39,ITSN1
+BP,regulation of Ras protein signal transduction,39,TTN
+BP,regulation of Ras protein signal transduction,39,MCF2L
+BP,regulation of Ras protein signal transduction,39,PLEKHG3
+BP,regulation of Ras protein signal transduction,39,PLEKHG2
+BP,regulation of Ras protein signal transduction,39,SMAP1
+BP,regulation of Ras protein signal transduction,39,TBC1D12
+BP,regulation of Ras protein signal transduction,39,TIAM1
+BP,regulation of Ras protein signal transduction,39,RASGRP4
+BP,regulation of Ras protein signal transduction,39,SOS1
+BP,regulation of Ras protein signal transduction,39,TBC1D14
+BP,regulation of Ras protein signal transduction,39,TBC1D13
+BP,regulation of Ras protein signal transduction,39,TBC1D4
+BP,regulation of Ras protein signal transduction,39,TBC1D30
+BP,regulation of Ras protein signal transduction,39,FGD6
+BP,regulation of Ras protein signal transduction,39,NET1
+BP,regulation of Ras protein signal transduction,39,VAV3
+BP,regulation of Ras protein signal transduction,39,ARHGEF7
+BP,regulation of Ras protein signal transduction,39,ARHGEF6
+BP,regulation of Ras protein signal transduction,39,NF1
+BP,regulation of Ras protein signal transduction,39,ARHGEF15
+BP,regulation of Ras protein signal transduction,39,RICTOR
+BP,regulation of Ras protein signal transduction,39,TBC1D22A
+BP,regulation of Ras protein signal transduction,39,FARP1
+BP,regulation of Ras protein signal transduction,39,PLCE1
+BP,regulation of Ras protein signal transduction,39,NDEL1
+BP,regulation of Ras protein signal transduction,39,RASGRF2
+BP,regulation of Ras protein signal transduction,39,ACAP2
+BP,regulation of Ras protein signal transduction,39,TNK1
+BP,regulation of Ras protein signal transduction,39,ARAP3
+BP,regulation of Ras protein signal transduction,39,ARAP2
+BP,regulation of Ras protein signal transduction,39,ARAP1
+BP,phosphorylation,109,STK33
+BP,phosphorylation,109,STK38
+BP,phosphorylation,109,TIRAP
+BP,phosphorylation,109,TGFB3
+BP,phosphorylation,109,PRKG1
+BP,phosphorylation,109,TTN
+BP,phosphorylation,109,C230081A13RIK
+BP,phosphorylation,109,TGFB2
+BP,phosphorylation,109,CTTNBP2
+BP,phosphorylation,109,PRKAR2B
+BP,phosphorylation,109,MAP3K5
+BP,phosphorylation,109,MDFIC
+BP,phosphorylation,109,MAP3K8
+BP,phosphorylation,109,IFNG
+BP,phosphorylation,109,ILK
+BP,phosphorylation,109,GAB1
+BP,phosphorylation,109,MLKL
+BP,phosphorylation,109,INSR
+BP,phosphorylation,109,RET
+BP,phosphorylation,109,MAP4K3
+BP,phosphorylation,109,MAP4K4
+BP,phosphorylation,109,PLCE1
+BP,phosphorylation,109,PDGFRA
+BP,phosphorylation,109,MAPK9
+BP,phosphorylation,109,WNT5A
+BP,phosphorylation,109,FGFR3
+BP,phosphorylation,109,STK10
+BP,phosphorylation,109,BMPR2
+BP,phosphorylation,109,MAP4K2
+BP,phosphorylation,109,CHEK2
+BP,phosphorylation,109,EPHB4
+BP,phosphorylation,109,EPHB1
+BP,phosphorylation,109,PTK2
+BP,phosphorylation,109,ZAP70
+BP,phosphorylation,109,TEC
+BP,phosphorylation,109,MAP2K1
+BP,phosphorylation,109,TAOK3
+BP,phosphorylation,109,TGFBR2
+BP,phosphorylation,109,BMX
+BP,phosphorylation,109,RPS6KL1
+BP,phosphorylation,109,EPHA7
+BP,phosphorylation,109,ATP6V0E2
+BP,phosphorylation,109,ULK1
+BP,phosphorylation,109,TGFBR3
+BP,phosphorylation,109,GRK4
+BP,phosphorylation,109,TNK1
+BP,phosphorylation,109,GRK5
+BP,phosphorylation,109,ABL2
+BP,phosphorylation,109,MYLK
+BP,phosphorylation,109,SRMS
+MF,phosphorylation,109,CDK19
+MF,phosphorylation,109,ATP5E
+MF,phosphorylation,109,ACVRL1
+MF,phosphorylation,109,PRDX2
+MF,phosphorylation,109,FES
+MF,phosphorylation,109,D8ERTD82E
+MF,phosphorylation,109,SLK
+MF,phosphorylation,109,PAK4
+MF,phosphorylation,109,CDK12
+MF,phosphorylation,109,PAK1
+MF,phosphorylation,109,FGF2
+MF,phosphorylation,109,ATP5H
+MF,phosphorylation,109,TRPM6
+MF,phosphorylation,109,SGK1
+MF,phosphorylation,109,ADAM10
+MF,phosphorylation,109,LYN
+MF,phosphorylation,109,LIMK1
+MF,phosphorylation,109,PIK3C2B
+MF,phosphorylation,109,DAPK2
+MF,phosphorylation,109,PRKCB
+MF,phosphorylation,109,DAPK1
+MF,phosphorylation,109,PRKD1
+MF,phosphorylation,109,ACVR2A
+MF,phosphorylation,109,PRKD2
+MF,phosphorylation,109,ATP6V1A
+MF,phosphorylation,109,CCND1
+MF,phosphorylation,109,MAST2
+MF,phosphorylation,109,HIPK3
+MF,phosphorylation,109,CD81
+MF,phosphorylation,109,ERN1
+MF,phosphorylation,109,NRK
+MF,phosphorylation,109,MAP3K12
+MF,phosphorylation,109,FRK
+MF,phosphorylation,109,NDUFB8
+MF,phosphorylation,109,CAMK2G
+MF,phosphorylation,109,KIT
+MF,phosphorylation,109,ATP5G3
+MF,phosphorylation,109,IGF1R
+MF,phosphorylation,109,GNPTAB
+MF,phosphorylation,109,BCL2
+MF,phosphorylation,109,CAMK2D
+MF,phosphorylation,109,PRKAA2
+MF,phosphorylation,109,PTPRE
+MF,phosphorylation,109,PTPRA
+MF,phosphorylation,109,NDUFA7
+MF,phosphorylation,109,TRIM28
+MF,phosphorylation,109,NPR1
+MF,phosphorylation,109,NPR2
+MF,phosphorylation,109,TRIM24
+MF,phosphorylation,109,ICK
+MF,phosphorylation,109,MAPK12
+MF,phosphorylation,109,RPS6KA1
+MF,phosphorylation,109,RPS6KA2
+MF,phosphorylation,109,FYN
+MF,phosphorylation,109,GSK3B
+MF,phosphorylation,109,JAK1
+MF,phosphorylation,109,ATP6V0A1
+MF,phosphorylation,109,IGFBP3
+MF,phosphorylation,109,F2R
+MF,phosphorus metabolic process,126,STK33
+MF,phosphorus metabolic process,126,STK38
+MF,phosphorus metabolic process,126,TGFB3
+MF,phosphorus metabolic process,126,TIRAP
+MF,phosphorus metabolic process,126,PRKG1
+MF,phosphorus metabolic process,126,TTN
+MF,phosphorus metabolic process,126,C230081A13RIK
+MF,phosphorus metabolic process,126,TGFB2
+MF,phosphorus metabolic process,126,CTTNBP2
+MF,phosphorus metabolic process,126,PRKAR2B
+MF,phosphorus metabolic process,126,MAP3K5
+MF,phosphorus metabolic process,126,MDFIC
+MF,phosphorus metabolic process,126,MAP3K8
+MF,phosphorus metabolic process,126,IFNG
+MF,phosphorus metabolic process,126,ILK
+MF,phosphorus metabolic process,126,GAB1
+MF,phosphorus metabolic process,126,MLKL
+MF,phosphorus metabolic process,126,INSR
+MF,phosphorus metabolic process,126,PTPRJ
+MF,phosphorus metabolic process,126,PTPRK
+MF,phosphorus metabolic process,126,RET
+MF,phosphorus metabolic process,126,MAP4K3
+MF,phosphorus metabolic process,126,MAP4K4
+MF,phosphorus metabolic process,126,PLCE1
+MF,phosphorus metabolic process,126,PDGFRA
+MF,phosphorus metabolic process,126,MAPK9
+MF,phosphorus metabolic process,126,WNT5A
+MF,phosphorus metabolic process,126,FGFR3
+MF,phosphorus metabolic process,126,STK10
+MF,phosphorus metabolic process,126,BMPR2
+MF,phosphorus metabolic process,126,MAP4K2
+MF,phosphorus metabolic process,126,CHEK2
+MF,phosphorus metabolic process,126,EPHB4
+MF,phosphorus metabolic process,126,EPHB1
+MF,phosphorus metabolic process,126,DUSP18
+MF,phosphorus metabolic process,126,PTK2
+MF,phosphorus metabolic process,126,PTPLA
+MF,phosphorus metabolic process,126,ZAP70
+MF,phosphorus metabolic process,126,TEC
+MF,phosphorus metabolic process,126,GPD2
+MF,phosphorus metabolic process,126,PTPN9
+MF,phosphorus metabolic process,126,MAP2K1
+MF,phosphorus metabolic process,126,TAOK3
+MF,phosphorus metabolic process,126,TGFBR2
+MF,phosphorus metabolic process,126,BMX
+MF,phosphorus metabolic process,126,PTPN12
+MF,phosphorus metabolic process,126,RPS6KL1
+MF,phosphorus metabolic process,126,EPHA7
+MF,phosphorus metabolic process,126,ATP6V0E2
+MF,phosphorus metabolic process,126,ULK1
+MF,phosphorus metabolic process,126,TGFBR3
+MF,phosphorus metabolic process,126,GRK4
+MF,phosphorus metabolic process,126,TNK1
+MF,phosphorus metabolic process,126,GRK5
+MF,phosphorus metabolic process,126,ABL2
+MF,phosphorus metabolic process,126,MYLK
+MF,phosphorus metabolic process,126,SRMS
+MF,phosphorus metabolic process,126,CDK19
+MF,phosphorus metabolic process,126,ATP5E
+MF,phosphorus metabolic process,126,ACVRL1
+MF,phosphorus metabolic process,126,CDC14A
+MF,phosphorus metabolic process,126,CDC14B
+MF,phosphorus metabolic process,126,PRDX2
+MF,phosphorus metabolic process,126,FES
+MF,phosphorus metabolic process,126,D8ERTD82E
+MF,phosphorus metabolic process,126,SLK
+MF,phosphorus metabolic process,126,PAK4
+MF,phosphorus metabolic process,126,CDK12
+MF,phosphorus metabolic process,126,PAK1
+MF,phosphorus metabolic process,126,ATP5H
+MF,phosphorus metabolic process,126,FGF2
+MF,phosphorus metabolic process,126,TRPM6
+MF,phosphorus metabolic process,126,SGK1
+MF,phosphorus metabolic process,126,ADAM10
+MF,phosphorus metabolic process,126,LYN
+MF,phosphorus metabolic process,126,LIMK1
+MF,phosphorus metabolic process,126,PIK3C2B
+MF,phosphorus metabolic process,126,DAPK2
+MF,phosphorus metabolic process,126,PRKCB
+MF,phosphorus metabolic process,126,DAPK1
+MF,phosphorus metabolic process,126,PRKD1
+MF,phosphorus metabolic process,126,PRKD2
+MF,phosphorus metabolic process,126,ATP6V1A
+MF,phosphorus metabolic process,126,ACVR2A
+MF,phosphorus metabolic process,126,CCND1
+MF,phosphorus metabolic process,126,MAST2
+MF,phosphorus metabolic process,126,PPM1J
+MF,phosphorus metabolic process,126,HIPK3
+MF,phosphorus metabolic process,126,CD81
+MF,phosphorus metabolic process,126,ERN1
+MF,phosphorus metabolic process,126,PPM1L
+MF,phosphorus metabolic process,126,NRK
+MF,phosphorus metabolic process,126,MAP3K12
+MF,phosphorus metabolic process,126,FRK
+MF,phosphorus metabolic process,126,NDUFB8
+MF,phosphorus metabolic process,126,CAMK2G
+MF,phosphorus metabolic process,126,KIT
+MF,phosphorus metabolic process,126,ATP5G3
+MF,phosphorus metabolic process,126,IGF1R
+MF,phosphorus metabolic process,126,GNPTAB
+MF,phosphorus metabolic process,126,BCL2
+MF,phosphorus metabolic process,126,CAMK2D
+MF,phosphorus metabolic process,126,PRKAA2
+MF,phosphorus metabolic process,126,MTMR6
+MF,phosphorus metabolic process,126,PPAP2A
+MF,phosphorus metabolic process,126,INPP5A
+MF,phosphorus metabolic process,126,PTPRD
+MF,phosphorus metabolic process,126,NCEH1
+MF,phosphorus metabolic process,126,PTPRE
+MF,phosphorus metabolic process,126,PTPRA
+MF,phosphorus metabolic process,126,TRIM28
+MF,phosphorus metabolic process,126,NDUFA7
+MF,phosphorus metabolic process,126,NPR1
+MF,phosphorus metabolic process,126,NPR2
+MF,phosphorus metabolic process,126,TRIM24
+MF,phosphorus metabolic process,126,ICK
+MF,phosphorus metabolic process,126,MAPK12
+MF,phosphorus metabolic process,126,PTP4A3
+MF,phosphorus metabolic process,126,RPS6KA1
+MF,phosphorus metabolic process,126,FYN
+MF,phosphorus metabolic process,126,RPS6KA2
+MF,phosphorus metabolic process,126,GSK3B
+MF,phosphorus metabolic process,126,ATP6V0A1
+MF,phosphorus metabolic process,126,JAK1
+MF,phosphorus metabolic process,126,IGFBP3
+MF,phosphorus metabolic process,126,F2R
+MF,phosphate metabolic process,126,STK33
+MF,phosphate metabolic process,126,STK38
+MF,phosphate metabolic process,126,TGFB3
+MF,phosphate metabolic process,126,TIRAP
+MF,phosphate metabolic process,126,PRKG1
+MF,phosphate metabolic process,126,TTN
+MF,phosphate metabolic process,126,C230081A13RIK
+MF,phosphate metabolic process,126,TGFB2
+MF,phosphate metabolic process,126,CTTNBP2
+MF,phosphate metabolic process,126,PRKAR2B
+MF,phosphate metabolic process,126,MAP3K5
+MF,phosphate metabolic process,126,MDFIC
+MF,phosphate metabolic process,126,MAP3K8
+MF,phosphate metabolic process,126,IFNG
+MF,phosphate metabolic process,126,ILK
+MF,phosphate metabolic process,126,GAB1
+MF,phosphate metabolic process,126,MLKL
+MF,phosphate metabolic process,126,INSR
+MF,phosphate metabolic process,126,PTPRJ
+MF,phosphate metabolic process,126,PTPRK
+MF,phosphate metabolic process,126,RET
+MF,phosphate metabolic process,126,MAP4K3
+MF,phosphate metabolic process,126,MAP4K4
+MF,phosphate metabolic process,126,PLCE1
+MF,phosphate metabolic process,126,PDGFRA
+MF,phosphate metabolic process,126,MAPK9
+MF,phosphate metabolic process,126,WNT5A
+MF,phosphate metabolic process,126,FGFR3
+MF,phosphate metabolic process,126,STK10
+MF,phosphate metabolic process,126,BMPR2
+MF,phosphate metabolic process,126,MAP4K2
+MF,phosphate metabolic process,126,CHEK2
+MF,phosphate metabolic process,126,EPHB4
+MF,phosphate metabolic process,126,EPHB1
+MF,phosphate metabolic process,126,DUSP18
+MF,phosphate metabolic process,126,PTK2
+MF,phosphate metabolic process,126,PTPLA
+MF,phosphate metabolic process,126,ZAP70
+MF,phosphate metabolic process,126,TEC
+MF,phosphate metabolic process,126,GPD2
+MF,phosphate metabolic process,126,PTPN9
+MF,phosphate metabolic process,126,MAP2K1
+MF,phosphate metabolic process,126,TAOK3
+MF,phosphate metabolic process,126,TGFBR2
+MF,phosphate metabolic process,126,BMX
+MF,phosphate metabolic process,126,PTPN12
+MF,phosphate metabolic process,126,RPS6KL1
+MF,phosphate metabolic process,126,EPHA7
+MF,phosphate metabolic process,126,ATP6V0E2
+MF,phosphate metabolic process,126,ULK1
+MF,phosphate metabolic process,126,TGFBR3
+MF,phosphate metabolic process,126,GRK4
+MF,phosphate metabolic process,126,TNK1
+MF,phosphate metabolic process,126,GRK5
+MF,phosphate metabolic process,126,ABL2
+MF,phosphate metabolic process,126,MYLK
+MF,phosphate metabolic process,126,SRMS
+MF,phosphate metabolic process,126,CDK19
+MF,phosphate metabolic process,126,ATP6V0A1
+MF,phosphate metabolic process,126,JAK1
+MF,phosphate metabolic process,126,IGFBP3
+MF,phosphate metabolic process,126,F2R
+MF,protein amino acid phosphorylation,99,STK33
+MF,protein amino acid phosphorylation,99,STK38
+MF,protein amino acid phosphorylation,99,TIRAP
+MF,protein amino acid phosphorylation,99,TGFB3
+MF,protein amino acid phosphorylation,99,TTN
+MF,protein amino acid phosphorylation,99,PRKG1
+MF,protein amino acid phosphorylation,99,C230081A13RIK
+MF,protein amino acid phosphorylation,99,TGFB2
+MF,protein amino acid phosphorylation,99,PRKAR2B
+MF,protein amino acid phosphorylation,99,CTTNBP2
+MF,protein amino acid phosphorylation,99,MAP3K5
+MF,protein amino acid phosphorylation,99,MDFIC
+MF,protein amino acid phosphorylation,99,MAP3K8
+MF,protein amino acid phosphorylation,99,ILK
+MF,protein amino acid phosphorylation,99,IFNG
+MF,protein amino acid phosphorylation,99,GAB1
+MF,protein amino acid phosphorylation,99,MLKL
+MF,protein amino acid phosphorylation,99,INSR
+MF,protein amino acid phosphorylation,99,RET
+MF,protein amino acid phosphorylation,99,MAP4K3
+MF,protein amino acid phosphorylation,99,MAP4K4
+MF,protein amino acid phosphorylation,99,PLCE1
+MF,protein amino acid phosphorylation,99,PDGFRA
+MF,protein amino acid phosphorylation,99,MAPK9
+MF,protein amino acid phosphorylation,99,WNT5A
+MF,protein amino acid phosphorylation,99,FGFR3
+MF,protein amino acid phosphorylation,99,STK10
+MF,protein amino acid phosphorylation,99,BMPR2
+MF,protein amino acid phosphorylation,99,MAP4K2
+MF,protein amino acid phosphorylation,99,CHEK2
+MF,protein amino acid phosphorylation,99,EPHB4
+MF,protein amino acid phosphorylation,99,EPHB1
+MF,protein amino acid phosphorylation,99,PTK2
+MF,protein amino acid phosphorylation,99,ZAP70
+MF,protein amino acid phosphorylation,99,TEC
+MF,protein amino acid phosphorylation,99,MAP2K1
+MF,protein amino acid phosphorylation,99,TAOK3
+MF,protein amino acid phosphorylation,99,TGFBR2
+MF,protein amino acid phosphorylation,99,BMX
+MF,protein amino acid phosphorylation,99,RPS6KL1
+MF,protein amino acid phosphorylation,99,EPHA7
+MF,protein amino acid phosphorylation,99,ULK1
+MF,protein amino acid phosphorylation,99,TGFBR3
+MF,protein amino acid phosphorylation,99,GRK4
+MF,protein amino acid phosphorylation,99,TNK1
+MF,protein amino acid phosphorylation,99,GRK5
+MF,protein amino acid phosphorylation,99,ABL2
+MF,protein amino acid phosphorylation,99,MYLK
+MF,protein amino acid phosphorylation,99,SRMS
+MF,protein amino acid phosphorylation,99,CDK19
+MF,protein amino acid phosphorylation,99,ACVRL1
+MF,protein amino acid phosphorylation,99,PRDX2
+MF,protein amino acid phosphorylation,99,FES
+MF,protein amino acid phosphorylation,99,D8ERTD82E
+MF,protein amino acid phosphorylation,99,SLK
+MF,protein amino acid phosphorylation,99,PAK4
+MF,protein amino acid phosphorylation,99,CDK12
+MF,protein amino acid phosphorylation,99,PAK1
+MF,protein amino acid phosphorylation,99,FGF2
+MF,protein amino acid phosphorylation,99,TRPM6
+MF,protein amino acid phosphorylation,99,SGK1
+MF,protein amino acid phosphorylation,99,ADAM10
+MF,protein amino acid phosphorylation,99,LYN
+MF,protein amino acid phosphorylation,99,LIMK1
+MF,protein amino acid phosphorylation,99,DAPK2
+MF,protein amino acid phosphorylation,99,PRKCB
+MF,protein amino acid phosphorylation,99,DAPK1
+MF,protein amino acid phosphorylation,99,PRKD1
+MF,protein amino acid phosphorylation,99,ACVR2A
+MF,protein amino acid phosphorylation,99,PRKD2
+MF,protein amino acid phosphorylation,99,CCND1
+MF,protein amino acid phosphorylation,99,MAST2
+MF,protein amino acid phosphorylation,99,HIPK3
+MF,protein amino acid phosphorylation,99,CD81
+MF,protein amino acid phosphorylation,99,ERN1
+MF,protein amino acid phosphorylation,99,NRK
+MF,protein amino acid phosphorylation,99,MAP3K12
+MF,protein amino acid phosphorylation,99,FRK
+MF,protein amino acid phosphorylation,99,CAMK2G
+MF,protein amino acid phosphorylation,99,KIT
+MF,protein amino acid phosphorylation,99,IGF1R
+MF,protein amino acid phosphorylation,99,BCL2
+MF,protein amino acid phosphorylation,99,CAMK2D
+MF,protein amino acid phosphorylation,99,PRKAA2
+MF,protein amino acid phosphorylation,99,PTPRE
+MF,protein amino acid phosphorylation,99,TRIM28
+MF,protein amino acid phosphorylation,99,PTPRA
+MF,protein amino acid phosphorylation,99,NPR1
+MF,protein amino acid phosphorylation,99,NPR2
+MF,protein amino acid phosphorylation,99,TRIM24
+MF,protein amino acid phosphorylation,99,ICK
+MF,protein amino acid phosphorylation,99,MAPK12
+MF,protein amino acid phosphorylation,99,RPS6KA1
+MF,protein amino acid phosphorylation,99,RPS6KA2
+MF,protein amino acid phosphorylation,99,FYN
+MF,protein amino acid phosphorylation,99,GSK3B
+MF,protein amino acid phosphorylation,99,JAK1
+MF,protein amino acid phosphorylation,99,IGFBP3
+MF,protein amino acid phosphorylation,99,F2R
+MF,regulation of small GTPase mediated signal transduction,45,AGFG1
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D9
+MF,regulation of small GTPase mediated signal transduction,45,CYTH1
+MF,regulation of small GTPase mediated signal transduction,45,ASAP2
+MF,regulation of small GTPase mediated signal transduction,45,ITPKB
+MF,regulation of small GTPase mediated signal transduction,45,CYTH3
+MF,regulation of small GTPase mediated signal transduction,45,ASAP3
+MF,regulation of small GTPase mediated signal transduction,45,ITSN1
+MF,regulation of small GTPase mediated signal transduction,45,TTN
+MF,regulation of small GTPase mediated signal transduction,45,IQGAP1
+MF,regulation of small GTPase mediated signal transduction,45,MCF2L
+MF,regulation of small GTPase mediated signal transduction,45,PLEKHG3
+MF,regulation of small GTPase mediated signal transduction,45,PLEKHG2
+MF,regulation of small GTPase mediated signal transduction,45,SMAP1
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D12
+MF,regulation of small GTPase mediated signal transduction,45,TIAM1
+MF,regulation of small GTPase mediated signal transduction,45,RASGRP4
+MF,regulation of small GTPase mediated signal transduction,45,SOS1
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D14
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D13
+MF,regulation of small GTPase mediated signal transduction,45,RAPGEF5
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D4
+MF,regulation of small GTPase mediated signal transduction,45,RAPGEF3
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D30
+MF,regulation of small GTPase mediated signal transduction,45,FGD6
+MF,regulation of small GTPase mediated signal transduction,45,RAPGEF1
+MF,regulation of small GTPase mediated signal transduction,45,NET1
+MF,regulation of small GTPase mediated signal transduction,45,VAV3
+MF,regulation of small GTPase mediated signal transduction,45,ARHGEF7
+MF,regulation of small GTPase mediated signal transduction,45,ARHGEF6
+MF,regulation of small GTPase mediated signal transduction,45,NF1
+MF,regulation of small GTPase mediated signal transduction,45,ARHGEF15
+MF,regulation of small GTPase mediated signal transduction,45,RICTOR
+MF,regulation of small GTPase mediated signal transduction,45,TBC1D22A
+MF,regulation of small GTPase mediated signal transduction,45,FARP1
+MF,regulation of small GTPase mediated signal transduction,45,RALGAPA2
+MF,regulation of small GTPase mediated signal transduction,45,PLCE1
+MF,regulation of small GTPase mediated signal transduction,45,NDEL1
+MF,regulation of small GTPase mediated signal transduction,45,RASGRF2
+MF,regulation of small GTPase mediated signal transduction,45,ACAP2
+MF,regulation of small GTPase mediated signal transduction,45,TSC2
+MF,regulation of small GTPase mediated signal transduction,45,TNK1
+MF,regulation of small GTPase mediated signal transduction,45,ARAP3
+MF,regulation of small GTPase mediated signal transduction,45,ARAP2
+MF,regulation of small GTPase mediated signal transduction,45,ARAP1
+MF,regulation of phosphate metabolic process,55,EDN1
+MF,regulation of phosphate metabolic process,55,TGFB3
+MF,regulation of phosphate metabolic process,55,TIRAP
+MF,regulation of phosphate metabolic process,55,PRDX2
+MF,regulation of phosphate metabolic process,55,TLR4
+MF,regulation of phosphate metabolic process,55,PDCD4
+MF,regulation of phosphate metabolic process,55,SPRY4
+MF,regulation of phosphate metabolic process,55,PRKAR2B
+MF,regulation of phosphate metabolic process,55,MAP3K5
+MF,regulation of phosphate metabolic process,55,NDUFS4
+MF,regulation of phosphate metabolic process,55,CERKL
+MF,regulation of phosphate metabolic process,55,MDFIC
+MF,regulation of phosphate metabolic process,55,IFNG
+MF,regulation of phosphate metabolic process,55,GAB1
+MF,regulation of phosphate metabolic process,55,SPRED1
+MF,regulation of phosphate metabolic process,55,RAPGEF3
+MF,regulation of phosphate metabolic process,55,CEACAM2
+MF,regulation of phosphate metabolic process,55,FGF2
+MF,regulation of phosphate metabolic process,55,LYN
+MF,regulation of phosphate metabolic process,55,CCDC88C
+MF,regulation of phosphate metabolic process,55,PKIG
+MF,regulation of phosphate metabolic process,55,THY1
+MF,regulation of phosphate metabolic process,55,ACVR2A
+MF,regulation of phosphate metabolic process,55,PLCE1
+MF,regulation of phosphate metabolic process,55,HIPK3
+MF,regulation of phosphate metabolic process,55,CD81
+MF,regulation of phosphate metabolic process,55,ERN1
+MF,regulation of phosphate metabolic process,55,NRK
+MF,regulation of phosphate metabolic process,55,GADD45A
+MF,regulation of phosphate metabolic process,55,CAV1
+MF,regulation of phosphate metabolic process,55,TNF
+MF,regulation of phosphate metabolic process,55,FGFR3
+MF,regulation of phosphate metabolic process,55,ADORA2A
+MF,regulation of phosphate metabolic process,55,BMPR2
+MF,regulation of phosphate metabolic process,55,KIT
+MF,regulation of phosphate metabolic process,55,CD24A
+MF,regulation of phosphate metabolic process,55,INPP5K
+MF,regulation of phosphate metabolic process,55,HEXIM1
+MF,regulation of phosphate metabolic process,55,DGKD
+MF,regulation of phosphate metabolic process,55,BCL2
+MF,regulation of phosphate metabolic process,55,VAV3
+MF,regulation of phosphate metabolic process,55,MAP2K1
+MF,regulation of phosphate metabolic process,55,HCLS1
+MF,regulation of phosphate metabolic process,55,TGFBR2
+MF,regulation of phosphate metabolic process,55,NF1
+MF,regulation of phosphate metabolic process,55,DGKH
+MF,regulation of phosphate metabolic process,55,RICTOR
+MF,regulation of phosphate metabolic process,55,CDKN1C
+MF,regulation of phosphate metabolic process,55,SH3BP5
+MF,regulation of phosphate metabolic process,55,TSC2
+MF,regulation of phosphate metabolic process,55,FABP4
+MF,regulation of phosphate metabolic process,55,LRP8
+MF,regulation of phosphate metabolic process,55,IGFBP3
+MF,regulation of phosphate metabolic process,55,HTR2A
+MF,regulation of phosphate metabolic process,55,F2R
+MF,regulation of phosphorus metabolic process,55,EDN1
+MF,regulation of phosphorus metabolic process,55,TGFB3
+MF,regulation of phosphorus metabolic process,55,TIRAP
+MF,regulation of phosphorus metabolic process,55,PRDX2
+MF,regulation of phosphorus metabolic process,55,TLR4
+MF,regulation of phosphorus metabolic process,55,PDCD4
+MF,regulation of phosphorus metabolic process,55,SPRY4
+MF,regulation of phosphorus metabolic process,55,PRKAR2B
+MF,regulation of phosphorus metabolic process,55,MAP3K5
+MF,regulation of phosphorus metabolic process,55,NDUFS4
+MF,regulation of phosphorus metabolic process,55,CERKL
+MF,regulation of phosphorus metabolic process,55,MDFIC
+MF,regulation of phosphorus metabolic process,55,IFNG
+MF,regulation of phosphorus metabolic process,55,GAB1
+MF,regulation of phosphorus metabolic process,55,SPRED1
+MF,regulation of phosphorus metabolic process,55,RAPGEF3
+MF,regulation of phosphorus metabolic process,55,CEACAM2
+MF,regulation of phosphorus metabolic process,55,FGF2
+MF,regulation of phosphorus metabolic process,55,LYN
+MF,regulation of phosphorus metabolic process,55,CCDC88C
+MF,regulation of phosphorus metabolic process,55,PKIG
+MF,regulation of phosphorus metabolic process,55,THY1
+MF,regulation of phosphorus metabolic process,55,ACVR2A
+MF,regulation of phosphorus metabolic process,55,PLCE1
+MF,regulation of phosphorus metabolic process,55,HIPK3
+MF,regulation of phosphorus metabolic process,55,CD81
+MF,regulation of phosphorus metabolic process,55,ERN1
+MF,regulation of phosphorus metabolic process,55,NRK
+MF,regulation of phosphorus metabolic process,55,GADD45A
+MF,regulation of phosphorus metabolic process,55,CAV1
+MF,regulation of phosphorus metabolic process,55,TNF
+MF,regulation of phosphorus metabolic process,55,FGFR3
+MF,regulation of phosphorus metabolic process,55,ADORA2A
+MF,regulation of phosphorus metabolic process,55,BMPR2
+MF,regulation of phosphorus metabolic process,55,KIT
+MF,regulation of phosphorus metabolic process,55,CD24A
+MF,regulation of phosphorus metabolic process,55,INPP5K
+MF,regulation of phosphorus metabolic process,55,HEXIM1
+MF,regulation of phosphorus metabolic process,55,DGKD
+MF,regulation of phosphorus metabolic process,55,BCL2
+MF,regulation of phosphorus metabolic process,55,VAV3
+MF,regulation of phosphorus metabolic process,55,MAP2K1
+MF,regulation of phosphorus metabolic process,55,HCLS1
+MF,regulation of phosphorus metabolic process,55,TGFBR2
+MF,regulation of phosphorus metabolic process,55,NF1
+MF,regulation of phosphorus metabolic process,55,DGKH
+MF,regulation of phosphorus metabolic process,55,RICTOR
+MF,regulation of phosphorus metabolic process,55,CDKN1C
+MF,regulation of phosphorus metabolic process,55,SH3BP5
+MF,regulation of phosphorus metabolic process,55,TSC2
+MF,regulation of phosphorus metabolic process,55,FABP4
+MF,regulation of phosphorus metabolic process,55,LRP8
+MF,regulation of phosphorus metabolic process,55,IGFBP3
+MF,regulation of phosphorus metabolic process,55,HTR2A
+MF,regulation of phosphorus metabolic process,55,F2R
+MF,morphogenesis of an epithelium,37,DLC1
+MF,morphogenesis of an epithelium,37,WNT5A
+MF,morphogenesis of an epithelium,37,COBL
+MF,morphogenesis of an epithelium,37,BBS4
+MF,morphogenesis of an epithelium,37,ENAH
+MF,morphogenesis of an epithelium,37,NRP1
+MF,morphogenesis of an epithelium,37,FGFR3
+MF,morphogenesis of an epithelium,37,PGF
+MF,morphogenesis of an epithelium,37,TNC
+MF,morphogenesis of an epithelium,37,CTNND1
+MF,morphogenesis of an epithelium,37,NR3C1
+MF,morphogenesis of an epithelium,37,SOX9
+MF,morphogenesis of an epithelium,37,ZIC2
+MF,morphogenesis of an epithelium,37,IGF1R
+MF,morphogenesis of an epithelium,37,CD44
+MF,morphogenesis of an epithelium,37,HOXA5
+MF,morphogenesis of an epithelium,37,BCL2
+MF,morphogenesis of an epithelium,37,ILK
+MF,morphogenesis of an epithelium,37,SEMA3C
+MF,morphogenesis of an epithelium,37,PLXND1
+MF,morphogenesis of an epithelium,37,CAR2
+MF,morphogenesis of an epithelium,37,RET
+MF,morphogenesis of an epithelium,37,AR
+MF,morphogenesis of an epithelium,37,VANGL2
+MF,morphogenesis of an epithelium,37,TBX4
+MF,morphogenesis of an epithelium,37,FZD3
+MF,morphogenesis of an epithelium,37,SHANK3
+MF,morphogenesis of an epithelium,37,FZD6
+MF,morphogenesis of an epithelium,37,HOXB4
+MF,morphogenesis of an epithelium,37,MIB1
+MF,morphogenesis of an epithelium,37,HHEX
+MF,morphogenesis of an epithelium,37,NCOA3
+MF,morphogenesis of an epithelium,37,FREM2
+MF,morphogenesis of an epithelium,37,ZIC5
+MF,morphogenesis of an epithelium,37,TSC2
+MF,morphogenesis of an epithelium,37,APAF1
+MF,morphogenesis of an epithelium,37,TGFB1I1
+MF,plasma membrane,368,LYPD1
+MF,plasma membrane,368,CDIPT
+MF,plasma membrane,368,GPR126
+MF,plasma membrane,368,SGMS2
+MF,plasma membrane,368,CADM1
+MF,plasma membrane,368,GPR124
+MF,plasma membrane,368,EFNA3
+MF,plasma membrane,368,ADCY6
+MF,plasma membrane,368,UTRN
+MF,plasma membrane,368,AQP7
+MF,plasma membrane,368,AMOTL1
+MF,plasma membrane,368,ITSN1
+MF,plasma membrane,368,VPS33B
+MF,plasma membrane,368,AQP1
+MF,plasma membrane,368,AMOTL2
+MF,plasma membrane,368,MAGED1
+MF,plasma membrane,368,CTTNBP2
+CC,plasma membrane,368,LPHN3
+CC,plasma membrane,368,ATP2B4
+CC,plasma membrane,368,HMCN1
+CC,plasma membrane,368,PICALM
+CC,plasma membrane,368,CD44
+CC,plasma membrane,368,AQP11
+CC,plasma membrane,368,RAB28
+CC,plasma membrane,368,APOE
+CC,plasma membrane,368,ILK
+CC,plasma membrane,368,KLRA10
+CC,plasma membrane,368,GNG5
+CC,plasma membrane,368,ADAM9
+CC,plasma membrane,368,GNG7
+CC,plasma membrane,368,CDH23
+CC,plasma membrane,368,RECK
+CC,plasma membrane,368,TMEFF1
+CC,plasma membrane,368,BSG
+CC,plasma membrane,368,MAGI1
+CC,plasma membrane,368,MPDZ
+CC,plasma membrane,368,CRYAB
+CC,plasma membrane,368,SCN2A1
+CC,plasma membrane,368,VANGL2
+CC,plasma membrane,368,EFNB2
+CC,plasma membrane,368,THY1
+CC,plasma membrane,368,JUP
+CC,plasma membrane,368,NPC1
+CC,plasma membrane,368,EGFLAM
+CC,plasma membrane,368,CD36
+CC,plasma membrane,368,PGM5
+CC,plasma membrane,368,PTRF
+CC,plasma membrane,368,ABCB1A
+CC,plasma membrane,368,ABCB1B
+CC,plasma membrane,368,PDGFRA
+CC,plasma membrane,368,NPTN
+CC,plasma membrane,368,TRAPPC4
+CC,plasma membrane,368,TGFB1I1
+CC,plasma membrane,368,UNC13C
+CC,plasma membrane,368,GPR146
+CC,plasma membrane,368,CLCN3
+CC,plasma membrane,368,ENPP2
+CC,plasma membrane,368,ASAP2
+CC,plasma membrane,368,FCGRT
+CC,plasma membrane,368,EPHB4
+CC,plasma membrane,368,EPHB1
+CC,plasma membrane,368,ITGBL1
+CC,plasma membrane,368,DAGLA
+CC,plasma membrane,368,ZAP70
+CC,plasma membrane,368,SLC28A2
+CC,plasma membrane,368,NPHP1
+CC,plasma membrane,368,ASPSCR1
+CC,plasma membrane,368,NTF3
+CC,plasma membrane,368,MAOA
+CC,plasma membrane,368,PCDH10
+CC,plasma membrane,368,TGFBR2
+CC,plasma membrane,368,MAOB
+CC,plasma membrane,368,SMAD3
+CC,plasma membrane,368,PCDH12
+CC,plasma membrane,368,CD63
+CC,plasma membrane,368,PCDH17
+CC,plasma membrane,368,MCAM
+CC,plasma membrane,368,GNAT3
+CC,plasma membrane,368,ABCG2
+CC,plasma membrane,368,LAMA2
+CC,plasma membrane,368,EPHA7
+CC,plasma membrane,368,GNGT2
+CC,plasma membrane,368,CD55
+CC,plasma membrane,368,EPS8
+CC,plasma membrane,368,KCNJ8
+CC,plasma membrane,368,TGFBR3
+CC,plasma membrane,368,RHEB
+CC,plasma membrane,368,SYTL2
+CC,plasma membrane,368,NRP2
+CC,plasma membrane,368,GYPC
+CC,plasma membrane,368,STEAP4
+CC,plasma membrane,368,GPR85
+CC,plasma membrane,368,NRP1
+CC,plasma membrane,368,GPR160
+CC,plasma membrane,368,MYO7A
+CC,plasma membrane,368,H2-D1
+CC,plasma membrane,368,GJA1
+CC,plasma membrane,368,AP3S1
+CC,plasma membrane,368,GJA5
+CC,plasma membrane,368,MMP25
+CC,plasma membrane,368,MCF2L
+CC,plasma membrane,368,ASAH2
+CC,plasma membrane,368,ART3
+CC,plasma membrane,368,EDNRB
+CC,plasma membrane,368,AP2B1
+CC,plasma membrane,368,CERKL
+CC,plasma membrane,368,SMAP1
+CC,plasma membrane,368,IL1RAP
+CC,plasma membrane,368,STRA6
+CC,plasma membrane,368,SLC22A5
+CC,plasma membrane,368,GPIHBP1
+CC,plasma membrane,368,CEACAM2
+CC,plasma membrane,368,DPP4
+CC,plasma membrane,368,AGPAT1
+CC,plasma membrane,368,CTBP2
+CC,plasma membrane,368,ADAM10
+CC,plasma membrane,368,LYN
+CC,plasma membrane,368,STX2
+CC,plasma membrane,368,FLOT2
+CC,plasma membrane,368,SLC22A8
+CC,plasma membrane,368,SLC3A2
+CC,plasma membrane,368,RFTN2
+CC,plasma membrane,368,MMP15
+CC,plasma membrane,368,CLIC1
+CC,plasma membrane,368,CD164
+CC,plasma membrane,368,FLNA
+CC,plasma membrane,368,LRPAP1
+CC,plasma membrane,368,BGN
+CC,plasma membrane,368,MAST2
+CC,plasma membrane,368,PRUNE
+CC,plasma membrane,368,XPR1
+CC,plasma membrane,368,PLXDC1
+CC,plasma membrane,368,SORT1
+CC,plasma membrane,368,KCTD12B
+CC,plasma membrane,368,SGCE
+CC,plasma membrane,368,PARVB
+CC,plasma membrane,368,MAP3K12
+CC,plasma membrane,368,SGCB
+CC,plasma membrane,368,PARVA
+CC,plasma membrane,368,SLC39A14
+CC,plasma membrane,368,NKD1
+CC,plasma membrane,368,SHROOM2
+CC,plasma membrane,368,PARD3
+CC,plasma membrane,368,MTDH
+CC,plasma membrane,368,LIMS2
+CC,plasma membrane,368,EEA1
+CC,plasma membrane,368,SLC19A3
+CC,plasma membrane,368,KIT
+CC,plasma membrane,368,CLDN15
+CC,plasma membrane,368,PLIN2
+CC,plasma membrane,368,DGKD
+CC,plasma membrane,368,MFSD7C
+CC,plasma membrane,368,LANCL2
+CC,plasma membrane,368,SOS1
+CC,plasma membrane,368,COL6A3
+CC,plasma membrane,368,CLEC2D
+CC,plasma membrane,368,PKD2
+CC,plasma membrane,368,SLCO3A1
+CC,plasma membrane,368,CLEC2H
+CC,plasma membrane,368,LY75
+CC,plasma membrane,368,NOS1
+CC,plasma membrane,368,NPR2
+CC,plasma membrane,368,ATP1A1
+CC,plasma membrane,368,SAMD4
+CC,plasma membrane,368,FZD6
+CC,plasma membrane,368,PROM1
+CC,plasma membrane,368,CDH13
+CC,plasma membrane,368,SLC16A2
+CC,plasma membrane,368,ABCC9
+CC,plasma membrane,368,AP2A2
+CC,plasma membrane,368,PTP4A3
+CC,plasma membrane,368,TFRC
+CC,plasma membrane,368,GRIA1
+CC,plasma membrane,368,STAB1
+CC,plasma membrane,368,LAYN
+CC,plasma membrane,368,FYN
+CC,plasma membrane,368,GNG10
+CC,plasma membrane,368,CDON
+CC,plasma membrane,368,SLC16A9
+CC,plasma membrane,368,HBEGF
+CC,plasma membrane,368,ABCC4
+CC,plasma membrane,368,AMOT
+CC,plasma membrane,368,LRP8
+CC,plasma membrane,368,CP
+CC,plasma membrane,368,DNM2
+CC,plasma membrane,368,HTR2A
+CC,plasma membrane,368,GNA13
+CC,plasma membrane,368,ENAH
+CC,plasma membrane,368,OCLN
+CC,plasma membrane,368,PLXNA4
+CC,plasma membrane,368,GABRB2
+CC,plasma membrane,368,TGFB3
+CC,plasma membrane,368,LMO7
+CC,plasma membrane,368,SLC7A5
+CC,plasma membrane,368,IL17RD
+CC,plasma membrane,368,IQGAP1
+CC,plasma membrane,368,SEZ6L2
+CC,plasma membrane,368,SLC16A1
+CC,plasma membrane,368,DMXL2
+CC,plasma membrane,368,DYSF
+CC,plasma membrane,368,TIAM1
+CC,plasma membrane,368,SLC2A1
+CC,plasma membrane,368,ROBO2
+CC,plasma membrane,368,SPRED1
+CC,plasma membrane,368,INSR
+CC,plasma membrane,368,MTUS1
+CC,plasma membrane,368,SCAMP5
+CC,plasma membrane,368,INADL
+CC,plasma membrane,368,BST2
+CC,plasma membrane,368,MFGE8
+CC,plasma membrane,368,PNPLA6
+CC,plasma membrane,368,TNS3
+CC,plasma membrane,368,IGSF5
+CC,plasma membrane,368,MIB1
+CC,plasma membrane,368,PLCE1
+CC,plasma membrane,368,LYNX1
+CC,plasma membrane,368,RASGRF2
+CC,plasma membrane,368,CLEC12B
+CC,plasma membrane,368,CD300LG
+CC,plasma membrane,368,NEURL2
+CC,plasma membrane,368,VAMP1
+CC,plasma membrane,368,CAR4
+CC,plasma membrane,368,DST
+CC,plasma membrane,368,SLC40A1
+CC,plasma membrane,368,TNFAIP1
+CC,plasma membrane,368,SLC38A5
+CC,plasma membrane,368,BBS4
+CC,plasma membrane,368,CGNL1
+CC,plasma membrane,368,CAV1
+CC,plasma membrane,368,SLC38A3
+CC,plasma membrane,368,FGFR3
+CC,plasma membrane,368,CYSLTR1
+CC,plasma membrane,368,ADORA2A
+CC,plasma membrane,368,MAP4K2
+CC,plasma membrane,368,LRBA
+CC,plasma membrane,368,PAQR7
+CC,plasma membrane,368,ITGB5
+CC,plasma membrane,368,CDC42SE1
+CC,plasma membrane,368,NOSTRIN
+CC,plasma membrane,368,TTC8
+CC,plasma membrane,368,KCNA5
+CC,plasma membrane,368,ITGB1
+CC,plasma membrane,368,TTYH3
+CC,plasma membrane,368,PTK2
+CC,plasma membrane,368,SLC30A1
+CC,plasma membrane,368,P2RY2
+CC,plasma membrane,368,TTYH2
+CC,plasma membrane,368,NUMB
+CC,plasma membrane,368,LRFN1
+CC,plasma membrane,368,SSX2IP
+CC,plasma membrane,368,PLXND1
+CC,plasma membrane,368,FN1
+CC,plasma membrane,368,LPL
+CC,plasma membrane,368,DIXDC1
+CC,plasma membrane,368,PHACTR1
+CC,plasma membrane,368,CACNA2D1
+CC,plasma membrane,368,VAV3
+CC,plasma membrane,368,ADAM23
+CC,plasma membrane,368,KCNB1
+CC,plasma membrane,368,ITGA3
+CC,plasma membrane,368,SNAPIN
+CC,plasma membrane,368,SLCO2B1
+CC,plasma membrane,368,H2-Q6
+CC,plasma membrane,368,H2-Q7
+CC,plasma membrane,368,SHANK3
+CC,plasma membrane,368,H2-Q8
+CC,plasma membrane,368,ITGA9
+CC,plasma membrane,368,LAMP2
+CC,plasma membrane,368,SLC7A3
+CC,plasma membrane,368,ITGA5
+CC,plasma membrane,368,FREM2
+CC,plasma membrane,368,PRICKLE2
+CC,plasma membrane,368,ECSCR
+CC,plasma membrane,368,PDZD2
+CC,plasma membrane,368,PLEKHA2
+CC,plasma membrane,368,CACNA1A
+CC,plasma membrane,368,IER3
+CC,plasma membrane,368,TLN1
+CC,plasma membrane,368,CLDN6
+CC,plasma membrane,368,LEPR
+CC,plasma membrane,368,CLSTN1
+CC,plasma membrane,368,CLDN5
+CC,plasma membrane,368,PEX3
+CC,plasma membrane,368,SKAP2
+CC,plasma membrane,368,LSR
+CC,plasma membrane,368,VMN1R208
+CC,plasma membrane,368,ARHGAP21
+CC,plasma membrane,368,GPC4
+CC,plasma membrane,368,ANK
+CC,plasma membrane,368,TMEM173
+CC,plasma membrane,368,CXCR4
+CC,plasma membrane,368,MAPKAP1
+CC,plasma membrane,368,SDPR
+CC,plasma membrane,368,GOPC
+CC,plasma membrane,368,MSN
+CC,plasma membrane,368,RHOD
+CC,plasma membrane,368,PAK1
+CC,plasma membrane,368,ZYX
+CC,plasma membrane,368,SCN7A
+CC,plasma membrane,368,KIRREL2
+CC,plasma membrane,368,DLG2
+CC,plasma membrane,368,H2-K1
+CC,plasma membrane,368,TRPM6
+CC,plasma membrane,368,PTGER4
+CC,plasma membrane,368,LIMK1
+CC,plasma membrane,368,MPP7
+CC,plasma membrane,368,SLC9A3R1
+CC,plasma membrane,368,NEXN
+CC,plasma membrane,368,PPAP2A
+CC,plasma membrane,368,FGFBP1
+CC,plasma membrane,368,EHD2
+CC,plasma membrane,368,MYOF
+CC,plasma membrane,368,ENO1
+CC,plasma membrane,368,TMEM45A
+CC,plasma membrane,368,CNNM2
+CC,plasma membrane,368,PLP2
+CC,plasma membrane,368,SLC12A2
+CC,plasma membrane,368,ABCA8B
+CC,plasma membrane,368,ABCA8A
+CC,plasma membrane,368,MAL
+CC,plasma membrane,368,UBL3
+CC,plasma membrane,368,GM614
+CC,plasma membrane,368,VWF
+CC,plasma membrane,368,TMEM47
+CC,plasma membrane,368,SLC6A6
+CC,plasma membrane,368,TCAM1
+CC,plasma membrane,368,SYNM
+CC,plasma membrane,368,VPS28
+CC,plasma membrane,368,ARAP3
+CC,plasma membrane,368,LIPE
+CC,plasma membrane,368,ARAP1
+CC,plasma membrane,368,F2R
+CC,adherens junction,28,TLN1
+CC,adherens junction,28,ENAH
+CC,adherens junction,28,SHROOM2
+CC,adherens junction,28,PARD3
+CC,adherens junction,28,LIMS2
+CC,adherens junction,28,LMO7
+CC,adherens junction,28,CDH2
+CC,adherens junction,28,CTTNBP2
+CC,adherens junction,28,PTK2
+CC,adherens junction,28,ILK
+CC,adherens junction,28,ZYX
+CC,adherens junction,28,PAK1
+CC,adherens junction,28,SSX2IP
+CC,adherens junction,28,NPHP1
+CC,adherens junction,28,DIXDC1
+CC,adherens junction,28,LIMK1
+CC,adherens junction,28,MPP7
+CC,adherens junction,28,NEXN
+CC,adherens junction,28,JUP
+CC,adherens junction,28,TNS3
+CC,adherens junction,28,PRUNE
+CC,adherens junction,28,PGM5
+CC,adherens junction,28,LAYN
+CC,adherens junction,28,SYNM
+CC,adherens junction,28,TGFB1I1
+CC,adherens junction,28,NEURL2
+CC,adherens junction,28,PARVB
+CC,adherens junction,28,PARVA
+CC,basolateral plasma membrane,34,ENAH
+CC,basolateral plasma membrane,34,TLN1
+CC,basolateral plasma membrane,34,CAV1
+CC,basolateral plasma membrane,34,LIMS2
+CC,basolateral plasma membrane,34,CADM1
+CC,basolateral plasma membrane,34,AQP1
+CC,basolateral plasma membrane,34,CTTNBP2
+CC,basolateral plasma membrane,34,PTK2
+CC,basolateral plasma membrane,34,CD44
+CC,basolateral plasma membrane,34,SLC2A1
+CC,basolateral plasma membrane,34,ILK
+CC,basolateral plasma membrane,34,NUMB
+CC,basolateral plasma membrane,34,MSN
+CC,basolateral plasma membrane,34,ZYX
+CC,basolateral plasma membrane,34,SLCO3A1
+CC,basolateral plasma membrane,34,PAK1
+CC,basolateral plasma membrane,34,AGPAT1
+CC,basolateral plasma membrane,34,DIXDC1
+CC,basolateral plasma membrane,34,STX2
+CC,basolateral plasma membrane,34,SLC12A2
+CC,basolateral plasma membrane,34,LIMK1
+CC,basolateral plasma membrane,34,ATP1A1
+CC,basolateral plasma membrane,34,ITGA3
+CC,basolateral plasma membrane,34,NEXN
+CC,basolateral plasma membrane,34,SLCO2B1
+CC,basolateral plasma membrane,34,TNS3
+CC,basolateral plasma membrane,34,PRUNE
+CC,basolateral plasma membrane,34,PGM5
+CC,basolateral plasma membrane,34,LAYN
+CC,basolateral plasma membrane,34,TGFB1I1
+CC,basolateral plasma membrane,34,NEURL2
+CC,basolateral plasma membrane,34,DST
+CC,basolateral plasma membrane,34,PARVB
+CC,basolateral plasma membrane,34,PARVA
+CC,cell-substrate junction,20,DIXDC1
+CC,cell-substrate junction,20,TLN1
+CC,cell-substrate junction,20,ENAH
+CC,cell-substrate junction,20,LIMS2
+CC,cell-substrate junction,20,LIMK1
+CC,cell-substrate junction,20,NEXN
+CC,cell-substrate junction,20,CTTNBP2
+CC,cell-substrate junction,20,TNS3
+CC,cell-substrate junction,20,PTK2
+CC,cell-substrate junction,20,PGM5
+CC,cell-substrate junction,20,PRUNE
+CC,cell-substrate junction,20,LAYN
+CC,cell-substrate junction,20,ILK
+CC,cell-substrate junction,20,TGFB1I1
+CC,cell-substrate junction,20,PAK1
+CC,cell-substrate junction,20,ZYX
+CC,cell-substrate junction,20,NEURL2
+CC,cell-substrate junction,20,DST
+CC,cell-substrate junction,20,PARVB
+CC,cell-substrate junction,20,PARVA
+CC,cell junction,78,TLN1
+CC,cell junction,78,ENAH
+CC,cell junction,78,OCLN
+CC,cell junction,78,CADM1
+CC,cell junction,78,GABRB2
+CC,cell junction,78,CLDN6
+CC,cell junction,78,UTRN
+CC,cell junction,78,CLDN5
+CC,cell junction,78,CLSTN1
+CC,cell junction,78,LMO7
+CC,cell junction,78,GJA1
+CC,cell junction,78,ITSN1
+CC,cell junction,78,AMOTL1
+CC,cell junction,78,GJA5
+CC,cell junction,78,AMOTL2
+CC,cell junction,78,ARHGAP21
+CC,cell junction,78,CTTNBP2
+CC,cell junction,78,HMCN1
+CC,cell junction,78,DMXL2
+CC,cell junction,78,ILK
+CC,cell junction,78,GOPC
+CC,cell junction,78,PAK1
+CC,cell junction,78,ZYX
+CC,cell junction,78,DLG2
+CC,cell junction,78,DPP4
+CC,cell junction,78,SCAMP5
+CC,cell junction,78,INADL
+CC,cell junction,78,CTBP2
+CC,cell junction,78,MAGI1
+CC,cell junction,78,LIMK1
+CC,cell junction,78,MPDZ
+CC,cell junction,78,SCN2A1
+CC,cell junction,78,MPP7
+CC,cell junction,78,NEXN
+CC,cell junction,78,JUP
+CC,cell junction,78,IGSF5
+CC,cell junction,78,TNS3
+CC,cell junction,78,EGFLAM
+CC,cell junction,78,MAST2
+CC,cell junction,78,PGM5
+CC,cell junction,78,PRUNE
+CC,cell junction,78,ABCB1A
+CC,cell junction,78,ABCB1B
+CC,cell junction,78,TRAPPC4
+CC,cell junction,78,TGFB1I1
+CC,cell junction,78,NEURL2
+CC,cell junction,78,UNC13C
+CC,cell junction,78,VAMP1
+CC,cell junction,78,DST
+CC,cell junction,78,PARVB
+CC,cell junction,78,PARVA
+CC,cell junction,78,CGNL1
+CC,cell junction,78,PARD3
+CC,cell junction,78,SHROOM2
+CC,cell junction,78,MTDH
+CC,cell junction,78,LIMS2
+CC,cell junction,78,CDH2
+CC,cell junction,78,CDH5
+CC,cell junction,78,CLDN15
+CC,cell junction,78,PTK2
+CC,cell junction,78,MARVELD2
+CC,cell junction,78,SYN2
+CC,cell junction,78,LRFN1
+CC,cell junction,78,SSX2IP
+CC,cell junction,78,NPHP1
+CC,cell junction,78,DIXDC1
+CC,cell junction,78,PHACTR1
+CC,cell junction,78,PCDH12
+CC,cell junction,78,SNAPIN
+CC,cell junction,78,SAMD4
+CC,cell junction,78,SHANK3
+CC,cell junction,78,TMEM47
+CC,cell junction,78,LAYN
+CC,cell junction,78,GRIA1
+CC,cell junction,78,AMOT
+CC,cell junction,78,SYNM
+CC,cell junction,78,PDZD2
+CC,cell junction,78,DNM2
+CC,membrane-bounded vesicle,71,GNA13
+CC,membrane-bounded vesicle,71,CADM1
+CC,membrane-bounded vesicle,71,MLPH
+CC,membrane-bounded vesicle,71,MYO7A
+CC,membrane-bounded vesicle,71,TGFB3
+CC,membrane-bounded vesicle,71,PDIA6
+CC,membrane-bounded vesicle,71,ITSN1
+CC,membrane-bounded vesicle,71,CD2AP
+CC,membrane-bounded vesicle,71,SLC1A5
+CC,membrane-bounded vesicle,71,CTTNBP2
+CC,membrane-bounded vesicle,71,DMXL2
+CC,membrane-bounded vesicle,71,PICALM
+CC,membrane-bounded vesicle,71,TPP1
+CC,membrane-bounded vesicle,71,PACSIN2
+CC,membrane-bounded vesicle,71,MAPKAP1
+CC,membrane-bounded vesicle,71,SLC2A1
+CC,membrane-bounded vesicle,71,GOPC
+CC,membrane-bounded vesicle,71,SCAMP5
+CC,membrane-bounded vesicle,71,BSG
+CC,membrane-bounded vesicle,71,ADAM10
+CC,membrane-bounded vesicle,71,PIK3C2B
+CC,membrane-bounded vesicle,71,ANP32E
+CC,membrane-bounded vesicle,71,SLC3A2
+CC,membrane-bounded vesicle,71,STOM
+CC,membrane-bounded vesicle,71,MYRIP
+CC,membrane-bounded vesicle,71,F5
+CC,membrane-bounded vesicle,71,IGF2R
+CC,membrane-bounded vesicle,71,SEMA4C
+CC,membrane-bounded vesicle,71,SORT1
+CC,membrane-bounded vesicle,71,TRAPPC4
+CC,membrane-bounded vesicle,71,CTSB
+CC,membrane-bounded vesicle,71,PDCD6IP
+CC,membrane-bounded vesicle,71,RAB11FIP1
+CC,membrane-bounded vesicle,71,SLC40A1
+CC,membrane-bounded vesicle,71,DST
+CC,membrane-bounded vesicle,71,IFT74
+CC,membrane-bounded vesicle,71,CLCN3
+CC,membrane-bounded vesicle,71,TNF
+CC,membrane-bounded vesicle,71,AGFG1
+CC,membrane-bounded vesicle,71,LRBA
+CC,membrane-bounded vesicle,71,TIMP4
+CC,membrane-bounded vesicle,71,NOSTRIN
+CC,membrane-bounded vesicle,71,CXXC4
+CC,membrane-bounded vesicle,71,RFFL
+CC,membrane-bounded vesicle,71,ITGB1
+CC,membrane-bounded vesicle,71,DGKD
+CC,membrane-bounded vesicle,71,SYN2
+CC,membrane-bounded vesicle,71,TMED10
+CC,membrane-bounded vesicle,71,EHD1
+CC,membrane-bounded vesicle,71,PCSK5
+CC,membrane-bounded vesicle,71,HIP1
+CC,membrane-bounded vesicle,71,ASPSCR1
+CC,membrane-bounded vesicle,71,PLAT
+CC,membrane-bounded vesicle,71,NOS1
+CC,membrane-bounded vesicle,71,NTF3
+CC,membrane-bounded vesicle,71,GGH
+CC,membrane-bounded vesicle,71,EXOC3L
+CC,membrane-bounded vesicle,71,WIPI1
+CC,membrane-bounded vesicle,71,VWF
+CC,membrane-bounded vesicle,71,PLA2G4A
+CC,membrane-bounded vesicle,71,AP2A2
+CC,membrane-bounded vesicle,71,LAMP2
+CC,membrane-bounded vesicle,71,NTS
+CC,membrane-bounded vesicle,71,TFRC
+CC,membrane-bounded vesicle,71,ULK1
+CC,membrane-bounded vesicle,71,CAPG
+CC,membrane-bounded vesicle,71,ABCC4
+CC,membrane-bounded vesicle,71,AMOT
+CC,membrane-bounded vesicle,71,ATP6V0A1
+CC,membrane-bounded vesicle,71,SYTL2
+CC,membrane-bounded vesicle,71,ABL2
+CC,basement membrane,21,COL4A2
+CC,basement membrane,21,COL4A1
+CC,basement membrane,21,TNC
+CC,basement membrane,21,COL15A1
+CC,basement membrane,21,HSPG2
+CC,basement membrane,21,CCDC80
+CC,basement membrane,21,PAPLN
+CC,basement membrane,21,NID1
+CC,basement membrane,21,TIMP2
+CC,basement membrane,21,LAMA2
+CC,basement membrane,21,LAMA4
+CC,basement membrane,21,EGFLAM
+CC,basement membrane,21,HMCN1
+CC,basement membrane,21,ANG
+CC,basement membrane,21,FREM2
+CC,basement membrane,21,AGRN
+CC,basement membrane,21,LAMC1
+CC,basement membrane,21,ENTPD1
+CC,basement membrane,21,VWA1
+CC,basement membrane,21,COL8A1
+CC,basement membrane,21,FN1
+CC,vesicle,82,GNA13
+CC,vesicle,82,CADM1
+CC,vesicle,82,MLPH
+CC,vesicle,82,MYO7A
+CC,vesicle,82,TGFB3
+CC,vesicle,82,AP3S1
+CC,vesicle,82,PDIA6
+CC,vesicle,82,ITSN1
+CC,vesicle,82,CD2AP
+CC,vesicle,82,ARHGAP21
+CC,vesicle,82,SLC1A5
+CC,vesicle,82,CTTNBP2
+CC,vesicle,82,DMXL2
+CC,vesicle,82,DYSF
+CC,vesicle,82,PICALM
+CC,vesicle,82,MAP1LC3A
+CC,vesicle,82,TPP1
+CC,vesicle,82,PACSIN2
+CC,vesicle,82,MAPKAP1
+CC,vesicle,82,SLC2A1
+CC,vesicle,82,GOPC
+CC,vesicle,82,RAB6B
+CC,vesicle,82,IFNGR1
+CC,vesicle,82,SCAMP5
+CC,vesicle,82,BSG
+CC,vesicle,82,ADAM10
+CC,vesicle,82,PIK3C2B
+CC,vesicle,82,ANP32E
+CC,vesicle,82,SLC3A2
+CC,vesicle,82,STOM
+CC,vesicle,82,MIB1
+CC,vesicle,82,MYRIP
+CC,vesicle,82,F5
+CC,vesicle,82,IGF2R
+CC,vesicle,82,SEMA4C
+CC,vesicle,82,SORT1
+CC,vesicle,82,TRAPPC4
+CC,vesicle,82,PDCD6IP
+CC,vesicle,82,CTSB
+CC,vesicle,82,VAMP1
+CC,vesicle,82,RAB11FIP1
+CC,vesicle,82,SLC40A1
+CC,vesicle,82,DST
+CC,vesicle,82,IFT74
+CC,vesicle,82,CLCN3
+CC,vesicle,82,TNF
+CC,vesicle,82,AGFG1
+CC,vesicle,82,LRBA
+CC,vesicle,82,TIMP4
+CC,vesicle,82,NOSTRIN
+CC,vesicle,82,CXXC4
+CC,vesicle,82,RFFL
+CC,vesicle,82,ITGB1
+CC,vesicle,82,DGKD
+CC,vesicle,82,SYN2
+CC,vesicle,82,TMED10
+CC,vesicle,82,EHD1
+CC,vesicle,82,MYOF
+CC,vesicle,82,PCSK5
+CC,vesicle,82,HIP1
+CC,vesicle,82,PLAT
+CC,vesicle,82,ASPSCR1
+CC,vesicle,82,NOS1
+CC,vesicle,82,NTF3
+CC,vesicle,82,GGH
+CC,vesicle,82,EXOC3L
+CC,vesicle,82,SNAPIN
+CC,vesicle,82,WIPI1
+CC,vesicle,82,VWF
+CC,vesicle,82,PLA2G4A
+CC,vesicle,82,AP2A2
+CC,vesicle,82,LAMP2
+CC,vesicle,82,TFRC
+CC,vesicle,82,NTS
+CC,vesicle,82,ULK1
+CC,vesicle,82,CAPG
+CC,vesicle,82,ABCC4
+CC,vesicle,82,AMOT
+CC,vesicle,82,ATP6V0A1
+CC,vesicle,82,SYTL2
+CC,vesicle,82,ABL2
+CC,vesicle,82,ATP8A1
+CC,extracellular matrix,55,ASPN
+CC,extracellular matrix,55,CTHRC1
+CC,extracellular matrix,55,LTBP1
+CC,extracellular matrix,55,NEPN
+CC,extracellular matrix,55,TGFB3
+CC,extracellular matrix,55,POSTN
+CC,extracellular matrix,55,MMP25
+CC,extracellular matrix,55,GPC4
+CC,extracellular matrix,55,OGN
+CC,extracellular matrix,55,HMCN1
+CC,extracellular matrix,55,ANG
+CC,extracellular matrix,55,VWA1
+CC,extracellular matrix,55,ADAM10
+CC,extracellular matrix,55,CRTAP
+CC,extracellular matrix,55,MMP15
+CC,extracellular matrix,55,ADAMTS9
+CC,extracellular matrix,55,BGN
+CC,extracellular matrix,55,EGFLAM
+CC,extracellular matrix,55,NAV2
+CC,extracellular matrix,55,ADAM19
+CC,extracellular matrix,55,LAMC1
+CC,extracellular matrix,55,MFAP5
+CC,extracellular matrix,55,ADAMTS5
+CC,extracellular matrix,55,WNT5A
+CC,extracellular matrix,55,ADAMTSL2
+CC,extracellular matrix,55,SPOCK2
+CC,extracellular matrix,55,TNC
+CC,extracellular matrix,55,LUM
+CC,extracellular matrix,55,TIMP4
+CC,extracellular matrix,55,DCN
+CC,extracellular matrix,55,TIMP2
+CC,extracellular matrix,55,COL6A3
+CC,extracellular matrix,55,PTN
+CC,extracellular matrix,55,AGRN
+CC,extracellular matrix,55,COL8A1
+CC,extracellular matrix,55,ENTPD1
+CC,extracellular matrix,55,DPT
+CC,extracellular matrix,55,FN1
+CC,extracellular matrix,55,COL4A2
+CC,extracellular matrix,55,COL4A1
+CC,extracellular matrix,55,LGALS1
+CC,extracellular matrix,55,EFEMP2
+CC,extracellular matrix,55,FBN1
+CC,extracellular matrix,55,COL15A1
+CC,extracellular matrix,55,CCDC80
+CC,extracellular matrix,55,HSPG2
+CC,extracellular matrix,55,PAPLN
+CC,extracellular matrix,55,NID1
+CC,extracellular matrix,55,EMILIN1
+CC,extracellular matrix,55,LAMA2
+CC,extracellular matrix,55,VWF
+CC,extracellular matrix,55,LAMA4
+CC,extracellular matrix,55,FBLN2
+CC,extracellular matrix,55,FREM2
+CC,extracellular matrix,55,TGFBR3
+CC,plasma membrane part,215,CADM1
+CC,plasma membrane part,215,SGMS2
+CC,plasma membrane part,215,UTRN
+CC,plasma membrane part,215,AQP7
+CC,plasma membrane part,215,VPS33B
+CC,plasma membrane part,215,ITSN1
+CC,plasma membrane part,215,AQP1
+CC,plasma membrane part,215,AMOTL1
+CC,plasma membrane part,215,AMOTL2
+CC,plasma membrane part,215,CTTNBP2
+CC,plasma membrane part,215,ATP2B4
+CC,plasma membrane part,215,HMCN1
+CC,plasma membrane part,215,CD44
+CC,plasma membrane part,215,APOE
+CC,plasma membrane part,215,RAB28
+CC,plasma membrane part,215,ILK
+CC,plasma membrane part,215,GNG5
+CC,plasma membrane part,215,GNG7
+CC,plasma membrane part,215,ADAM9
+CC,plasma membrane part,215,MAGI1
+CC,plasma membrane part,215,MPDZ
+CC,plasma membrane part,215,VANGL2
+CC,plasma membrane part,215,SCN2A1
+CC,plasma membrane part,215,THY1
+CC,plasma membrane part,215,JUP
+CC,plasma membrane part,215,NPC1
+CC,plasma membrane part,215,EGFLAM
+CC,plasma membrane part,215,PGM5
+CC,plasma membrane part,215,PTRF
+CC,plasma membrane part,215,ABCB1A
+CC,plasma membrane part,215,ABCB1B
+CC,plasma membrane part,215,PDGFRA
+CC,plasma membrane part,215,TRAPPC4
+CC,plasma membrane part,215,TGFB1I1
+CC,plasma membrane part,215,UNC13C
+CC,plasma membrane part,215,CLCN3
+CC,plasma membrane part,215,ENPP2
+CC,plasma membrane part,215,FCGRT
+CC,plasma membrane part,215,EPHB4
+CC,plasma membrane part,215,EPHB1
+CC,plasma membrane part,215,ITGBL1
+CC,plasma membrane part,215,ZAP70
+CC,plasma membrane part,215,SLC28A2
+CC,plasma membrane part,215,NPHP1
+CC,plasma membrane part,215,ASPSCR1
+CC,plasma membrane part,215,MAOA
+CC,plasma membrane part,215,TGFBR2
+CC,plasma membrane part,215,PCDH10
+CC,plasma membrane part,215,MAOB
+CC,plasma membrane part,215,PCDH12
+CC,plasma membrane part,215,GNAT3
+CC,plasma membrane part,215,EPHA7
+CC,plasma membrane part,215,CD55
+CC,plasma membrane part,215,GNGT2
+CC,plasma membrane part,215,EPS8
+CC,plasma membrane part,215,KCNJ8
+CC,plasma membrane part,215,RHEB
+CC,plasma membrane part,215,SYTL2
+CC,plasma membrane part,215,STEAP4
+CC,plasma membrane part,215,GPR85
+CC,plasma membrane part,215,MYO7A
+CC,plasma membrane part,215,H2-D1
+CC,plasma membrane part,215,AP3S1
+CC,plasma membrane part,215,GJA1
+CC,plasma membrane part,215,GJA5
+CC,plasma membrane part,215,MCF2L
+CC,plasma membrane part,215,AP2B1
+CC,plasma membrane part,215,CERKL
+CC,plasma membrane part,215,SMAP1
+CC,plasma membrane part,215,SLC22A5
+CC,plasma membrane part,215,GPIHBP1
+CC,plasma membrane part,215,DPP4
+CC,plasma membrane part,215,AGPAT1
+CC,plasma membrane part,215,CTBP2
+CC,plasma membrane part,215,STX2
+CC,plasma membrane part,215,FLOT2
+CC,plasma membrane part,215,MMP15
+CC,plasma membrane part,215,PRUNE
+CC,plasma membrane part,215,MAST2
+CC,plasma membrane part,215,KCTD12B
+CC,plasma membrane part,215,SORT1
+CC,plasma membrane part,215,SGCE
+CC,plasma membrane part,215,PARVB
+CC,plasma membrane part,215,SGCB
+CC,plasma membrane part,215,PARVA
+CC,plasma membrane part,215,PARD3
+CC,plasma membrane part,215,SHROOM2
+CC,plasma membrane part,215,LIMS2
+CC,plasma membrane part,215,MTDH
+CC,plasma membrane part,215,SLC19A3
+CC,plasma membrane part,215,EEA1
+CC,plasma membrane part,215,KIT
+CC,plasma membrane part,215,CLDN15
+CC,plasma membrane part,215,CLEC2D
+CC,plasma membrane part,215,SLCO3A1
+CC,plasma membrane part,215,CLEC2H
+CC,plasma membrane part,215,LY75
+CC,plasma membrane part,215,ATP1A1
+CC,plasma membrane part,215,SAMD4
+CC,plasma membrane part,215,FZD6
+CC,plasma membrane part,215,PROM1
+CC,plasma membrane part,215,CDH13
+CC,plasma membrane part,215,AP2A2
+CC,plasma membrane part,215,LAYN
+CC,plasma membrane part,215,STAB1
+CC,plasma membrane part,215,GRIA1
+CC,plasma membrane part,215,CDON
+CC,plasma membrane part,215,GNG10
+CC,plasma membrane part,215,AMOT
+CC,plasma membrane part,215,HBEGF
+CC,plasma membrane part,215,CP
+CC,plasma membrane part,215,DNM2
+CC,plasma membrane part,215,GNA13
+CC,plasma membrane part,215,ENAH
+CC,plasma membrane part,215,OCLN
+CC,plasma membrane part,215,GABRB2
+CC,plasma membrane part,215,TGFB3
+CC,plasma membrane part,215,LMO7
+CC,plasma membrane part,215,DMXL2
+CC,plasma membrane part,215,DYSF
+CC,plasma membrane part,215,SLC2A1
+CC,plasma membrane part,215,ROBO2
+CC,plasma membrane part,215,SCAMP5
+CC,plasma membrane part,215,INADL
+CC,plasma membrane part,215,MFGE8
+CC,plasma membrane part,215,PNPLA6
+CC,plasma membrane part,215,TNS3
+CC,plasma membrane part,215,IGSF5
+CC,plasma membrane part,215,NEURL2
+CC,plasma membrane part,215,VAMP1
+CC,plasma membrane part,215,DST
+CC,plasma membrane part,215,TNFAIP1
+CC,plasma membrane part,215,CGNL1
+CC,plasma membrane part,215,BBS4
+CC,plasma membrane part,215,SLC38A3
+CC,plasma membrane part,215,CAV1
+CC,plasma membrane part,215,FGFR3
+CC,plasma membrane part,215,CYSLTR1
+CC,plasma membrane part,215,ADORA2A
+CC,plasma membrane part,215,ITGB5
+CC,plasma membrane part,215,KCNA5
+CC,plasma membrane part,215,TTC8
+CC,plasma membrane part,215,ITGB1
+CC,plasma membrane part,215,PTK2
+CC,plasma membrane part,215,NUMB
+CC,plasma membrane part,215,LRFN1
+CC,plasma membrane part,215,SSX2IP
+CC,plasma membrane part,215,FN1
+CC,plasma membrane part,215,PHACTR1
+CC,plasma membrane part,215,DIXDC1
+CC,plasma membrane part,215,CACNA2D1
+CC,plasma membrane part,215,KCNB1
+CC,plasma membrane part,215,SNAPIN
+CC,plasma membrane part,215,ITGA3
+CC,plasma membrane part,215,H2-Q6
+CC,plasma membrane part,215,SLCO2B1
+CC,plasma membrane part,215,H2-Q7
+CC,plasma membrane part,215,H2-Q8
+CC,plasma membrane part,215,SHANK3
+CC,plasma membrane part,215,ITGA9
+CC,plasma membrane part,215,SLC7A3
+CC,plasma membrane part,215,FREM2
+CC,plasma membrane part,215,ITGA5
+CC,plasma membrane part,215,PRICKLE2
+CC,plasma membrane part,215,PDZD2
+CC,plasma membrane part,215,CACNA1A
+CC,plasma membrane part,215,IER3
+CC,plasma membrane part,215,TLN1
+CC,plasma membrane part,215,CLDN6
+CC,plasma membrane part,215,LEPR
+CC,plasma membrane part,215,CLDN5
+CC,plasma membrane part,215,CLSTN1
+CC,plasma membrane part,215,PEX3
+CC,plasma membrane part,215,VMN1R208
+CC,plasma membrane part,215,ARHGAP21
+CC,plasma membrane part,215,GPC4
+CC,plasma membrane part,215,ANK
+CC,plasma membrane part,215,SDPR
+CC,plasma membrane part,215,GOPC
+CC,plasma membrane part,215,ZYX
+CC,plasma membrane part,215,PAK1
+CC,plasma membrane part,215,SCN7A
+CC,plasma membrane part,215,MSN
+CC,plasma membrane part,215,DLG2
+CC,plasma membrane part,215,H2-K1
+CC,plasma membrane part,215,TRPM6
+CC,plasma membrane part,215,LIMK1
+CC,plasma membrane part,215,MPP7
+CC,plasma membrane part,215,SLC9A3R1
+CC,plasma membrane part,215,NEXN
+CC,plasma membrane part,215,ARL3
+CC,plasma membrane part,215,STOM
+CC,plasma membrane part,215,NRM
+CC,plasma membrane part,215,STXBP5
+CC,plasma membrane part,215,CD81
+CC,plasma membrane part,215,CTSB
+CC,plasma membrane part,215,TNF
+CC,plasma membrane part,215,CDH2
+CC,plasma membrane part,215,CD24A
+CC,plasma membrane part,215,CDH5
+CC,plasma membrane part,215,MARVELD2
+CC,plasma membrane part,215,SYN2
+CC,plasma membrane part,215,CAMK2D
+CC,plasma membrane part,215,PPAP2A
+CC,plasma membrane part,215,EHD1
+CC,plasma membrane part,215,EHD2
+CC,plasma membrane part,215,TMEM45A
+CC,plasma membrane part,215,SLC12A2
+CC,plasma membrane part,215,GM614
+CC,plasma membrane part,215,VWF
+CC,plasma membrane part,215,TMEM47
+CC,plasma membrane part,215,SLC6A6
+CC,plasma membrane part,215,TCAM1
+CC,plasma membrane part,215,SYNM
+CC,plasma membrane part,215,LIPE
+CC,cytoplasmic membrane-bounded vesicle,69,GNA13
+CC,cytoplasmic membrane-bounded vesicle,69,CADM1
+CC,cytoplasmic membrane-bounded vesicle,69,MLPH
+CC,cytoplasmic membrane-bounded vesicle,69,MYO7A
+CC,cytoplasmic membrane-bounded vesicle,69,TGFB3
+CC,cytoplasmic membrane-bounded vesicle,69,PDIA6
+CC,cytoplasmic membrane-bounded vesicle,69,ITSN1
+CC,cytoplasmic membrane-bounded vesicle,69,CD2AP
+CC,cytoplasmic membrane-bounded vesicle,69,SLC1A5
+CC,cytoplasmic membrane-bounded vesicle,69,CTTNBP2
+CC,cytoplasmic membrane-bounded vesicle,69,DMXL2
+CC,cytoplasmic membrane-bounded vesicle,69,PICALM
+CC,cytoplasmic membrane-bounded vesicle,69,TPP1
+CC,cytoplasmic membrane-bounded vesicle,69,PACSIN2
+CC,cytoplasmic membrane-bounded vesicle,69,MAPKAP1
+CC,cytoplasmic membrane-bounded vesicle,69,SLC2A1
+CC,cytoplasmic membrane-bounded vesicle,69,GOPC
+CC,cytoplasmic membrane-bounded vesicle,69,SCAMP5
+CC,cytoplasmic membrane-bounded vesicle,69,BSG
+CC,cytoplasmic membrane-bounded vesicle,69,ADAM10
+CC,cytoplasmic membrane-bounded vesicle,69,PIK3C2B
+CC,cytoplasmic membrane-bounded vesicle,69,ANP32E
+CC,cytoplasmic membrane-bounded vesicle,69,SLC3A2
+CC,cytoplasmic membrane-bounded vesicle,69,STOM
+CC,cytoplasmic membrane-bounded vesicle,69,MYRIP
+CC,cytoplasmic membrane-bounded vesicle,69,F5
+CC,cytoplasmic membrane-bounded vesicle,69,IGF2R
+CC,cytoplasmic membrane-bounded vesicle,69,SEMA4C
+CC,cytoplasmic membrane-bounded vesicle,69,SORT1
+CC,cytoplasmic membrane-bounded vesicle,69,TRAPPC4
+CC,cytoplasmic membrane-bounded vesicle,69,CTSB
+CC,cytoplasmic membrane-bounded vesicle,69,PDCD6IP
+CC,cytoplasmic membrane-bounded vesicle,69,RAB11FIP1
+CC,cytoplasmic membrane-bounded vesicle,69,SLC40A1
+CC,cytoplasmic membrane-bounded vesicle,69,DST
+CC,cytoplasmic membrane-bounded vesicle,69,IFT74
+CC,cytoplasmic membrane-bounded vesicle,69,TNF
+CC,cytoplasmic membrane-bounded vesicle,69,AGFG1
+CC,cytoplasmic membrane-bounded vesicle,69,LRBA
+CC,cytoplasmic membrane-bounded vesicle,69,TIMP4
+CC,cytoplasmic membrane-bounded vesicle,69,NOSTRIN
+CC,cytoplasmic membrane-bounded vesicle,69,CXXC4
+CC,cytoplasmic membrane-bounded vesicle,69,RFFL
+CC,cytoplasmic membrane-bounded vesicle,69,ITGB1
+CC,cytoplasmic membrane-bounded vesicle,69,DGKD
+CC,cytoplasmic membrane-bounded vesicle,69,SYN2
+CC,cytoplasmic membrane-bounded vesicle,69,TMED10
+CC,cytoplasmic membrane-bounded vesicle,69,EHD1
+CC,cytoplasmic membrane-bounded vesicle,69,PCSK5
+CC,cytoplasmic membrane-bounded vesicle,69,HIP1
+CC,cytoplasmic membrane-bounded vesicle,69,PLAT
+CC,cytoplasmic membrane-bounded vesicle,69,NOS1
+CC,cytoplasmic membrane-bounded vesicle,69,NTF3
+CC,cytoplasmic membrane-bounded vesicle,69,GGH
+CC,cytoplasmic membrane-bounded vesicle,69,EXOC3L
+CC,cytoplasmic membrane-bounded vesicle,69,WIPI1
+CC,cytoplasmic membrane-bounded vesicle,69,VWF
+CC,cytoplasmic membrane-bounded vesicle,69,PLA2G4A
+CC,cytoplasmic membrane-bounded vesicle,69,AP2A2
+CC,cytoplasmic membrane-bounded vesicle,69,LAMP2
+CC,cytoplasmic membrane-bounded vesicle,69,NTS
+CC,cytoplasmic membrane-bounded vesicle,69,TFRC
+CC,cytoplasmic membrane-bounded vesicle,69,ULK1
+CC,cytoplasmic membrane-bounded vesicle,69,CAPG
+CC,cytoplasmic membrane-bounded vesicle,69,ABCC4
+CC,cytoplasmic membrane-bounded vesicle,69,ATP6V0A1
+CC,cytoplasmic membrane-bounded vesicle,69,AMOT
+CC,cytoplasmic membrane-bounded vesicle,69,SYTL2
+CC,cytoplasmic membrane-bounded vesicle,69,ABL2
+CC,proteinaceous extracellular matrix,53,ASPN
+CC,proteinaceous extracellular matrix,53,CTHRC1
+CC,proteinaceous extracellular matrix,53,LTBP1
+CC,proteinaceous extracellular matrix,53,NEPN
+CC,proteinaceous extracellular matrix,53,POSTN
+CC,proteinaceous extracellular matrix,53,MMP25
+CC,proteinaceous extracellular matrix,53,GPC4
+CC,proteinaceous extracellular matrix,53,OGN
+CC,proteinaceous extracellular matrix,53,HMCN1
+CC,proteinaceous extracellular matrix,53,ANG
+CC,proteinaceous extracellular matrix,53,VWA1
+CC,proteinaceous extracellular matrix,53,ADAM10
+CC,proteinaceous extracellular matrix,53,CRTAP
+CC,proteinaceous extracellular matrix,53,MMP15
+CC,proteinaceous extracellular matrix,53,ADAMTS9
+CC,proteinaceous extracellular matrix,53,BGN
+CC,proteinaceous extracellular matrix,53,EGFLAM
+CC,proteinaceous extracellular matrix,53,NAV2
+CC,proteinaceous extracellular matrix,53,ADAM19
+CC,proteinaceous extracellular matrix,53,LAMC1
+CC,proteinaceous extracellular matrix,53,MFAP5
+CC,proteinaceous extracellular matrix,53,ADAMTS5
+CC,proteinaceous extracellular matrix,53,WNT5A
+CC,proteinaceous extracellular matrix,53,ADAMTSL2
+CC,proteinaceous extracellular matrix,53,SPOCK2
+CC,proteinaceous extracellular matrix,53,TNC
+CC,proteinaceous extracellular matrix,53,LUM
+CC,proteinaceous extracellular matrix,53,TIMP4
+CC,proteinaceous extracellular matrix,53,DCN
+CC,proteinaceous extracellular matrix,53,TIMP2
+CC,proteinaceous extracellular matrix,53,PTN
+CC,proteinaceous extracellular matrix,53,AGRN
+CC,proteinaceous extracellular matrix,53,COL8A1
+CC,proteinaceous extracellular matrix,53,ENTPD1
+CC,proteinaceous extracellular matrix,53,DPT
+CC,proteinaceous extracellular matrix,53,FN1
+CC,proteinaceous extracellular matrix,53,COL4A2
+CC,proteinaceous extracellular matrix,53,COL4A1
+CC,proteinaceous extracellular matrix,53,LGALS1
+CC,proteinaceous extracellular matrix,53,EFEMP2
+CC,proteinaceous extracellular matrix,53,FBN1
+CC,proteinaceous extracellular matrix,53,COL15A1
+CC,proteinaceous extracellular matrix,53,CCDC80
+CC,proteinaceous extracellular matrix,53,HSPG2
+CC,proteinaceous extracellular matrix,53,PAPLN
+CC,proteinaceous extracellular matrix,53,NID1
+CC,proteinaceous extracellular matrix,53,EMILIN1
+CC,proteinaceous extracellular matrix,53,LAMA2
+CC,proteinaceous extracellular matrix,53,VWF
+CC,proteinaceous extracellular matrix,53,LAMA4
+CC,proteinaceous extracellular matrix,53,FBLN2
+CC,proteinaceous extracellular matrix,53,FREM2
+CC,proteinaceous extracellular matrix,53,TGFBR3
+CC,cytoplasmic vesicle,80,GNA13
+CC,cytoplasmic vesicle,80,CADM1
+CC,cytoplasmic vesicle,80,MLPH
+CC,cytoplasmic vesicle,80,MYO7A
+CC,cytoplasmic vesicle,80,TGFB3
+CC,cytoplasmic vesicle,80,AP3S1
+CC,cytoplasmic vesicle,80,PDIA6
+CC,cytoplasmic vesicle,80,ITSN1
+CC,cytoplasmic vesicle,80,CD2AP
+CC,cytoplasmic vesicle,80,ARHGAP21
+CC,cytoplasmic vesicle,80,SLC1A5
+CC,cytoplasmic vesicle,80,CTTNBP2
+CC,cytoplasmic vesicle,80,DMXL2
+CC,cytoplasmic vesicle,80,DYSF
+CC,cytoplasmic vesicle,80,PICALM
+CC,cytoplasmic vesicle,80,MAP1LC3A
+CC,cytoplasmic vesicle,80,TPP1
+CC,cytoplasmic vesicle,80,PACSIN2
+CC,cytoplasmic vesicle,80,MAPKAP1
+CC,cytoplasmic vesicle,80,SLC2A1
+CC,cytoplasmic vesicle,80,GOPC
+CC,cytoplasmic vesicle,80,RAB6B
+CC,cytoplasmic vesicle,80,SCAMP5
+CC,cytoplasmic vesicle,80,BSG
+CC,cytoplasmic vesicle,80,ADAM10
+CC,cytoplasmic vesicle,80,PIK3C2B
+CC,cytoplasmic vesicle,80,ANP32E
+CC,cytoplasmic vesicle,80,SLC3A2
+CC,cytoplasmic vesicle,80,STOM
+CC,cytoplasmic vesicle,80,MIB1
+CC,cytoplasmic vesicle,80,MYRIP
+CC,cytoplasmic vesicle,80,F5
+CC,cytoplasmic vesicle,80,IGF2R
+CC,cytoplasmic vesicle,80,SEMA4C
+CC,cytoplasmic vesicle,80,SORT1
+CC,cytoplasmic vesicle,80,TRAPPC4
+CC,cytoplasmic vesicle,80,PDCD6IP
+CC,cytoplasmic vesicle,80,CTSB
+CC,cytoplasmic vesicle,80,VAMP1
+CC,cytoplasmic vesicle,80,RAB11FIP1
+CC,cytoplasmic vesicle,80,SLC40A1
+CC,cytoplasmic vesicle,80,DST
+CC,cytoplasmic vesicle,80,IFT74
+CC,cytoplasmic vesicle,80,CLCN3
+CC,cytoplasmic vesicle,80,TNF
+CC,cytoplasmic vesicle,80,AGFG1
+CC,cytoplasmic vesicle,80,LRBA
+CC,cytoplasmic vesicle,80,TIMP4
+CC,cytoplasmic vesicle,80,NOSTRIN
+CC,cytoplasmic vesicle,80,CXXC4
+CC,cytoplasmic vesicle,80,RFFL
+CC,cytoplasmic vesicle,80,ITGB1
+MF,plasma membrane,368,ARL3
+MF,plasma membrane,368,STOM
+MF,plasma membrane,368,ATP6V1A
+MF,plasma membrane,368,NRM
+MF,plasma membrane,368,STXBP5
+MF,plasma membrane,368,DEF6
+MF,plasma membrane,368,CD81
+MF,plasma membrane,368,H2-KE6
+MF,plasma membrane,368,CTSB
+MF,plasma membrane,368,GPR17
+MF,plasma membrane,368,PRNP
+MF,plasma membrane,368,JAM3
+MF,plasma membrane,368,EPN1
+MF,plasma membrane,368,CPM
+MF,plasma membrane,368,TNFRSF23
+MF,plasma membrane,368,TNF
+MF,plasma membrane,368,PRND
+MF,plasma membrane,368,CD109
+MF,plasma membrane,368,CTNND1
+MF,plasma membrane,368,CDH2
+MF,plasma membrane,368,CYTH3
+MF,plasma membrane,368,ESYT2
+MF,plasma membrane,368,GPRC5B
+MF,plasma membrane,368,CD24A
+MF,plasma membrane,368,CDH5
+MF,plasma membrane,368,IGF1R
+MF,plasma membrane,368,APLNR
+MF,plasma membrane,368,CD9
+MF,plasma membrane,368,KLRA9
+MF,plasma membrane,368,RASGRP4
+MF,plasma membrane,368,HRH2
+MF,plasma membrane,368,MARVELD2
+MF,plasma membrane,368,SYN2
+MF,plasma membrane,368,CAMK2D
+MF,plasma membrane,368,TNFRSF19
+MF,plasma membrane,368,EHD1
+MF,phosphate metabolic process,126,ATP5E
+MF,phosphate metabolic process,126,ACVRL1
+MF,phosphate metabolic process,126,CDC14A
+MF,phosphate metabolic process,126,CDC14B
+MF,phosphate metabolic process,126,PRDX2
+MF,phosphate metabolic process,126,FES
+MF,phosphate metabolic process,126,D8ERTD82E
+MF,phosphate metabolic process,126,SLK
+MF,phosphate metabolic process,126,PAK4
+MF,phosphate metabolic process,126,CDK12
+MF,phosphate metabolic process,126,PAK1
+MF,phosphate metabolic process,126,ATP5H
+MF,phosphate metabolic process,126,FGF2
+MF,phosphate metabolic process,126,TRPM6
+MF,phosphate metabolic process,126,SGK1
+MF,phosphate metabolic process,126,ADAM10
+MF,phosphate metabolic process,126,LYN
+MF,phosphate metabolic process,126,LIMK1
+MF,phosphate metabolic process,126,PIK3C2B
+MF,phosphate metabolic process,126,DAPK2
+MF,phosphate metabolic process,126,PRKCB
+MF,phosphate metabolic process,126,DAPK1
+MF,phosphate metabolic process,126,PRKD1
+MF,phosphate metabolic process,126,PRKD2
+MF,phosphate metabolic process,126,ATP6V1A
+MF,phosphate metabolic process,126,ACVR2A
+MF,phosphate metabolic process,126,CCND1
+MF,phosphate metabolic process,126,MAST2
+MF,phosphate metabolic process,126,PPM1J
+MF,phosphate metabolic process,126,HIPK3
+MF,phosphate metabolic process,126,CD81
+MF,phosphate metabolic process,126,ERN1
+MF,phosphate metabolic process,126,PPM1L
+MF,phosphate metabolic process,126,NRK
+MF,phosphate metabolic process,126,MAP3K12
+MF,phosphate metabolic process,126,FRK
+MF,phosphate metabolic process,126,NDUFB8
+MF,phosphate metabolic process,126,CAMK2G
+MF,phosphate metabolic process,126,KIT
+MF,phosphate metabolic process,126,ATP5G3
+MF,phosphate metabolic process,126,IGF1R
+MF,phosphate metabolic process,126,GNPTAB
+MF,phosphate metabolic process,126,BCL2
+MF,phosphate metabolic process,126,CAMK2D
+MF,phosphate metabolic process,126,PRKAA2
+MF,phosphate metabolic process,126,MTMR6
+MF,phosphate metabolic process,126,PPAP2A
+MF,phosphate metabolic process,126,INPP5A
+MF,phosphate metabolic process,126,PTPRD
+MF,phosphate metabolic process,126,NCEH1
+MF,phosphate metabolic process,126,PTPRE
+MF,phosphate metabolic process,126,PTPRA
+MF,phosphate metabolic process,126,TRIM28
+MF,phosphate metabolic process,126,NDUFA7
+MF,phosphate metabolic process,126,NPR1
+MF,phosphate metabolic process,126,NPR2
+MF,phosphate metabolic process,126,TRIM24
+MF,phosphate metabolic process,126,ICK
+MF,phosphate metabolic process,126,MAPK12
+MF,phosphate metabolic process,126,PTP4A3
+MF,phosphate metabolic process,126,RPS6KA1
+MF,phosphate metabolic process,126,FYN
+MF,phosphate metabolic process,126,RPS6KA2
+MF,phosphate metabolic process,126,GSK3B
