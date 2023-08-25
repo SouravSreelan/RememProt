@@ -14,7 +14,7 @@ import base64
 
 from . models import Remembprot , Enrich , Dose , Cellmarker
 from .utils import getbarplot
-
+import json
 
 def get_graph():
     buffer = BytesIO()
@@ -43,18 +43,23 @@ def browse(request):
     return render(request,'rememb_prot/browse.html', context)
 
 
+
+
+
 def browseResult(request):
     method = request.POST.get("method")
     tissueCell = request.POST.get("tissueCell")
     species = request.POST.get("species")
     
     if tissueCell == None:
-        results = Remembprot.objects.filter( Q(organism = species) & Q(protienExtractMethod = method )).values()   
+        results = Remembprot.objects.filter( Q(organism = species) & Q(protienExtractMethod = method )).values("pmid","geneSymbol","isTrans","profileOrDifex","contxtOfIdent")   
     else:
         results = Remembprot.objects.filter( Q(organism = species) & Q(protienExtractMethod = method  ) &
-            Q(CellOrtissue = tissueCell) ).values()
+            Q(CellOrtissue = tissueCell) ).values("pmid","geneSymbol","isTrans","profileOrDifex","contxtOfIdent")
+        
 
     df = pd.DataFrame(list(results))
+    print(df)
     if df.empty:
 
         messages.error(request, 'could not find any result for your query.')
@@ -75,69 +80,57 @@ def browseResult(request):
 
         df.sort_values('isTrans', ascending = False, inplace=True)
 
-        profile_df = df.loc[df['profileOrDifex'] == "Profile" ]
+        formatted_data = {}
 
-        difx_df = df.loc[df['profileOrDifex'] == "Differential expression"]
-
-        if (not profile_df.empty) and (not difx_df.empty):
-            
-            if not cmData.empty:
-                profile_df = profile_df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex", "contxtOfDiferentialREG","contxtOfIdent","tissueType", 'cancerType', 'cellName']]
-            else:
-                profile_df = profile_df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent", "contxtOfDiferentialREG",]]
-
-            context_of_id_pr = profile_df.iloc[0]['contxtOfIdent']
-            pmids_prof = set(profile_df['pmid'].tolist()) 
-            profile_df =  profile_df.T.to_dict().values()
-
-            if not cmData.empty:
-                difx_df = difx_df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent", "contxtOfDiferentialREG", "tissueType", 'cancerType', 'cellName']]
-            else:
-                difx_df = difx_df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent", "contxtOfDiferentialREG",]]
-
-            context_of_id_dif = difx_df.iloc[0]['contxtOfIdent']
-            diff_reg = difx_df.iloc[0]['contxtOfDiferentialREG']
-
-            pmids_dif = set(difx_df['pmid'].tolist()) 
-            difx_df =  difx_df.T.to_dict().values()
+        for _, row in df.iterrows():
+            gene_symbol = row['geneSymbol']
+            isTrans = row['isTrans']
+            profileOrDifex = row['profileOrDifex']
+            contxtOfIdent = row['contxtOfIdent']
+            pmid = row['pmid']
 
 
-            context = {'profile_contxt':context_of_id_pr,'profile_df':profile_df,  'dif_contxt':context_of_id_dif,'difx_df':difx_df,   'species':species , 'method':method, 'tissueCell':tissueCell , 'key':"both" ,
-                       'pmids_prof':pmids_prof, 'pmids_dif':pmids_dif, 'diff_reg':diff_reg }
-            return render(request,'rememb_prot/browseresult.html',context)
+            if gene_symbol not in formatted_data:
+                gene_info = {
+                    'gene': gene_symbol,
+                    'Transmem_status': isTrans,
+                    'profileOrDifferential' : profileOrDifex,
+                    'contxtOfIdent' : contxtOfIdent,
+                    'pmid' : pmid,
+                    'cell marker status': []
+                }
+                if row['tissueType'] != '-' and row['cancerType'] != '-' and row['cellName'] != '-':
+
+                    
+                    cell_marker_info = {
+                    'tissueType': row['tissueType'],
+                    'cancerType': row['cancerType'],
+                    'cellName': row['cellName']
+                    }
+                    gene_info['cell marker status'].append(cell_marker_info)
+                else:
+                    cell_marker_info = {
+                    'tissueType': '-',
+                    'cancerType': '-',
+                    'cellName': '-'
+                    }
+                    gene_info['cell marker status'].append(cell_marker_info)
 
 
-        if not(profile_df.empty) and difx_df.empty:
+                formatted_data[gene_symbol] = gene_info
 
-            if not cmData.empty:
-                df = df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent","tissueType", 'cancerType', 'cellName']]
+        
+        
+        final_formatted_data = list(formatted_data.values())
 
-            else:
-                df = df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent",]]
-
-            context_of_id = df.iloc[0]['contxtOfIdent']
-            pmids_prof = set(df['pmid'].tolist()) 
-
-            profile_df =  df.T.to_dict().values()
-            context = {'profile_contxt':context_of_id,'profile_df':profile_df, 'species':species , 'method':method, 'tissueCell':tissueCell , "key":"profile" , 'pmids_prof':pmids_prof}
-            
-            return render(request,'rememb_prot/browseresult.html',context)
+        print(final_formatted_data)
 
 
-        if not(difx_df.empty) and profile_df.empty:
-            if not cmData.empty:
-                df = df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent", "contxtOfDiferentialREG","tissueType", 'cancerType', 'cellName']]
-            else:
-                df = df[["pmid","geneID","geneSymbol","isTrans","profileOrDifex","contxtOfIdent","contxtOfDiferentialREG",]]
+        context = { 'final_formatted_data':final_formatted_data, 'species':species , 'method':method, 'tissueCell':tissueCell }
+ 
+        return render(request,'rememb_prot/browseresultnew.html',context)
+        
 
-            context_of_id = df.iloc[0]['contxtOfIdent']
-            diff_reg = difx_df.iloc[0]['contxtOfDiferentialREG']
-
-            pmids_dif = set(df['pmid'].tolist()) 
-
-            difx_df =  df.T.to_dict().values()
-            context = {'diffx_contxt':context_of_id,'difx_df':difx_df, 'species':species , 'method':method, 'tissueCell':tissueCell, "key":"diff",'pmids_dif':pmids_dif , 'diff_reg':diff_reg}
-            return render(request,'rememb_prot/browseresult.html',context)
 
 
 def pvalue_calc(list_hit,pop_hit,list_total):
@@ -181,7 +174,8 @@ def enrichment(request):
     df = df.merge(enrich_df[['enrichment','count_total']] , on ='enrichment')
     df['percentage'] = df['count'].apply(lambda x: (x/total_genes)*100)
     df['p_value'] = df.apply(lambda x: pvalue_calc(x['count'], x['count_total'],total_genes), axis=1)
-    df['p_value'] = df['p_value'].apply(lambda x: float("{:.5f}".format(x)))
+    df['log10pval'] = abs(np.log10(df['p_value']))
+    df.to_csv('check.csv')
     df['percentage'] = df['percentage'].apply(lambda x: "{:.2f}%".format(x))
     results = df[['enrichment','percentage','count','p_value']]
 
