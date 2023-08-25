@@ -16,6 +16,14 @@ from . models import Remembprot , Enrich , Dose , Cellmarker
 from .utils import getbarplot
 import json
 
+
+from django.middleware.csrf import get_token
+
+def get_csrf_token(request):
+    csrf_token = get_token(request)
+    return JsonResponse({'csrfToken': csrf_token})
+
+
 def get_graph():
     buffer = BytesIO()
     plt.savefig(buffer, format = 'svg')
@@ -97,7 +105,7 @@ def browseResult(request):
                     'profileOrDifferential' : profileOrDifex,
                     'contxtOfIdent' : contxtOfIdent,
                     'pmid' : pmid,
-                    'cell marker status': []
+                    'cell_marker_status': []
                 }
                 if row['tissueType'] != '-' and row['cancerType'] != '-' and row['cellName'] != '-':
 
@@ -107,14 +115,14 @@ def browseResult(request):
                     'cancerType': row['cancerType'],
                     'cellName': row['cellName']
                     }
-                    gene_info['cell marker status'].append(cell_marker_info)
+                    gene_info['cell_marker_status'].append(cell_marker_info)
                 else:
                     cell_marker_info = {
                     'tissueType': '-',
                     'cancerType': '-',
                     'cellName': '-'
                     }
-                    gene_info['cell marker status'].append(cell_marker_info)
+                    gene_info['cell_marker_status'].append(cell_marker_info)
 
 
                 formatted_data[gene_symbol] = gene_info
@@ -127,8 +135,8 @@ def browseResult(request):
 
 
         context = { 'final_formatted_data':final_formatted_data, 'species':species , 'method':method, 'tissueCell':tissueCell }
- 
-        return render(request,'rememb_prot/browseresultnew.html',context)
+        return JsonResponse(context)
+        # return render(request,'rememb_prot/browseresultnew.html',context)
         
 
 
