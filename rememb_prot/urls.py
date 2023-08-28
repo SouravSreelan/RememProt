@@ -21,6 +21,7 @@ path('dose_ontology/', views.dose_ontology, name = 'dose_ontology'),
 
 path('selectedSpecies/', views.selectedSpecies, name = 'selectedSpecies'),
 path('selectedMethod/', views.selectedMethod, name = 'selectedMethod'),
+path('get_csrf_token/', views.get_csrf_token, name = 'get_csrf_token'),
 
 path('contributers/', TemplateView.as_view(template_name="rememb_prot/contributer.html"), name = 'contributers'),
 
