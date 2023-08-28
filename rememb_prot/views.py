@@ -190,13 +190,12 @@ def enrichment(request):
 
     results.sort_values('count', ascending = False , inplace = True)
 
-    barplot = getbarplot(results[['enrichment','count','percentage']])
 
     enrichment_result = list()
     for index, row in results.iterrows():
         enrichment_result.append(row.to_dict())
 
-    context = { 'enrichment_result':enrichment_result, 'barplot':barplot}
+    context = { 'enrichment_result':enrichment_result}
     return render(request,'rememb_prot/enrich_result.html', context)
 
 
