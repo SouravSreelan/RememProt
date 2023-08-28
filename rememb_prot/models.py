@@ -5,6 +5,7 @@ class Enrich(models.Model):
     pmid = models.CharField(max_length = 255,null = True, blank = True)
     enrichment = models.CharField(max_length = 255,null = True, blank = True)
     count_total = models.IntegerField(null=True)
+    method = models.CharField(max_length = 255, null = True)
 
 
     def __str__(self):
@@ -55,6 +56,7 @@ class Dose(models.Model):
     adj_pvalue = models.FloatField(max_length = 100, null = True)
     count = models.IntegerField(null = True)
     organism = models.CharField(max_length = 255, null = True)
+
 
     def __str__(self):
         return self.dose_id
