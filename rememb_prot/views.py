@@ -249,6 +249,7 @@ def transmembrane(request):
 
 def bqueryResult(request):
     genes = request.POST.get("bqueryInput")
+    print(genes)
     species = request.POST.get("species")
     genes = genes.split()
     genes = [x.strip() for x in genes]
@@ -261,20 +262,20 @@ def bqueryResult(request):
         if len(main) == 0 or len(cmData) == 0:
             messages.error(request, 'Gene not found!') 
             return redirect('rememb_prot:bquery')
-        results = main.merge(cmData, on = 'geneSymbol', how = 'left')
+        results = main.merge(cmData, on='geneSymbol', how='left')
         results.fillna('-', inplace=True)
-        results =  results.T.to_dict().values()
+        results = results.to_dict(orient='records')  # Convert DataFrame to list of dictionaries
     else:
         if len(main) == 0 or len(cmData) == 0:
             messages.error(request, 'Gene not found!') 
             return redirect('rememb_prot:bquery')
         results = main
         results.fillna('-', inplace=True)
-        results =  results.T.to_dict().values()
+        results = results.to_dict(orient='records')  # Convert DataFrame to list of dictionaries
     
-    
-    context = {'results':results,'species':species}
-    return render(request,'rememb_prot/bquery_result.html', context)
+    context = {'results': results, 'species': species}
+    return JsonResponse(context)
+    # return render(request,'rememb_prot/bquery_result.html', context)
 
 
 def selectedSpecies(request):
