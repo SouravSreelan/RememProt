@@ -135,6 +135,7 @@ def browseResult(request):
 
 
         context = { 'final_formatted_data':final_formatted_data, 'species':species , 'method':method, 'tissueCell':tissueCell }
+        print(context)
         return JsonResponse(context)
         # return render(request,'rememb_prot/browseresultnew.html',context)
         

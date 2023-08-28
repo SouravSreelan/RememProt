@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 import pymysql  
-pymysql.install_as_MySQLdb()
+# pymysql.install_as_MySQLdb()
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,8 +11,8 @@ SECRET_KEY = 'django-insecure-6y_k8_amv&2(r3qhnmy0j7=1l)b9-u3(sb^m0br6ga=6dfcu*6
 
 DEBUG = True
 
-ALLOWED_HOSTS=['localhost', 'ciods.in']
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+ALLOWED_HOSTS=['*']
+# CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
@@ -67,7 +67,7 @@ TEMPLATES = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',  # Replace with your Next.js frontend URL
+    'http://localhost:8000',  # Replace with your Next.js frontend URL
 ]
 
 CORS_ALLOW_CREDENTIALS = True
