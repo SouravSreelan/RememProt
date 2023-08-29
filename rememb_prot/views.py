@@ -189,15 +189,13 @@ def enrichment(request):
     results = df[['enrichment','percentage','count','p_value']]
 
     results.sort_values('count', ascending = False , inplace = True)
-
-
     enrichment_result = list()
     for index, row in results.iterrows():
         enrichment_result.append(row.to_dict())
 
     context = { 'enrichment_result':enrichment_result}
-    return render(request,'rememb_prot/enrich_result.html', context)
-
+    return JsonResponse(context)
+    # return render(request,'rememb_prot/enrich_result.html', context)
 
 
 def dose_ontology(request):
@@ -233,8 +231,10 @@ def dose_ontology(request):
         # print(final_np)
         final_np = final_np.transpose()
         
-       
-        return render(request, 'rememb_prot/dose_result.html',{'n':header_list,'genes':genes,'nump':nump, 'final_np':final_np})
+        context = {'n':header_list,'genes':genes,'nump':nump, 'final_np':final_np}
+        return JsonResponse(context)
+      
+        # return render(request, 'rememb_prot/dose_result.html',{'n':header_list,'genes':genes,'nump':nump, 'final_np':final_np})
         
 
 def transmembrane(request):
@@ -248,7 +248,6 @@ def transmembrane(request):
 
 def bqueryResult(request):
     genes = request.POST.get("bqueryInput")
-    print(genes)
     species = request.POST.get("species")
     genes = genes.split()
     genes = [x.strip() for x in genes]
