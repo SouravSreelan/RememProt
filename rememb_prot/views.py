@@ -196,7 +196,7 @@ def enrichment(request):
     return JsonResponse(context)
     # return render(request,'rememb_prot/enrich_result.html', context)
 
-
+  
 def dose_ontology(request):
 
     if request.method == 'POST':
@@ -204,38 +204,31 @@ def dose_ontology(request):
         genes = genes.split()
         genes = [x.strip() for x in genes]
         genes = list(set(genes))
-        dose = Dose.objects.filter(gene_symbol__in = genes ).values()
+        dose = Dose.objects.filter(gene_symbol__in=genes).values()
         df = pd.DataFrame(list(dose))
        
-        df = df[['gene_symbol','description']]
+        df = df[['gene_symbol', 'description']]
         df['value'] = 1
-        df = df.pivot(index = 'gene_symbol', columns='description')
+        df = df.pivot(index='gene_symbol', columns='description')
         df.columns = df.columns.droplevel(0)
-        df.fillna(0 , inplace = True)
+        df.fillna(0, inplace=True)
         header_list = list(df.columns)
-        # header_list.pop(0)
-        df.reset_index(inplace = True)
-        genes = df["gene_symbol"].tolist()
-        # print(genes)
+        df.reset_index(inplace=True)
+        genes_list = df["gene_symbol"].tolist()
         df = df.set_index('gene_symbol')
         trans_df = df.transpose()
         
         nump = trans_df.to_numpy()
-        dfg = pd.DataFrame(columns = genes)
-        dfg.loc[0] = genes
-        dfnew  = pd.concat([dfg,trans_df], axis=0)
+        dfg = pd.DataFrame(columns=genes_list)
+        dfg.loc[0] = genes_list
+        dfnew = pd.concat([dfg, trans_df], axis=0)
         dfnew.reset_index(inplace=True)
         final_np = dfnew.to_numpy()
         final_np = np.delete(final_np, 0, 1)
-        # print(final_np)
         final_np = final_np.transpose()
         
-        context = {'n':header_list,'genes':genes,'nump':nump, 'final_np':final_np}
+        context = {'n': header_list, 'genes': genes_list, 'nump': nump.tolist(), 'final_np': final_np.tolist()}
         return JsonResponse(context)
-      
-        # return render(request, 'rememb_prot/dose_result.html',{'n':header_list,'genes':genes,'nump':nump, 'final_np':final_np})
-        
-
 def transmembrane(request):
     genes = request.POST.get("genefortrans")
     genes = genes.split()
@@ -255,7 +248,7 @@ def bqueryResult(request):
     main = pd.DataFrame(list(main))
     cmData = pd.DataFrame(list(cmData))
     if species in ['Homo sapiens', 'Mus musculus']:
-
+       
         if len(main) == 0 or len(cmData) == 0:
             messages.error(request, 'Gene not found!') 
             return redirect('rememb_prot:bquery')
@@ -272,7 +265,6 @@ def bqueryResult(request):
     
     context = {'results': results, 'species': species}
     return JsonResponse(context)
-    # return render(request,'rememb_prot/bquery_result.html', context)
 
 
 def selectedSpecies(request):
