@@ -12,6 +12,7 @@ SECRET_KEY = 'django-insecure-6y_k8_amv&2(r3qhnmy0j7=1l)b9-u3(sb^m0br6ga=6dfcu*6
 DEBUG = True
 
 ALLOWED_HOSTS=['localhost', 'ciods.in']
+# ALLOWED_HOSTS=['*']
 CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
 
 INSTALLED_APPS = [

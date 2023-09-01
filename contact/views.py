@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.shortcuts import render , redirect
 from django.core.mail import send_mail
+from django.http import JsonResponse
 
 from .forms import ContactsForm
 
@@ -35,6 +36,7 @@ def contacts(request):
             messages.error(request, 'please enter valid information')
 
     context  = {'form': form }
+    # return JsonResponse(context) 
     return render(request, 'contact/contactus.html',context)
 
 

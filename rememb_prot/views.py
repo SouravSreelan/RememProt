@@ -55,7 +55,6 @@ def browse(request):
 
 
 
-
 def browseResult(request):
     method = request.POST.get("method")
     tissueCell = request.POST.get("tissueCell")
@@ -90,57 +89,72 @@ def browseResult(request):
 
         df.sort_values('isTrans', ascending = False, inplace=True)
 
-        formatted_data = {}
+        formatted_data = {
+			"organisms": species,
+			"data": []
+		}
+        grouped_data = {}
 
         for _, row in df.iterrows():
             gene_symbol = row['geneSymbol']
             isTrans = row['isTrans']
             profileOrDifex = row['profileOrDifex']
             contxtOfIdent = row['contxtOfIdent']
-            pmid = row['pmid']
+            tissue_or_cell_line = tissueCell
+            pubmed_id = row['pmid']
 
+            key = (profileOrDifex, contxtOfIdent, method, tissue_or_cell_line, pubmed_id)
 
-            if gene_symbol not in formatted_data:
-                gene_info = {
-                    'gene': gene_symbol,
-                    'Transmem_status': isTrans,
-                    'profileOrDifferential' : profileOrDifex,
-                    'contxtOfIdent' : contxtOfIdent,
-                    'pmid' : pmid,
-                    'cell_marker_status': []
+            if key not in grouped_data:
+                grouped_data[key] = {
+                "analysis": profileOrDifex,
+                "context": contxtOfIdent,
+                "method": method,
+                "tissue_or_cell_line": tissue_or_cell_line,
+                "pubmedId": pubmed_id,
+                "proteinData": []
                 }
-                if row['tissueType'] != '-' and row['cancerType'] != '-' and row['cellName'] != '-':
-
-                    
-                    cell_marker_info = {
-                    'tissueType': row['tissueType'],
-                    'cancerType': row['cancerType'],
-                    'cellName': row['cellName']
+            gene_exists = False
+            for cell_marker_info in grouped_data[key]["proteinData"]:
+                if cell_marker_info["gene"] == gene_symbol:
+                    gene_exists = True
+                    break
+            if not gene_exists:
+                cell_marker_info = {
+                    "gene": gene_symbol,
+                    "transmemStatus": isTrans,
+                    "cellMarker": [
+                    {
+                    "tissueType": row['tissueType'],
+                    "cancerType": row['cancerType'],
+                    "cellName": row['cellName']
                     }
-                    gene_info['cell_marker_status'].append(cell_marker_info)
-                else:
-                    cell_marker_info = {
-                    'tissueType': '-',
-                    'cancerType': '-',
-                    'cellName': '-'
-                    }
-                    gene_info['cell_marker_status'].append(cell_marker_info)
+                ]
+                }
+                grouped_data[key]["proteinData"].append(cell_marker_info)
 
+  
 
-                formatted_data[gene_symbol] = gene_info
-
-        
-        
-        final_formatted_data = list(formatted_data.values())
+        formatted_data["data"] = list(grouped_data.values())
+            
+        final_formatted_data = {
+            "organisms": species,
+            "data": formatted_data["data"]
+        }
 
         print(final_formatted_data)
+        
+        json_filename = 'formatted_data.json'
+        with open(json_filename, 'w') as json_file:
+            json.dump(final_formatted_data, json_file, indent=4)
+        
 
 
         context = { 'final_formatted_data':final_formatted_data, 'species':species , 'method':method, 'tissueCell':tissueCell }
+        # print(context)
         return JsonResponse(context)
         # return render(request,'rememb_prot/browseresultnew.html',context)
         
-
 
 
 def pvalue_calc(list_hit,pop_hit,list_total):
@@ -149,54 +163,6 @@ def pvalue_calc(list_hit,pop_hit,list_total):
     _ , p_value = fisher_exact(data, alternative = 'two-sided')
     return p_value
 
-
-
-# def enrichment(request):
-#     genes = request.POST.get("analysisInput")
-#     genetype =  'genesymbol'
-#     genes = genes.split()
-#     genes = [x.strip() for x in genes]
-
-#     total_genes = len(genes)
-
-#     enrich = Enrich.objects.all().values('pmid','enrichment','count_total')
-
-#     if genetype == 'genesymbol':
-#         gene = Remembprot.objects.filter(geneSymbol__in = genes).values('geneSymbol','pmid')
-#         genetype = 'geneSymbol'
-#     else:
-#         gene = Remembprot.objects.filter(geneID__in = genes).values('geneID','pmid')
-#         genetype = 'geneID'
-
-#     main_df = pd.DataFrame(list(gene))
-#     enrich_df = pd.DataFrame(list(enrich))
-
-#     df = pd.merge(main_df,enrich_df, on = 'pmid')
-
-#     df = df[['enrichment',genetype,'count_total']]
-
-#     df = df.groupby('enrichment').agg({genetype:lambda x:list(set(x))})
-
-#     df['count'] = df[genetype].apply(lambda x: len(x))
-
-#     df.reset_index(inplace = True)
-
-#     df = df.merge(enrich_df[['enrichment','count_total']] , on ='enrichment')
-#     df['percentage'] = df['count'].apply(lambda x: (x/total_genes)*100)
-#     df['p_value'] = df.apply(lambda x: pvalue_calc(x['count'], x['count_total'],total_genes), axis=1)
-#     df['log10pval'] = abs(np.log10(df['p_value']))
-#     df.to_csv('check.csv')
-#     df['percentage'] = df['percentage'].apply(lambda x: "{:.2f}%".format(x))
-#     results = df[['enrichment','percentage','count','p_value']]
-
-#     results.sort_values('count', ascending = False , inplace = True)
-#     enrichment_result = list()
-#     for index, row in results.iterrows():
-#         enrichment_result.append(row.to_dict())
-
-#     context = { 'enrichment_result':enrichment_result}
-#     return JsonResponse(context)
-    # return render(request,'rememb_prot/enrich_result.html', context)
 
 
 def enrichment(request):
@@ -235,7 +201,7 @@ def enrichment(request):
     df['log10pval'] = abs(np.log10(df['p_value']))
     df.to_csv('check.csv')
     df['percentage'] = df['percentage'].apply(lambda x: "{:.2f}%".format(x))
-    results = df[['enrichment', 'percentage', 'count', 'p_value', 'method']]  # Include 'method' field
+    results = df[['enrichment', 'percentage', 'count', 'p_value', 'method', 'log10pval']]  # Include 'method' field
 
     results.sort_values('count', ascending=False, inplace=True)
 
@@ -246,75 +212,6 @@ def enrichment(request):
     context = {'enrichment_result': enrichment_result}
     return JsonResponse(context)
 
-
-# def enrichment(request):
-#     genes = request.POST.get("analysisInput")
-#     genetype = 'genesymbol'
-#     genes = genes.split()
-#     genes = [x.strip() for x in genes]
-
-#     total_genes = len(genes)
-
-#     enrich = Enrich.objects.all().values('pmid', 'enrichment', 'count_total')
-
-#     if genetype == 'genesymbol':
-#         gene = Remembprot.objects.filter(geneSymbol__in=genes).values('geneSymbol', 'pmid')
-#         genetype = 'geneSymbol'
-#     else:
-#         gene = Remembprot.objects.filter(geneID__in=genes).values('geneID', 'pmid')
-#         genetype = 'geneID'
-
-#     main_df = pd.DataFrame(list(gene))
-#     enrich_df = pd.DataFrame(list(enrich))
-
-#     df = pd.merge(main_df, enrich_df, on='pmid')
-
-#     df = df[['enrichment', genetype, 'count_total']]
-
-#     df = df.groupby('enrichment').agg({genetype: lambda x: list(set(x))})
-
-#     df['count'] = df[genetype].apply(lambda x: len(x))
-
-#     df.reset_index(inplace=True)
-
-#     df = df.merge(enrich_df[['enrichment', 'count_total']], on='enrichment')
-#     df['percentage'] = df['count'].apply(lambda x: (x / total_genes) * 100)
-#     df['p_value'] = df.apply(lambda x: pvalue_calc(x['count'], x['count_total'], total_genes), axis=1)
-#     df['log10pval'] = abs(np.log10(df['p_value']))
-#     df.to_csv('check.csv')
-#     df['percentage'] = df['percentage'].apply(lambda x: "{:.2f}%".format(x))
-#     results = df[['enrichment', 'percentage', 'count', 'p_value']]
-
-#     results.sort_values('count', ascending=False, inplace=True)
-
-#     paginator = Paginator(results, 20)  # 20 items per page
-#     page_number = int(request.POST.get("page", 1))
-
-#     # Number of pages to cache around the current page
-#     cache_range = 2
-
-#     # Check cache for cached pages
-#     cached_pages = cache.get('cached_pages', set())
-#     if page_number in cached_pages:
-#         # Page is already cached, retrieve it
-#         page_obj = paginator.page(page_number)
-#     else:
-#         # Fetch the requested page and cache it
-#         try:
-#             page_obj = paginator.page(page_number)
-#             cached_pages.add(page_number)
-#             cache.set('cached_pages', cached_pages)
-#         except EmptyPage:
-#             return JsonResponse({'enrichment_result': [], 'pagination': {'has_next': False, 'total_pages': 0}})
-
-#     enrichment_result = []
-#     for index, row in page_obj.object_list.iterrows():
-#         enrichment_result.append(row.to_dict())
-
-#     pagination = {'has_next': page_obj.has_next(), 'total_pages': paginator.num_pages}
-
-#     context = {'enrichment_result': enrichment_result, 'pagination': pagination}
-#     return JsonResponse(context)
 
 
 def dose_ontology(request):
@@ -358,105 +255,6 @@ def transmembrane(request):
     return render(request,'rememb_prot/transmemb_done.html', context)
 
 
-# def bqueryResult(request):
-#     genes = request.POST.get("bqueryInput")
-#     species = request.POST.get("species")
-#     genes = genes.split()
-#     genes = [x.strip() for x in genes]
-#     main = Remembprot.objects.filter(Q(geneSymbol__in = genes) & Q(organism = species)).values()
-#     cmData = Cellmarker.objects.filter(Q(geneSymbol__in = genes) & Q(species = species)).values()
-#     main = pd.DataFrame(list(main))
-#     cmData = pd.DataFrame(list(cmData))
-#     if species in ['Homo sapiens', 'Mus musculus']:
-
-#         if len(main) == 0 or len(cmData) == 0:
-#             messages.error(request, 'Gene not found!') 
-#             return redirect('rememb_prot:bquery')
-#         results = main.merge(cmData, on='geneSymbol', how='left')
-#         results.fillna('-', inplace=True)
-#         results_dict = results.to_dict(orient='records')
-#     else:
-#         if len(main) == 0 or len(cmData) == 0:
-#             messages.error(request, 'Gene not found!') 
-#             return redirect('rememb_prot:bquery')
-#         results = main
-#         results.fillna('-', inplace=True)
-#         results_dict = results.to_dict(orient='records')
-
-#     context = {'results': results_dict, 'species': species}
-    
-#     return JsonResponse(context)
-
-# def bqueryResult(request):
-#     genes = request.POST.get("bqueryInput")
-#     species = request.POST.get("species")
-#     genes = genes.split()
-#     genes = [x.strip() for x in genes]
-#     main = Remembprot.objects.filter(Q(geneSymbol__in=genes) & Q(organism=species)).values()
-#     cmData = Cellmarker.objects.filter(Q(geneSymbol__in=genes) & Q(species=species)).values()
-#     main = pd.DataFrame(list(main))
-#     cmData = pd.DataFrame(list(cmData))
-    
-#     if species in ['Homo sapiens', 'Mus musculus']:
-#         if len(main) == 0 or len(cmData) == 0:
-#             messages.error(request, 'Gene not found!')
-#             return redirect('rememb_prot:bquery')
-#         results = main.merge(cmData, on='geneSymbol', how='left')
-#     else:
-#         if len(main) == 0 or len(cmData) == 0:
-#             messages.error(request, 'Gene not found!')
-#             return redirect('rememb_prot:bquery')
-#         results = main
-    
-#     paginator = Paginator(results, 20)  # 20 items per page
-#     page_number = request.GET.get('page')
-#     page_obj = paginator.get_page(page_number)
-    
-#     results_dict = page_obj.object_list.to_dict(orient='records')
-
-#     context = {'results': results_dict, 'species': species}
-#     return JsonResponse(context)
-
-
-# def bqueryResult(request):
-    genes = request.POST.get("bqueryInput")
-    species = request.POST.get("species")
-    page_number = int(request.POST.get("page", 1))
-    
-    genes = genes.split()
-    genes = [x.strip() for x in genes]
-    main = Remembprot.objects.filter(Q(geneSymbol__in=genes) & Q(organism=species)).values()
-    cmData = Cellmarker.objects.filter(Q(geneSymbol__in=genes) & Q(species=species)).values()
-    main = pd.DataFrame(list(main))
-    cmData = pd.DataFrame(list(cmData))
-    
-    if species in ['Homo sapiens', 'Mus musculus']:
-        if len(main) == 0 or len(cmData) == 0:
-            messages.error(request, 'Gene not found!')
-            return redirect('rememb_prot:bquery')
-        results = main.merge(cmData, on='geneSymbol', how='left')
-    else:
-        if len(main) == 0:
-            messages.error(request, 'Gene not found!')
-            return redirect('rememb_prot:bquery')
-        results = main
-    
-    # Fill missing values with hyphen
-    results.fillna('-', inplace=True)
-    
-    paginator = Paginator(results, 30)  # 30 items per page
-    
-    try:
-        page_obj = paginator.page(page_number)
-    except EmptyPage:
-        return JsonResponse({'results': [], 'pagination': {'has_next': False, 'total_pages': 0}, 'species': species})
-    
-    results_dict = page_obj.object_list.to_dict(orient='records')
-    pagination = {'has_next': page_obj.has_next(), 'total_pages': paginator.num_pages}
-    
-    context = {'results': results_dict, 'pagination': pagination, 'species': species}
-    return JsonResponse(context)
-
 def bqueryResult(request):
     genes = request.POST.get("bqueryInput")
     species = request.POST.get("species")
@@ -464,15 +262,21 @@ def bqueryResult(request):
     
     genes = genes.split()
     genes = [x.strip() for x in genes]
+    
+    # Query Remembprot data
     main = Remembprot.objects.filter(Q(geneSymbol__in=genes) & Q(organism=species)).values()
-    cmData = Cellmarker.objects.filter(Q(geneSymbol__in=genes) & Q(species=species)).values()
     main = pd.DataFrame(list(main))
+    
+    # Query Cellmarker data
+    cmData = Cellmarker.objects.filter(Q(geneSymbol__in=genes) & Q(species=species)).values()
     cmData = pd.DataFrame(list(cmData))
     
     if species in ['Homo sapiens', 'Mus musculus']:
         if len(main) == 0 or len(cmData) == 0:
             messages.error(request, 'Gene not found!')
             return redirect('rememb_prot:bquery')
+        
+        # Merge Remembprot and Cellmarker data
         results = main.merge(cmData, on='geneSymbol', how='left')
     else:
         if len(main) == 0:
@@ -483,28 +287,21 @@ def bqueryResult(request):
     # Fill missing values with hyphen
     results.fillna('-', inplace=True)
     
-    paginator = Paginator(results, 30)  # 30 items per page
+    # Initialize the paginator
+    paginator = Paginator(results.to_dict(orient='records'), 30)  # 30 items per page
     
-    # Get the cached page numbers
-    cached_pages = cache.get('cached_pages', set())
-    
-    if page_number in cached_pages:
-        # Page is already cached, retrieve it
+    try:
+        # Get the requested page
         page_obj = paginator.page(page_number)
-    else:
-        # Fetch the requested page and cache it
-        try:
-            page_obj = paginator.page(page_number)
-            cached_pages.add(page_number)
-            cache.set('cached_pages', cached_pages)
-        except EmptyPage:
-            return JsonResponse({'results': [], 'pagination': {'has_next': False, 'total_pages': 0}, 'species': species})
+    except EmptyPage:
+        return JsonResponse({'results': [], 'pagination': {'has_next': False, 'total_pages': 0}, 'species': species})
     
-    results_dict = page_obj.object_list.to_dict(orient='records')
+    results_dict = page_obj.object_list
     pagination = {'has_next': page_obj.has_next(), 'total_pages': paginator.num_pages}
     
     context = {'results': results_dict, 'pagination': pagination, 'species': species}
     return JsonResponse(context)
+
 
 def selectedSpecies(request):
     if request.method == 'POST':
